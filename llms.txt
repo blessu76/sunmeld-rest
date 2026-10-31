@@ -1,0 +1,36 @@
+# Sunmeld
+
+> Sunmeld (Space Merge Duel) is a player-versus-AI merge duel for iOS and Android, now in development. Take turns dropping space stones into one shared tub, merge them into bigger worlds, and do not be the one who overflows it.
+
+Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). It is coming soon to iOS and Android and has NOT been released: no store page or release date exists yet. This site is the game's home and its journal.
+
+## Key facts
+
+- You and an AI opponent take turns dropping space stones into one shared tub.
+- Two stones of the same stage that touch merge into the next stage, from dust up to a sun.
+- The player who causes a merge scores it; if the tub overflows, the player who placed the last stone loses.
+- Each AI opponent has its own habits.
+- Free to try; a single purchase unlocks everything. No ads.
+
+## Pages
+
+- [Home](https://sunmeld.ipe.rest/): A merge duel against an AI opponent in one shared tub. Drop a stone, merge matching stones into the next stage, and score. Overflow the tub and you lose.
+- [About](https://sunmeld.ipe.rest/about/): what Sunmeld is and who makes it
+- [Support](https://sunmeld.ipe.rest/support/): contact and questions
+- [Privacy Policy](https://sunmeld.ipe.rest/privacy/)
+- [Terms of Use](https://sunmeld.ipe.rest/terms/)
+- [Release notes](https://sunmeld.ipe.rest/releases/)
+- [Journal](https://sunmeld.ipe.rest/journal/): notes from the making of the game
+- [RSS](https://sunmeld.ipe.rest/journal/feed.xml)
+
+## Journal posts (English)
+
+- [Starting to make Sunmeld](https://sunmeld.ipe.rest/journal/starting-sunmeld/) — 2026-10-31 — The first journal post. What Sunmeld is, and why this journal exists.
+
+## Languages
+
+The site is available in 2 languages: English, 한국어. Each language lives under /<code>/ (English at the root).
+
+## Contact and operator
+
+Davy Kim (ipe Studio) — ipe.haven@gmail.com
