@@ -56,15 +56,15 @@ class Built(unittest.TestCase):
         self.assertIn("/assets/sunmeld.css?v=%s" % bs.ASSET_V, h)
         self.assertIn("/assets/sunmeld.js?v=%s" % bs.ASSET_V, h)
         css = (REPO / "assets" / "sunmeld.css").read_text(encoding="utf-8")
-        for token in ("--paper:#FBF8EE", "--ink:#1B2540", "--blue:#2B5FD9", "--orange:#FFA726", "--chalk:#1F2B27", "--font-head", "--font-body"):
+        for token in ("--bg:#10305A", "--gold:#F3C969", "--rival:#8FB4E3", "--bg:#E7EEF5", "--font-head", "--font-body"):
             self.assertIn(token, css)
-        self.assertIn("Caveat+Brush", h)
-        self.assertIn("Nunito", h)
+        self.assertIn("Instrument+Serif", h)
+        self.assertIn("IBM+Plex+Sans", h)
 
     def test_root_inlines_language_picker_only_on_home(self):
-        self.assertIn("cb-lang", self.read("index.html"))
-        self.assertNotIn("cb-lang", self.read("about/index.html"))
-        self.assertNotIn("cb-lang", self.read("ko/index.html"))
+        self.assertIn("sm-lang", self.read("index.html"))
+        self.assertNotIn("sm-lang", self.read("about/index.html"))
+        self.assertNotIn("sm-lang", self.read("ko/index.html"))
 
     def test_store_badges_are_not_links(self):
         for lang_dir in ("", "ko/"):
