@@ -56,10 +56,10 @@ class Built(unittest.TestCase):
         self.assertIn("/assets/sunmeld.css?v=%s" % bs.ASSET_V, h)
         self.assertIn("/assets/sunmeld.js?v=%s" % bs.ASSET_V, h)
         css = (REPO / "assets" / "sunmeld.css").read_text(encoding="utf-8")
-        for token in ("--bg:#10305A", "--gold:#F3C969", "--rival:#8FB4E3", "--bg:#E7EEF5", "--font-head", "--font-body"):
+        for token in ("--bg:#0A0612", "--panel:#160F22", "--gold:#FFB23F", "--rival:#FF5C8A", "--font-head", "--font-body"):
             self.assertIn(token, css)
-        self.assertIn("Instrument+Serif", h)
-        self.assertIn("IBM+Plex+Sans", h)
+        self.assertIn("Unbounded", h)
+        self.assertIn("Manrope", h)
 
     def test_root_inlines_language_picker_only_on_home(self):
         self.assertIn("sm-lang", self.read("index.html"))
