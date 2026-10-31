@@ -3,7 +3,7 @@ title: 이용약관
 description: 썬멜드(Sunmeld) 이용약관.
 updated: 2026-10-31
 ---
-시행일: {{EFFECTIVE}} · 운영: {{OPERATOR}}
+시행일: {{TERMS_EFFECTIVE}} · 운영: {{OPERATOR}}
 
 ## 1. 목적
 

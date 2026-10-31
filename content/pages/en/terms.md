@@ -3,7 +3,7 @@ title: Terms of Use
 description: Terms of Use for Sunmeld.
 updated: 2026-10-31
 ---
-Effective date: {{EFFECTIVE}} · Operator: {{OPERATOR}}
+Effective date: {{TERMS_EFFECTIVE}} · Operator: {{OPERATOR}}
 
 ## 1. Purpose
 

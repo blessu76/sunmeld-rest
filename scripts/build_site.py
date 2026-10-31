@@ -4,7 +4,7 @@
 Sources
   content/i18n/<lang>.json              UI strings + home copy (same keys in every language, see KEYS)
   content/pages/<lang>/<page>.md        about / privacy / support / terms (front matter title + description + updated,
-                                        Markdown body, placeholders {{OPERATOR}} {{EMAIL}} {{EFFECTIVE}})
+                                        Markdown body, placeholders {{OPERATOR}} {{EMAIL}} {{EFFECTIVE}} {{TERMS_EFFECTIVE}})
   content/releases.json                 release notes, newest first (may be empty while no build is public)
   content/journal/<slug>/<lang>.md      PUBLISHED posts (front matter + Markdown). Queue lives in content/queue/ and is never built.
 
@@ -34,12 +34,26 @@ import sys
 from pathlib import Path
 
 SITE = "https://sunmeld.ipe.rest"
-ASSET_V = "20261031d"  # keep in sync: bump when assets/sunmeld.css or sunmeld.js change
+ASSET_V = "20261101a"  # keep in sync: bump when assets/sunmeld.css or sunmeld.js change
 KST = dt.timezone(dt.timedelta(hours=9))
-SITE_UPDATED = "2026-10-31"  # "Last updated" of home / releases / 404 and sitemap lastmod — bump by hand when their text changes
+SITE_UPDATED = "2026-11-01"  # "Last updated" of home / releases / 404 and sitemap lastmod — bump by hand when their text changes
 OPERATOR = "Davy Kim (ipe Studio)"
 EMAIL = "ipe.haven@gmail.com"
-EFFECTIVE = "2026-10-31"
+EFFECTIVE = "2026-11-01"  # privacy policy effective date (GA4 added)
+TERMS_EFFECTIVE = "2026-10-31"  # terms are unchanged by GA4 -> keep their own date
+# GA4 (same property as ipe.rest). Inserted once into every page by render(); the privacy policy (section 2), the support FAQ,
+# llms.txt and CLAUDE.md say so -> change them together with this.
+GA_MEASUREMENT_ID = "G-XG4BH800J0"
+GA_SNIPPET = (
+    "<script>(function(){var GA_ID='%s';"
+    "var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);"
+    "window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};"
+    "window.gtag('js',new Date());window.gtag('config',GA_ID);"
+    "function track(e){if(e.type==='auxclick'&&e.button!==1)return;"
+    "var a=e.target.closest&&e.target.closest('a[href^=\"http\"]');if(!a)return;"
+    "var h=a.hostname;if(h==='ipe.rest'||/\\.ipe\\.rest$/.test(h))return;"
+    "window.gtag('event','outbound_click',{link_url:a.href,link_domain:h,transport_type:'beacon'})}"
+    "document.addEventListener('click',track);document.addEventListener('auxclick',track)})();</script>") % GA_MEASUREMENT_ID
 ORG_ID = "https://ipe.rest/#organization"
 ORG = {"@type": "Organization", "@id": ORG_ID, "name": "ipe()", "url": "https://ipe.rest/"}
 PER_PAGE = 10
@@ -470,7 +484,7 @@ class Ctx:
         return self.i18n[lang][key]
 
     def sub(self, text):
-        return (text.replace("{{OPERATOR}}", OPERATOR).replace("{{EMAIL}}", EMAIL).replace("{{EFFECTIVE}}", EFFECTIVE)
+        return (text.replace("{{OPERATOR}}", OPERATOR).replace("{{EMAIL}}", EMAIL).replace("{{TERMS_EFFECTIVE}}", TERMS_EFFECTIVE).replace("{{EFFECTIVE}}", EFFECTIVE)
                 .replace("{{SITE}}", SITE))
 
 
@@ -546,8 +560,8 @@ def render(ctx, lang, *, path, title, desc, body, graph, alt, updated, og_type="
     last = '<p class="updated">%s: <time datetime="%s">%s</time></p>' % (esc(t("updated_label")), esc(updated), esc(updated))
     return ('<!doctype html>\n<!-- %s -->\n<html lang="%s" dir="%s"><head>%s</head><body>'
             '<a class="skip" href="#main">%s</a>%s<main id="main">%s%s</main>%s'
-            '<script src="/assets/sunmeld.js?v=%s" defer></script></body></html>\n') % (
-        GEN_MARK, lang, direction, "\n".join(head), esc(t("skip")), header, body, last, footer, ASSET_V)
+            '<script src="/assets/sunmeld.js?v=%s" defer></script>%s</body></html>\n') % (
+        GEN_MARK, lang, direction, "\n".join(head), esc(t("skip")), header, body, last, footer, ASSET_V, GA_SNIPPET)
 
 
 def breadcrumb_html(items):
@@ -846,6 +860,9 @@ def build_llms(ctx):
             "- The player who causes a merge scores it; if the tub overflows, the player who placed the last stone loses.",
             "- Each AI opponent has its own habits.",
             "- Free to try; a single purchase unlocks everything. No ads.", "",
+            "## Privacy", "",
+            "- The Sunmeld app collects no personal information and contains no ads, analytics or tracking SDKs.",
+            "- This website collects only basic visit statistics through Google Analytics and has no ads; see the privacy policy.", "",
             "## Pages", "", "- [Home](%s/): %s" % (SITE, en["hero_lead"]),
             "- [About](%s%s): what Sunmeld is and who makes it" % (SITE, path_page("en", "about")),
             "- [Support](%s%s): contact and questions" % (SITE, path_page("en", "support")),

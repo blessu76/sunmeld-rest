@@ -12,6 +12,11 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 - Each AI opponent has its own habits.
 - Free to try; a single purchase unlocks everything. No ads.
 
+## Privacy
+
+- The Sunmeld app collects no personal information and contains no ads, analytics or tracking SDKs.
+- This website collects only basic visit statistics through Google Analytics and has no ads; see the privacy policy.
+
 ## Pages
 
 - [Home](https://sunmeld.ipe.rest/): A merge duel against an AI opponent in one shared tub. Drop a stone, merge matching stones into the next stage, and score. Overflow the tub and you lose.

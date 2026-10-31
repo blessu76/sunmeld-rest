@@ -1,7 +1,7 @@
 ---
 title: Support
 description: Sunmeld support. Contact email and frequently asked questions.
-updated: 2026-10-31
+updated: 2026-11-01
 ---
 If you run into a problem or have a suggestion, please write to us by email.
 
@@ -27,4 +27,4 @@ Sunmeld is free to try, and a single purchase unlocks everything. There are no a
 
 ### Do you collect personal information?
 
-No. See the [Privacy Policy](/privacy/) for details.
+The Sunmeld app collects none. This website collects basic visit statistics through Google Analytics (see the [Privacy Policy](/privacy/) for details), and has no accounts or ads.
