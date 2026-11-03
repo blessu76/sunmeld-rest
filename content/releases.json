@@ -1,6 +1,32 @@
 {
   "releases": [
     {
+      "id": "1.0.0-7",
+      "version": "1.0.0 (7)",
+      "status": "beta",
+      "date": "2026-11-03",
+      "title": {
+        "en": "Test build: daily challenge and customization",
+        "ko": "테스트 빌드: 일일 도전과 꾸미기"
+      },
+      "intro": {
+        "en": "A test build for the iOS beta. The game is still in development.",
+        "ko": "iOS 베타용 테스트 빌드예요. 게임은 아직 개발 중이에요."
+      },
+      "notes": {
+        "en": [
+          "Daily challenge: one new game each day, the same for everyone that day, with your streak and stars saved and a card on the home screen.",
+          "Customization: choose from 3 stone shapes and 3 bucket patterns, unlocked as you progress. Nothing is sold.",
+          "Now available in 12 languages for the new screens."
+        ],
+        "ko": [
+          "일일 도전: 매일 새 한 판, 그날은 모두 같은 판이에요. 연속일과 별이 저장되고 홈 화면에 카드가 생겨요.",
+          "꾸미기: 돌 모양 3종과 통 무늬 3종 중에서 고를 수 있고, 진척에 따라 하나씩 열려요. 유료 상품은 없어요.",
+          "새 화면은 12개 언어로 볼 수 있어요."
+        ]
+      }
+    },
+    {
       "id": "1.0.0-6",
       "version": "1.0.0 (6)",
       "status": "beta",
