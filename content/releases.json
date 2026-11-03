@@ -1,1 +1,28 @@
-{"releases": []}
+{"releases": [
+  {
+    "id": "1.0.0-5",
+    "version": "1.0.0 (5)",
+    "status": "beta",
+    "date": "2026-11-03",
+    "title": {"en": "Test build: League 1 and a clearer start", "ko": "테스트 빌드: 리그 1과 더 쉬운 시작"},
+    "intro": {"en": "A test build for the iOS beta. The game is still in development.", "ko": "iOS 베타용 테스트 빌드예요. 게임은 아직 개발 중이에요."},
+    "notes": {
+      "en": [
+        "League 1: play against AI opponents that each have their own habits.",
+        "League results are scored by stars, with a clear rule for how many you earn.",
+        "A short tutorial walks you through the first game.",
+        "Special stones now come with an in-game explanation.",
+        "Resume a saved game right where you left off.",
+        "Accessibility: screen reader labels and support for larger text."
+      ],
+      "ko": [
+        "리그 1: 저마다 습관이 다른 AI 상대와 겨뤄요.",
+        "리그 결과는 별로 평가하고, 별을 얻는 기준을 분명히 안내해요.",
+        "짧은 튜토리얼이 첫 판을 차근차근 알려 줘요.",
+        "특수 돌은 게임 안에서 설명을 볼 수 있어요.",
+        "저장한 판을 이어서 계속할 수 있어요.",
+        "접근성: 화면 낭독 라벨과 큰 글자를 지원해요."
+      ]
+    }
+  }
+]}

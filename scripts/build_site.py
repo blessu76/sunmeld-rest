@@ -36,7 +36,7 @@ from pathlib import Path
 SITE = "https://sunmeld.ipe.rest"
 ASSET_V = "20261101a"  # keep in sync: bump when assets/sunmeld.css or sunmeld.js change
 KST = dt.timezone(dt.timedelta(hours=9))
-SITE_UPDATED = "2026-11-01"  # "Last updated" of home / releases / 404 and sitemap lastmod — bump by hand when their text changes
+SITE_UPDATED = "2026-11-03"  # "Last updated" of home / releases / 404 and sitemap lastmod — bump by hand when their text changes
 OPERATOR = "Davy Kim (ipe Studio)"
 EMAIL = "ipe.haven@gmail.com"
 EFFECTIVE = "2026-11-01"  # privacy policy effective date (GA4 added)
