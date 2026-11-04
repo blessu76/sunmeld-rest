@@ -31,6 +31,8 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 ## Journal posts (English)
 
 - [Opponents with their own habits](https://sunmeld.ipe.rest/journal/opponents-with-habits/) — 2026-11-03 — A look at how the AI opponents in Sunmeld are being shaped to play differently from one another.
+- [Why the last stone loses](https://sunmeld.ipe.rest/journal/why-the-last-stone-loses/) — 2026-11-02 — Why overflow in Sunmeld costs the player who placed the last stone.
+- [How a merge scores](https://sunmeld.ipe.rest/journal/how-a-merge-scores/) — 2026-11-01 — A short note on how merging works in Sunmeld and why it decides who leads.
 - [Starting to make Sunmeld](https://sunmeld.ipe.rest/journal/starting-sunmeld/) — 2026-10-31 — The first journal post. What Sunmeld is, and why this journal exists.
 
 ## Languages
