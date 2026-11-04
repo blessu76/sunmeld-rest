@@ -5,6 +5,7 @@ slug: league-one-and-stars
 lang: en
 category: devlog
 keywords: Sunmeld, league, stars, AI opponent, journal
+published: 2026-11-04T18:00+09:00
 ---
 League 1 is now in the Sunmeld test build. Sunmeld is still in development for iOS and Android.
 
