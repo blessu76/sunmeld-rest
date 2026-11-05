@@ -1,6 +1,32 @@
 {
   "releases": [
     {
+      "id": "1.0.0-12",
+      "version": "1.0.0 (12)",
+      "status": "beta",
+      "date": "2026-11-05",
+      "title": {
+        "en": "Test build: groundwork for the next league",
+        "ko": "테스트 빌드: 다음 리그 준비"
+      },
+      "intro": {
+        "en": "A test build for the iOS beta. The game is still in development.",
+        "ko": "iOS 베타용 테스트 빌드예요. 게임은 아직 개발 중이에요."
+      },
+      "notes": {
+        "en": [
+          "Under the hood: the computer opponent can now think two moves ahead on a background thread. It is not switched on in the current leagues.",
+          "The next league and its two new rivals are built but still hidden, so nothing changes in what you play today.",
+          "The new rivals' names and texts are ready in the 12 supported languages."
+        ],
+        "ko": [
+          "내부 작업: 컴퓨터 상대가 백그라운드에서 두 수 앞을 읽을 수 있게 됐어요. 지금 리그에는 아직 적용하지 않았어요.",
+          "다음 리그와 새 상대 둘을 만들어 뒀지만 아직 숨겨 두었어요. 지금 플레이하는 내용은 달라지지 않아요.",
+          "새 상대의 이름과 문구는 지원하는 12개 언어로 모두 준비했어요."
+        ]
+      }
+    },
+    {
       "id": "1.0.0-11",
       "version": "1.0.0 (11)",
       "status": "beta",
