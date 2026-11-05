@@ -1,6 +1,32 @@
 {
   "releases": [
     {
+      "id": "1.0.0-9",
+      "version": "1.0.0 (9)",
+      "status": "beta",
+      "date": "2026-11-05",
+      "title": {
+        "en": "Test build: haptics, sound switch, speed check",
+        "ko": "테스트 빌드: 진동·소리 설정, 속도 점검"
+      },
+      "intro": {
+        "en": "A test build for the iOS beta. The game is still in development.",
+        "ko": "iOS 베타용 테스트 빌드예요. 게임은 아직 개발 중이에요."
+      },
+      "notes": {
+        "en": [
+          "Haptic feedback when you drop a stone, merge, chain merges or the stack nears the top. You can turn haptics and sound off in Settings (there are no sound effects yet).",
+          "Settings now has a \"Copy problem report\" button that copies a short diagnostic log, with no personal data, to share with us.",
+          "Checked the computer opponent's thinking time to keep play smooth."
+        ],
+        "ko": [
+          "돌을 놓거나 합칠 때, 연쇄가 이어질 때, 쌓인 돌이 꼭대기에 가까워질 때 진동이 울려요. 설정에서 진동과 소리를 끌 수 있어요(효과음은 아직 없어요).",
+          "설정에 «문제 보고 복사» 버튼이 생겼어요. 개인 정보 없는 짧은 진단 기록을 복사해 보내 주실 수 있어요.",
+          "상대 컴퓨터의 생각 시간을 점검해 플레이가 매끄럽게 이어지도록 했어요."
+        ]
+      }
+    },
+    {
       "id": "1.0.0-8",
       "version": "1.0.0 (8)",
       "status": "beta",
