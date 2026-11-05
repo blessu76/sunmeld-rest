@@ -1,6 +1,32 @@
 {
   "releases": [
     {
+      "id": "1.0.0-10",
+      "version": "1.0.0 (10)",
+      "status": "beta",
+      "date": "2026-11-05",
+      "title": {
+        "en": "Test build: clearer settings for screen readers",
+        "ko": "테스트 빌드: 화면 읽기 도구용 설정 문구 정리"
+      },
+      "intro": {
+        "en": "A test build for the iOS beta. The game is still in development.",
+        "ko": "iOS 베타용 테스트 빌드예요. 게임은 아직 개발 중이에요."
+      },
+      "notes": {
+        "en": [
+          "Sound, haptics and theme switches now read out their name and state together (for example, \"Sound, on\") with screen readers.",
+          "Checked all 12 languages for missing, mixed-script or overlong text, and checked the settings sheets at large text sizes on small screens.",
+          "Confirmed that haptics fire on real game events."
+        ],
+        "ko": [
+          "소리·진동·테마 스위치를 화면 읽기 도구로 들으면 «소리, 켬»처럼 이름과 상태를 함께 읽어요.",
+          "12개 언어의 누락·글자 섞임·너무 긴 문구를 점검하고, 작은 화면에서 큰 글자로 설정 시트를 확인했어요.",
+          "진동이 실제 게임 사건에서 울리는지 확인했어요."
+        ]
+      }
+    },
+    {
       "id": "1.0.0-9",
       "version": "1.0.0 (9)",
       "status": "beta",
