@@ -1,6 +1,32 @@
 {
   "releases": [
     {
+      "id": "1.0.0-14",
+      "version": "1.0.0 (14)",
+      "status": "beta",
+      "date": "2026-11-06",
+      "title": {
+        "en": "Test build: release notes open inside the app",
+        "ko": "테스트 빌드: 릴리즈 노트를 앱 안에서 열어요"
+      },
+      "intro": {
+        "en": "A test build for the iOS beta. The game is still in development.",
+        "ko": "iOS 베타용 테스트 빌드예요. 게임은 아직 개발 중이에요."
+      },
+      "notes": {
+        "en": [
+          "Release notes now open in a sheet inside the app instead of sending you out to the browser.",
+          "The sheet works on iPhone and iPad, and you can close it to land right back where you were.",
+          "Nothing changes in how the game plays."
+        ],
+        "ko": [
+          "릴리즈 노트가 브라우저로 넘어가지 않고 앱 안의 시트로 열려요.",
+          "시트는 아이폰과 아이패드 모두에서 열리고, 닫으면 보던 화면으로 바로 돌아와요.",
+          "게임 플레이는 달라지지 않아요."
+        ]
+      }
+    },
+    {
       "id": "1.0.0-13",
       "version": "1.0.0 (13)",
       "status": "beta",
