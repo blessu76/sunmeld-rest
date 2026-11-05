@@ -5,6 +5,7 @@ slug: first-game-tutorial
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 튜토리얼, 저널
+published: 2026-11-05T18:00+09:00
 ---
 썬멜드 테스트 빌드는 이제 짧은 튜토리얼로 시작해요. 썬멜드는 아직 iOS와 Android용으로 개발 중이에요.
 

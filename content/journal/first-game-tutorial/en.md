@@ -5,6 +5,7 @@ slug: first-game-tutorial
 lang: en
 category: devlog
 keywords: Sunmeld, tutorial, onboarding, journal
+published: 2026-11-05T18:00+09:00
 ---
 The Sunmeld test build now opens with a short tutorial. Sunmeld is still in development for iOS and Android.
 
