@@ -1,6 +1,32 @@
 {
   "releases": [
     {
+      "id": "1.0.0-13",
+      "version": "1.0.0 (13)",
+      "status": "beta",
+      "date": "2026-11-05",
+      "title": {
+        "en": "Test build: a layout made for iPad",
+        "ko": "테스트 빌드: 아이패드에 맞춘 화면"
+      },
+      "intro": {
+        "en": "A test build for the iOS beta. The game is still in development.",
+        "ko": "iOS 베타용 테스트 빌드예요. 게임은 아직 개발 중이에요."
+      },
+      "notes": {
+        "en": [
+          "On iPad the home, game and result screens now have their own layout instead of a stretched phone screen, with a bigger tub and larger text.",
+          "iPad now works in landscape too: the rival sits on the left, the tub in the middle and your side on the right.",
+          "Settings, help and other panels open as a centred card on iPad. Nothing changes on phones."
+        ],
+        "ko": [
+          "아이패드에서 홈·게임·결과 화면이 폰 화면을 늘린 모습이 아니라 따로 짠 배치로 바뀌었어요. 통이 더 크고 글자도 커졌어요.",
+          "아이패드를 가로로 눕혀도 돼요. 상대는 왼쪽, 통은 가운데, 내 쪽은 오른쪽에 놓여요.",
+          "설정·도움말 같은 창은 아이패드에서 가운데 카드로 열려요. 폰 화면은 달라지지 않아요."
+        ]
+      }
+    },
+    {
       "id": "1.0.0-12",
       "version": "1.0.0 (12)",
       "status": "beta",
