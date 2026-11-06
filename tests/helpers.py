@@ -45,6 +45,7 @@ def make_site(langs=("en", "ko"), posts=(("alpha-post", "2026-11-01T18:00+09:00"
     # 실제 릴리즈노트가 아니라 고정 표본 — 실제 노트 날짜가 NOW 를 앞서도 테스트가 깨지지 않게
     (root / "content" / "releases.json").write_text('{"releases": []}\n', encoding="utf-8")
     shutil.copytree(REPO / "assets", root / "assets")
+    shutil.copytree(REPO / "vendor", root / "vendor", ignore=shutil.ignore_patterns("__pycache__"))
     return root
 
 

@@ -10,7 +10,7 @@ echo "== 3/4 build is up to date"
 tmp="$(mktemp -d)"; trap 'rm -rf "$tmp"' EXIT
 rsync -a --exclude='.git' ./ "$tmp/"
 python3 scripts/build_site.py --root "$tmp" >/dev/null
-if ! diff -r -q --exclude='.git' --exclude='__pycache__' --exclude='scripts' --exclude='tests' --exclude='docs' --exclude='ops' --exclude='.github' \
+if ! diff -r -q --exclude='.git' --exclude='__pycache__' --exclude='scripts' --exclude='tests' --exclude='vendor' --exclude='docs' --exclude='ops' --exclude='.github' \
    --exclude='content' --exclude='assets' --exclude='*.md' --exclude='*.txt' --exclude='CNAME' --exclude='.nojekyll' . "$tmp" >/dev/null 2>&1; then
   echo "generated files are stale — run: python3 scripts/build_site.py"; exit 1
 fi
