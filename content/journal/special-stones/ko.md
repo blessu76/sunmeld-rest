@@ -5,6 +5,7 @@ slug: special-stones
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 특수 돌, 바람, 서리, 구멍, 저널
+published: 2026-11-06T18:00+09:00
 ---
 썬멜드에 특수 돌 세 가지, 바람·서리·구멍이 들어왔어요. 게임은 아직 iOS와 Android용으로 개발 중이에요.
 

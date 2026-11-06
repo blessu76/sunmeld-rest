@@ -5,6 +5,7 @@ slug: special-stones
 lang: en
 category: devlog
 keywords: Sunmeld, special stones, wind, frost, hole, journal
+published: 2026-11-06T18:00+09:00
 ---
 Sunmeld now has three special stones: wind, frost and hole. The game is still in development for iOS and Android.
 
