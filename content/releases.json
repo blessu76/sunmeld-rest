@@ -1,6 +1,34 @@
 {
   "releases": [
     {
+      "id": "1.0.0-15",
+      "version": "1.0.0 (15)",
+      "status": "beta",
+      "date": "2026-11-06",
+      "title": {
+        "en": "Test build: Rush mode, internal trial",
+        "ko": "테스트 빌드: 러시 모드 내부 시험"
+      },
+      "intro": {
+        "en": "A test build for the iOS beta. The game is still in development.",
+        "ko": "iOS 베타용 테스트 빌드예요. 게임은 아직 개발 중이에요."
+      },
+      "notes": {
+        "en": [
+          "Rush mode is in an internal trial in this build.",
+          "You can play the first few Rush rounds for free; after that, continuing needs the one-time purchase.",
+          "The first lap of Rush is a little easier now. From the second lap on, nothing changes.",
+          "The Rush leaderboard is not switched on in this build."
+        ],
+        "ko": [
+          "이 빌드에서는 러시 모드를 내부에서 시험해 볼 수 있어요.",
+          "러시 모드는 처음 몇 판을 무료로 해 볼 수 있고, 그 뒤로 이어가려면 한 번 구매가 필요해요.",
+          "러시 모드의 첫 바퀴가 조금 쉬워졌어요. 두 바퀴째부터는 달라지지 않아요.",
+          "러시 리더보드는 이 빌드에서 켜지지 않아요."
+        ]
+      }
+    },
+    {
       "id": "1.0.0-14",
       "version": "1.0.0 (14)",
       "status": "beta",
