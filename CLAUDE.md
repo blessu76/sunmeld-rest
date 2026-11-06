@@ -1,6 +1,7 @@
 # sunmeld-rest
 
 Sunmeld (F-020) official site, https://sunmeld.ipe.rest. Static, GitHub Pages, generator `scripts/build_site.py` (stdlib only, Python 3.8+ compatible).
+- 공통 웹 킷 ipe_web_kit 은 비공개라 소스를 커밋하지 않는다 — `vendor/ipe_web_kit.lock` 만 커밋, 설치는 `python3 scripts/kit_lock.py sync --kit <킷 클론>`(README).
 
 - Never hand-edit generated files (`index.html`, `about/`, `privacy/`, `support/`, `terms/`, `releases/`, `journal/`, `ko/`, `sitemap.xml`, `robots.txt`, `llms.txt`, `404.html`). Edit `content/` or the generator, then run `python3 scripts/build_site.py`.
 - Green gate before every commit: `bash scripts/check.sh` must print GREEN. UI check: `tests/ui_check.js` (see README).
