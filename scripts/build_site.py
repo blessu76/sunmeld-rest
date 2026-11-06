@@ -82,6 +82,7 @@ REQUIRED_POST = ("title", "description", "slug", "lang", "category", "published"
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 PUB_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})\+09:00$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+TIME_RE = re.compile(r"^(\d{4}-\d{2}-\d{2})T(\d{2}:\d{2})\+09:00$")  # release "time": upload time, KST
 # never in public text: local paths, internal tools, secrets
 FORBIDDEN = ("/Users/", "ipe-harness", "ipe-room", "claude.ai/", "AuthKey_", "api_key", "sk-ant", "SLACK_BOT_TOKEN", ".env")
 # brand / policy rules for every public text: no trademarked game name, no emoji
@@ -344,6 +345,10 @@ def load_releases(root):
             errs.append("%s: version missing" % tag)
         if e.get("date") and not DATE_RE.match(e["date"]):
             errs.append("%s: date must look like 2026-10-31 (or be empty)" % tag)
+        if e.get("time"):
+            m = TIME_RE.match(str(e["time"]))
+            if not m or m.group(1) != e.get("date"):
+                errs.append("%s: time must look like 2026-11-07T06:25+09:00 and start with the same day as date" % tag)
         for field in ("title", "intro", "notes"):
             v = e.get(field)
             if not isinstance(v, dict):
@@ -700,6 +705,8 @@ def build_releases(ctx, lang):
         src = lang if own else "en"
         status = t("rel_status_" + e["status"])
         date = ' · <time datetime="%s">%s</time>' % (esc(e["date"]), esc(e["date"])) if e.get("date") else ""
+        if e.get("time"):  # same shape as the kit's time_tag: KST text + +09:00 datetime (no JS here)
+            date = ' · <time datetime="%s">%s KST</time>' % (esc(e["time"]), esc(e["time"][:10] + " " + e["time"][11:16]))
         attrs = "" if own else ' lang="en" dir="ltr"'
         note = "" if own else '<p class="rel-fallback">%s</p>' % esc(t("rel_en_note"))
         cards.append('<article class="card release" id="%s"><p class="meta"><span class="tag">%s</span> %s%s</p>'
