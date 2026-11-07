@@ -1,6 +1,28 @@
 {
   "releases": [
     {
+      "id": "1.0.0-19",
+      "version": "1.0.0 (19)",
+      "status": "beta",
+      "date": "2026-11-07",
+      "title": {
+        "en": "Test build: pick up where you left off with iCloud",
+        "ko": "테스트 빌드: iCloud 로 이어서 할 수 있어요"
+      },
+      "intro": {
+        "en": "A test build for the iOS beta. The game is still in development.",
+        "ko": "iOS 베타용 테스트 빌드예요. 게임은 아직 개발 중이에요."
+      },
+      "notes": {
+        "en": [
+          "On the same Apple ID, your league stars, daily challenges, records and unlocks now carry over between your Apple devices through iCloud."
+        ],
+        "ko": [
+          "같은 Apple 계정이면 리그 별·오늘의 도전·기록·해금이 iCloud 로 애플 기기 사이에 이어져요."
+        ]
+      }
+    },
+    {
       "id": "1.0.0-18",
       "version": "1.0.0 (18)",
       "status": "beta",
