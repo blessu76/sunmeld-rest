@@ -1,6 +1,32 @@
 {
   "releases": [
     {
+      "id": "1.0.0-18",
+      "version": "1.0.0 (18)",
+      "status": "beta",
+      "date": "2026-11-07",
+      "title": {
+        "en": "Test build: clearer league and daily flow",
+        "ko": "테스트 빌드: 리그와 오늘의 도전이 더 분명해졌어요"
+      },
+      "intro": {
+        "en": "A test build for the iOS beta. The game is still in development.",
+        "ko": "iOS 베타용 테스트 빌드예요. 게임은 아직 개발 중이에요."
+      },
+      "notes": {
+        "en": [
+          "In the league, your next opponent is now outlined and the list scrolls to it.",
+          "Tapping a locked opponent now tells you who to beat first.",
+          "After you finish the daily challenge, the card shows how many hours until the next one."
+        ],
+        "ko": [
+          "리그에서 다음 상대가 테두리로 강조되고, 화면이 그 상대로 스크롤돼요.",
+          "잠긴 상대를 누르면 먼저 이겨야 할 상대를 알려 줘요.",
+          "오늘의 도전을 끝내면 카드에 다음 도전까지 남은 시간이 보여요."
+        ]
+      }
+    },
+    {
       "id": "1.0.0-17",
       "version": "1.0.0 (17)",
       "status": "beta",
