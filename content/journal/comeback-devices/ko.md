@@ -5,6 +5,7 @@ slug: comeback-devices
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 역전, 피날레 존, 선공, 저널
+published: 2026-11-07T18:00+09:00
 ---
 뒤진 쪽에도 기회가 있어야 대결이 재미있어요. 썬멜드를 끝까지 열어 두는 두 가지 장치를 소개해요. 게임은 아직 iOS와 Android용으로 개발 중이에요.
 

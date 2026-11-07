@@ -5,6 +5,7 @@ slug: comeback-devices
 lang: en
 category: devlog
 keywords: Sunmeld, comeback, finale zone, first move, journal
+published: 2026-11-07T18:00+09:00
 ---
 A duel is more fun when the trailing player still has a chance. This note is about two devices that keep Sunmeld games open. The game is still in development for iOS and Android.
 
