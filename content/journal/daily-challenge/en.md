@@ -5,6 +5,7 @@ slug: daily-challenge
 lang: en
 category: devlog
 keywords: Sunmeld, daily challenge, streak, stars, journal
+published: 2026-11-08T18:00+09:00
 ---
 The Sunmeld test build has a daily challenge. Sunmeld is still in development for iOS and Android.
 

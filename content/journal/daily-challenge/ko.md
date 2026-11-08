@@ -5,6 +5,7 @@ slug: daily-challenge
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 일일 도전, 연속일, 별, 저널
+published: 2026-11-08T18:00+09:00
 ---
 썬멜드 테스트 빌드에 일일 도전이 들어왔어요. 썬멜드는 아직 iOS와 Android용으로 개발 중이에요.
 

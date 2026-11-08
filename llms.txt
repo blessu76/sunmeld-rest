@@ -30,6 +30,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Journal posts (English)
 
+- [The daily challenge](https://sunmeld.ipe.rest/journal/daily-challenge/) — 2026-11-08 — One new game each day, the same for everyone: how the Sunmeld daily challenge works.
 - [Comeback devices: first move and finale zone](https://sunmeld.ipe.rest/journal/comeback-devices/) — 2026-11-07 — How Sunmeld keeps a game open to a comeback: alternating first move and a finale zone.
 - [Three special stones](https://sunmeld.ipe.rest/journal/special-stones/) — 2026-11-06 — A note on the three special stones in Sunmeld: wind, frost and hole.
 - [A short tutorial for the first game](https://sunmeld.ipe.rest/journal/first-game-tutorial/) — 2026-11-05 — How the first game in Sunmeld walks new players through the rules.
