@@ -5,6 +5,7 @@ slug: customization-by-playing
 lang: en
 category: devlog
 keywords: Sunmeld, customization, stone shapes, bucket patterns, journal
+published: 2026-11-09T18:00+09:00
 ---
 The Sunmeld test build lets you change how the game looks. Sunmeld is still in development for iOS and Android.
 

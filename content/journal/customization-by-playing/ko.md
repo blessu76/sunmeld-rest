@@ -5,6 +5,7 @@ slug: customization-by-playing
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 꾸미기, 돌 모양, 통 무늬, 저널
+published: 2026-11-09T18:00+09:00
 ---
 썬멜드 테스트 빌드에서 게임의 겉모양을 바꿀 수 있어요. 썬멜드는 아직 iOS와 Android용으로 개발 중이에요.
 
