@@ -5,6 +5,7 @@ slug: play-your-way
 lang: en
 category: devlog
 keywords: Sunmeld, accessibility, languages, resume, journal
+published: 2026-11-10T18:00+09:00
 ---
 Some changes are not about rules. This note covers three that make Sunmeld easier to pick up. The game is still in development for iOS and Android.
 

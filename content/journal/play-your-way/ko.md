@@ -5,6 +5,7 @@ slug: play-your-way
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 접근성, 언어, 이어하기, 저널
+published: 2026-11-10T18:00+09:00
 ---
 규칙과 상관없는 변화도 있어요. 썬멜드를 시작하기 쉽게 만드는 세 가지를 소개해요. 게임은 아직 iOS와 Android용으로 개발 중이에요.
 

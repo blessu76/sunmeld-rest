@@ -30,6 +30,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Journal posts (English)
 
+- [Resume, accessibility and 12 languages](https://sunmeld.ipe.rest/journal/play-your-way/) — 2026-11-10 — Smaller things that make Sunmeld easier to pick up: saved games, accessibility and language support.
 - [Customization you unlock by playing](https://sunmeld.ipe.rest/journal/customization-by-playing/) — 2026-11-09 — Stone shapes and bucket patterns in Sunmeld unlock as you progress, and nothing is sold.
 - [The daily challenge](https://sunmeld.ipe.rest/journal/daily-challenge/) — 2026-11-08 — One new game each day, the same for everyone: how the Sunmeld daily challenge works.
 - [Comeback devices: first move and finale zone](https://sunmeld.ipe.rest/journal/comeback-devices/) — 2026-11-07 — How Sunmeld keeps a game open to a comeback: alternating first move and a finale zone.
