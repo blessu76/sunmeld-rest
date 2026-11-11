@@ -1,0 +1,10 @@
+{
+  "releases_file": "content/releases.json",
+  "style": "releases",
+  "langs": ["en", "ko"],
+  "build": "",
+  "check": "",
+  "commit_paths": ["content/releases.json"],
+  "push_blackout": ["10:00-11:00", "13:00-14:30"],
+  "branch": "main"
+}
