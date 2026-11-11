@@ -5,6 +5,7 @@ slug: one-purchase
 lang: en
 category: devlog
 keywords: Sunmeld, purchase, League 2, restore, journal
+published: 2026-11-11T18:00+09:00
 ---
 Sunmeld is free to try, has no ads, and has one purchase. This note explains what that purchase is. The game is still in development for iOS and Android.
 

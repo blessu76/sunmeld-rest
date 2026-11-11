@@ -5,6 +5,7 @@ slug: one-purchase
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 결제, 리그 2, 복원, 저널
+published: 2026-11-11T18:00+09:00
 ---
 썬멜드는 무료로 해 볼 수 있고, 광고가 없고, 결제는 하나뿐이에요. 그 결제가 무엇인지 소개해요. 게임은 아직 iOS와 Android용으로 개발 중이에요.
 
