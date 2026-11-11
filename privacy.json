@@ -1,0 +1,15 @@
+{
+  "_note": "Sunmeld privacy policy configuration for ipe_web_kit v0.4.2+. Service uses no comments feature — markdown pages are used instead.",
+  "service": "Sunmeld",
+  "operator": "ipe()",
+  "contactEmail": "privacy@ipe.rest",
+  "features": {"comments": false},
+  "langs": ["en", "ko"],
+  "retentionYears": 3,
+  "hiddenDeleteDays": 90,
+  "deleteRequestDays": 30,
+  "processors": [{"id": "firebase", "region": "asia-northeast3"}],
+  "primaryCountry": "KR",
+  "defaultAge": 18,
+  "legalReviewed": false
+}

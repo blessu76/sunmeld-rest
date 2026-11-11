@@ -5,6 +5,7 @@ Sources
   content/i18n/<lang>.json              UI strings + home copy (same keys in every language, see KEYS)
   content/pages/<lang>/<page>.md        about / privacy / support / terms (front matter title + description + updated,
                                         Markdown body, placeholders {{OPERATOR}} {{EMAIL}} {{EFFECTIVE}} {{TERMS_EFFECTIVE}})
+  privacy.json                          privacy policy configuration for ipe_web_kit.privacy module (comments disabled)
   content/releases.json                 release notes, newest first (may be empty while no build is public)
   content/journal/<slug>/<lang>.md      PUBLISHED posts (front matter + Markdown). Queue lives in content/queue/ and is never built.
 
@@ -32,6 +33,13 @@ import shutil
 import struct
 import sys
 from pathlib import Path
+
+# Add vendor to path for ipe_web_kit import
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "vendor"))
+try:
+    from ipe_web_kit import privacy as privacy_module
+except ImportError:
+    privacy_module = None
 
 SITE = "https://sunmeld.ipe.rest"
 ASSET_V = "20261101a"  # keep in sync: bump when assets/sunmeld.css or sunmeld.js change
@@ -66,7 +74,7 @@ LANGS = {
     "en": ("English", "en_US", "ltr", "EN"), "ko": ("한국어", "ko_KR", "ltr", "KO"),
 }
 MAIN_LANGS = ("en", "ko")
-PAGE_SLUGS = ("about", "privacy", "support", "terms")
+PAGE_SLUGS = ("about", "privacy", "support", "terms")  # privacy from markdown (comments=false), privacy.json for future use
 CATEGORIES = ("devlog", "art", "design")
 KEYS = (
     "nav_home nav_about nav_journal nav_releases nav_support nav_privacy nav_terms skip lang_label status_badge read_more all_posts "
@@ -301,7 +309,7 @@ def load_i18n(root):
 def load_pages(root):
     pages, errs = {}, []
     for lang in LANGS:
-        for slug in PAGE_SLUGS:
+        for slug in PAGE_SLUGS:  # Note: privacy is now generated from privacy.json, not from markdown
             f = Path(root) / "content" / "pages" / lang / (slug + ".md")
             if not f.is_file():
                 continue
@@ -319,6 +327,23 @@ def load_pages(root):
                 errs.append("pages/%s/%s.md: translation_of: ko|en required" % (lang, slug))
             pages[(lang, slug)] = (meta, body)
     return pages, errs
+
+
+def load_privacy(root):
+    """Load and validate privacy.json configuration. Returns (PP or None, errors)."""
+    if not privacy_module:
+        return None, ["ipe_web_kit.privacy module not available"]
+    f = Path(root) / "privacy.json"
+    if not f.is_file():
+        return None, ["privacy.json not found"]
+    try:
+        pp = privacy_module.load(f)
+    except (ValueError, KeyError, json.JSONDecodeError) as ex:
+        return None, ["privacy.json: %s" % ex]
+    probs = privacy_module.problems(pp)
+    if probs:
+        return None, ["privacy.json: " + p for p in probs]
+    return pp, []
 
 
 def load_releases(root):
@@ -919,10 +944,15 @@ def make_ctx(root, now=None, require_all=False):
     pages, e2 = load_pages(root)
     posts, e3 = load_posts(root, now)
     releases, e4 = load_releases(root)
-    errs += e2 + e3 + e4 + queue_errors(root)
+    pp, e5 = load_privacy(root)
+    errs += e2 + e3 + e4 + e5 + queue_errors(root)
     langs = [l for l in LANGS if l in i18n and all((l, s) in pages for s in PAGE_SLUGS)]
+    if pp:
+        # Only require privacy langs that are in the site's supported langs
+        available_langs = [l for l in MAIN_LANGS if l in pp.langs]
+        langs = [l for l in langs if l in available_langs]
     if "en" not in langs or "ko" not in langs:
-        errs.append("en and ko must both be complete (i18n + %s)" % " + ".join(PAGE_SLUGS))
+        errs.append("en and ko must both be complete (i18n + %s + privacy.json)" % " + ".join(PAGE_SLUGS))
     for l in LANGS:
         if l not in langs and require_all:
             errs.append("language %s is incomplete (needs i18n/%s.json and pages/%s/{%s}.md)" % (l, l, l, ",".join(PAGE_SLUGS)))
@@ -948,6 +978,14 @@ def build_all(ctx):
         put(*build_home(ctx, l))
         for slug in PAGE_SLUGS:
             put(*build_page(ctx, l, slug))
+        # Privacy pages are generated from ipe_web_kit.privacy module
+        if privacy_module:
+            pp = privacy_module.load(ctx.root / "privacy.json")
+            if l in pp.langs:
+                # privacy.render_page returns a standalone HTML page
+                privacy_html = privacy_module.render_page(pp, l)
+                if privacy_html:
+                    put(path_page(l, "privacy"), privacy_html)
         put(*build_releases(ctx, l))
         for pg in range(1, pages_count(len(posts_in(ctx, l))) + 1):
             put(*build_list(ctx, l, pg))
