@@ -706,14 +706,17 @@ def build_releases(ctx, lang):
         own = lang in e["notes"] and lang in e["title"] and lang in e["intro"]
         src = lang if own else "en"
         status = t("rel_status_" + e["status"])
-        date = ' · <time datetime="%s">%s</time>' % (esc(e["date"]), esc(e["date"])) if e.get("date") else ""
+        version = e["version"]
+        if e.get("build") and "(" not in version:
+            version = "%s (%s)" % (version, e["build"])
+        date =' · <time datetime="%s">%s</time>' % (esc(e["date"]), esc(e["date"])) if e.get("date") else ""
         if e.get("time"):  # same shape as the kit's time_tag: KST text + +09:00 datetime (no JS here)
             date = ' · <time datetime="%s">%s KST</time>' % (esc(e["time"]), esc(e["time"][:10] + " " + e["time"][11:16]))
         attrs = "" if own else ' lang="en" dir="ltr"'
         note = "" if own else '<p class="rel-fallback">%s</p>' % esc(t("rel_en_note"))
         cards.append('<article class="card release" id="%s"><p class="meta"><span class="tag">%s</span> %s%s</p>'
                      '<h2%s>%s</h2>%s<p%s>%s</p><ul%s>%s</ul></article>' % (
-                         esc(e["id"]), esc(status), esc(e["version"]), date, attrs, esc(e["title"][src]), note, attrs, esc(e["intro"][src]), attrs,
+                         esc(e["id"]), esc(status), esc(version), date, attrs, esc(e["title"][src]), note, attrs, esc(e["intro"][src]), attrs,
                          "".join("<li>%s</li>" % inline(x) for x in e["notes"][src])))
     listing = "".join(cards) if cards else '<div class="card release"><p>%s</p></div>' % esc(t("releases_empty"))
     body = '%s<h1 class="page-h">%s</h1><p class="lead">%s</p><div class="releases">%s</div>' % (
