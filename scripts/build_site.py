@@ -78,6 +78,7 @@ KEYS = (
     "nf_h nf_p"
 ).split()
 RELEASE_STATUS = ("prep", "beta", "live")
+RELEASE_STATUS_ALIAS = {"testflight": "beta", "store": "live"}  # 앱 원문 status → 사이트 표시
 REQUIRED_POST = ("title", "description", "slug", "lang", "category", "published")
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 PUB_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})\+09:00$")
@@ -339,7 +340,8 @@ def load_releases(root):
         if not re.match(r"^[A-Za-z0-9._-]+$", str(e.get("id", ""))) or e["id"] in seen:
             errs.append("%s: id missing, malformed or duplicated" % tag)
         seen.add(e.get("id"))
-        if e.get("status") not in RELEASE_STATUS:
+        e["status"] = RELEASE_STATUS_ALIAS.get(e.get("status"), e.get("status"))
+        if e["status"] not in RELEASE_STATUS:
             errs.append("%s: status must be one of %s" % (tag, "/".join(RELEASE_STATUS)))
         if not str(e.get("version", "")).strip():
             errs.append("%s: version missing" % tag)
