@@ -23,4 +23,4 @@ The league is for learning opponents. The daily challenge is a quick game to com
 
 ## What is next
 
-We will see how testers use it before changing anything. There is no release date yet. See the [release notes](/releases/) for test build changes.
+We will see how testers use it before changing anything. There is no release date yet.

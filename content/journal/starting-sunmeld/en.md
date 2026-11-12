@@ -19,4 +19,4 @@ We will use this journal to share notes from the making of the game. For now, th
 
 ## What is next
 
-Sunmeld is planned as free to try, with a single purchase that unlocks the rest and no ads. There is no release date yet. When there is news, it will show up here and in the [release notes](/releases/).
+Sunmeld is planned as free to try, with a single purchase that unlocks the rest and no ads. There is no release date yet. When there is news, it will show up here.

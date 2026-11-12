@@ -2,7 +2,6 @@
   "nav_home": "Inicio",
   "nav_about": "Acerca de",
   "nav_journal": "Diario",
-  "nav_releases": "Versiones",
   "nav_support": "Soporte",
   "nav_privacy": "Privacidad",
   "nav_terms": "Términos",
@@ -51,13 +50,6 @@
   "cat_devlog": "Diario de desarrollo",
   "cat_art": "Arte",
   "cat_design": "Diseño",
-  "releases_title": "Notas de versión",
-  "releases_desc": "Qué cambió en cada versión de Sunmeld. Sunmeld sigue en desarrollo, así que por ahora no hay notas.",
-  "releases_empty": "Sunmeld está en desarrollo para iOS y Android. Las notas de versión aparecerán aquí cuando salga la primera versión.",
-  "rel_status_prep": "En preparación",
-  "rel_status_beta": "Beta",
-  "rel_status_live": "Publicada",
-  "rel_en_note": "Esta nota solo está disponible en inglés.",
   "nf_h": "Página no encontrada",
   "nf_p": "No hemos encontrado esa página. Puede que se haya movido o que la dirección tenga un error."
 }

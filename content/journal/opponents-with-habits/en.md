@@ -23,4 +23,4 @@ We are playing many rounds against each opponent to check that they feel differe
 
 ## What is next
 
-The opponents will keep being tuned as the game takes shape. There is no release date yet. When there is news, it will show up here and in the [release notes](/releases/).
+The opponents will keep being tuned as the game takes shape. There is no release date yet. When there is news, it will show up here.

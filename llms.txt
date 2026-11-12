@@ -24,7 +24,6 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 - [Support](https://sunmeld.ipe.rest/support/): contact and questions
 - [Privacy Policy](https://sunmeld.ipe.rest/privacy/)
 - [Terms of Use](https://sunmeld.ipe.rest/terms/)
-- [Release notes](https://sunmeld.ipe.rest/releases/)
 - [Journal](https://sunmeld.ipe.rest/journal/): notes from the making of the game
 - [RSS](https://sunmeld.ipe.rest/journal/feed.xml)
 

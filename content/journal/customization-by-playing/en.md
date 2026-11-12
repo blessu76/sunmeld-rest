@@ -27,4 +27,4 @@ Choices differ in shape and pattern, not only in color, so they are easy to tell
 
 ## What is next
 
-We are still looking for the right pace of unlocking, and we will wait for tester feedback. There is no release date yet. See the [release notes](/releases/) for test build changes.
+We are still looking for the right pace of unlocking, and we will wait for tester feedback. There is no release date yet.

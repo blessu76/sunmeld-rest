@@ -23,4 +23,4 @@ Stone shapes and bucket patterns are not part of the purchase. They unlock as yo
 
 ## Testing it
 
-In the test build, testers try the purchase flow with sandbox accounts only, so no real payment is made. We show the price the store gives us and do not set one ourselves. There is no release date yet. See the [release notes](/releases/) for test build changes.
+In the test build, testers try the purchase flow with sandbox accounts only, so no real payment is made. We show the price the store gives us and do not set one ourselves. There is no release date yet.

@@ -23,4 +23,4 @@ Because the tub is shared, a big stone you leave behind is also a big stone your
 
 ## What is next
 
-More notes on how the game is built will follow. There is no release date yet. When there is news, it will show up here and in the [release notes](/releases/).
+More notes on how the game is built will follow. There is no release date yet. When there is news, it will show up here.

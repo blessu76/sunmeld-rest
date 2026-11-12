@@ -7,7 +7,7 @@ from pathlib import Path
 
 from helpers import NOW, REPO, bs, build, jsonld, make_site
 
-PAGES = ["", "about/", "privacy/", "support/", "terms/", "releases/", "journal/"]
+PAGES = ["", "about/", "privacy/", "support/", "terms/", "journal/"]
 
 
 class Built(unittest.TestCase):
@@ -91,7 +91,7 @@ class Built(unittest.TestCase):
 
     def test_sitemap_robots_llms_feed(self):
         sm = self.read("sitemap.xml")
-        for pth in ("/", "/ko/", "/about/", "/ko/terms/", "/support/", "/releases/", "/journal/", "/journal/beta-post/"):
+        for pth in ("/", "/ko/", "/about/", "/ko/terms/", "/support/", "/journal/", "/journal/beta-post/"):
             self.assertIn("<loc>https://sunmeld.ipe.rest%s</loc>" % pth, sm)
         self.assertNotIn("/404", sm)
         self.assertIn("Sitemap: https://sunmeld.ipe.rest/sitemap.xml", self.read("robots.txt"))
@@ -102,9 +102,6 @@ class Built(unittest.TestCase):
         self.assertIn("https://sunmeld.ipe.rest/journal/beta-post/", llms)
         self.assertIn("<rss", self.read("journal/feed.xml"))
         self.assertIn("<rss", self.read("ko/journal/feed.xml"))
-
-    def test_empty_releases_page_says_in_development(self):
-        self.assertIn("in development", self.read("releases/index.html").lower())
 
     def test_policy_pages_are_sunmeld_with_iltonggi_contact(self):
         for lang_dir in ("", "ko/"):
@@ -184,10 +181,6 @@ class Rules(unittest.TestCase):
         f = self.root / "content" / "pages" / "en" / "privacy.md"
         f.write_text(re.sub(r"updated:.*\n", "", f.read_text(encoding="utf-8")), encoding="utf-8")
         self.assertTrue(any("missing updated" in e for e in self.errs()))
-
-    def test_release_entry_validated(self):
-        (self.root / "content" / "releases.json").write_text('{"releases":[{"id":"1.0","version":"1.0","status":"nope","title":{},"intro":{},"notes":{}}]}', encoding="utf-8")
-        self.assertTrue(any("status must be" in e for e in self.errs()))
 
 
 class Repo(unittest.TestCase):

@@ -22,4 +22,4 @@ The first move alternates between games and a finale zone adds a last push near 
 
 ## What is still open
 
-League 2 can be unlocked with one purchase, and that flow is still being tested with sandbox accounts. The translations are waiting for native speaker review. We keep checking screens for fit and clarity. Free to try, one purchase, no ads: that part stays as it is. See the [release notes](/releases/) for each test build.
+League 2 can be unlocked with one purchase, and that flow is still being tested with sandbox accounts. The translations are waiting for native speaker review. We keep checking screens for fit and clarity. Free to try, one purchase, no ads: that part stays as it is.

@@ -2,7 +2,6 @@
   "nav_home": "首頁",
   "nav_about": "關於",
   "nav_journal": "日誌",
-  "nav_releases": "版本",
   "nav_support": "支援",
   "nav_privacy": "隱私權",
   "nav_terms": "服務條款",
@@ -51,13 +50,6 @@
   "cat_devlog": "開發日誌",
   "cat_art": "美術",
   "cat_design": "設計",
-  "releases_title": "版本說明",
-  "releases_desc": "Sunmeld 各版本的更新內容。Sunmeld 仍在開發中,目前還沒有版本說明。",
-  "releases_empty": "Sunmeld 正在開發 iOS 與 Android 版。第一個版本推出後,版本說明會顯示在這裡。",
-  "rel_status_prep": "準備中",
-  "rel_status_beta": "測試版",
-  "rel_status_live": "已發布",
-  "rel_en_note": "此說明僅提供英文版。",
   "nf_h": "找不到頁面",
   "nf_p": "找不到該頁面。它可能已經移動,或是網址輸入有誤。"
 }

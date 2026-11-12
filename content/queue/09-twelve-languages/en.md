@@ -22,4 +22,4 @@ Arabic is one of the 12 languages, so the screens also have to work right to lef
 
 ## What is not done
 
-A native speaker has not reviewed these translations yet. Wording may change, and we would like native speakers to look at the languages with different writing systems before any release. There is no release date yet. See the [release notes](/releases/) for test build changes.
+A native speaker has not reviewed these translations yet. Wording may change, and we would like native speakers to look at the languages with different writing systems before any release. There is no release date yet.

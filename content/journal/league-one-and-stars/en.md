@@ -23,4 +23,4 @@ A win or a loss tells you little about how a game went. Stars give you something
 
 ## What is next
 
-League 2 is also in the test build, and we will write about it soon. There is no release date yet. See the [release notes](/releases/) for what each test build changed.
+League 2 is also in the test build, and we will write about it soon. There is no release date yet.

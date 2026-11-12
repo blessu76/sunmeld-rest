@@ -23,4 +23,4 @@ Overflow still decides a round, and the player who placed the last stone loses. 
 
 ## What is next
 
-We checked these with many simulated games, but simulations are not the same as real play. We will watch how testers feel about them. There is no release date yet. See the [release notes](/releases/) for test build changes.
+We checked these with many simulated games, but simulations are not the same as real play. We will watch how testers feel about them. There is no release date yet.

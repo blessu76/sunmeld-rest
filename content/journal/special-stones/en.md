@@ -23,4 +23,4 @@ The AI opponents can use special stones too, under the same rules. We have been 
 
 ## What is next
 
-We will keep watching how special stones feel in real games. There is no release date yet. See the [release notes](/releases/) for test build changes.
+We will keep watching how special stones feel in real games. There is no release date yet.

@@ -2,7 +2,6 @@
   "nav_home": "Trang chủ",
   "nav_about": "Giới thiệu",
   "nav_journal": "Nhật ký",
-  "nav_releases": "Phiên bản",
   "nav_support": "Hỗ trợ",
   "nav_privacy": "Quyền riêng tư",
   "nav_terms": "Điều khoản",
@@ -51,13 +50,6 @@
   "cat_devlog": "Nhật ký phát triển",
   "cat_art": "Đồ họa",
   "cat_design": "Thiết kế",
-  "releases_title": "Ghi chú phát hành",
-  "releases_desc": "Những thay đổi trong từng phiên bản của Sunmeld. Sunmeld vẫn đang được phát triển nên hiện chưa có ghi chú nào.",
-  "releases_empty": "Sunmeld đang được phát triển cho iOS và Android. Ghi chú phát hành sẽ xuất hiện ở đây khi phiên bản đầu tiên ra mắt.",
-  "rel_status_prep": "Đang chuẩn bị",
-  "rel_status_beta": "Beta",
-  "rel_status_live": "Đã phát hành",
-  "rel_en_note": "Ghi chú này chỉ có bằng tiếng Anh.",
   "nf_h": "Không tìm thấy trang",
   "nf_p": "Chúng tôi không tìm thấy trang đó. Có thể trang đã được chuyển đi, hoặc địa chỉ bị gõ sai."
 }

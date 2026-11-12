@@ -23,4 +23,4 @@ The new screens are available in 12 languages. We wrote the translations ourselv
 
 ## What is next
 
-We will keep going through screens for fit and clarity. There is no release date yet. See the [release notes](/releases/) for test build changes.
+We will keep going through screens for fit and clarity. There is no release date yet.

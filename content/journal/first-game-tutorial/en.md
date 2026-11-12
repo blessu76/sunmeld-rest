@@ -23,4 +23,4 @@ Special stones now come with an in-game explanation too, so you can read what a 
 
 ## What is next
 
-We will keep watching where new players hesitate and adjust the tutorial. There is no release date yet. See the [release notes](/releases/) for test build changes.
+We will keep watching where new players hesitate and adjust the tutorial. There is no release date yet.

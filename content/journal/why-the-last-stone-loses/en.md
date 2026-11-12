@@ -23,4 +23,4 @@ The rule is the same for you and for the AI. Nobody gets a hidden advantage, and
 
 ## What is next
 
-We will keep testing how this rule feels over a whole round. There is no release date yet. When there is news, it will show up here and in the [release notes](/releases/).
+We will keep testing how this rule feels over a whole round. There is no release date yet. When there is news, it will show up here.

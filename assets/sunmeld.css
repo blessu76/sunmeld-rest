@@ -22,7 +22,7 @@ h1,h2,h3{font-family:var(--font-head);font-weight:600;line-height:1.12;margin:0;
 img,svg{max-width:100%;height:auto}
 .skip{position:absolute;left:-999px;top:8px;background:var(--gold);color:var(--on-gold);padding:8px 14px;z-index:10;font-family:var(--font-mono)}
 .skip:focus{left:8px}
-.perk,.tag,.post-meta,.crumbs,.updated,.langsw,.store small,.score,.orb-cap,.release .meta,.foot-small,.ai-note{font-family:var(--font-mono)}
+.perk,.tag,.post-meta,.crumbs,.updated,.langsw,.store small,.score,.orb-cap,.foot-small,.ai-note{font-family:var(--font-mono)}
 
 /* header */
 .site-header{width:100%;border-bottom:var(--border)}
@@ -135,11 +135,6 @@ th{font-family:var(--font-mono);font-size:13px;letter-spacing:.06em;text-transfo
 .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
 .btn:hover{color:var(--on-gold);background:var(--ink);border-color:var(--ink)}.btn.ghost:hover{color:var(--gold-ink);border-color:var(--gold);background:transparent}
 .empty{color:var(--ink2)}
-.releases{display:flex;flex-direction:column;gap:22px;margin-top:20px}
-.release h2{font-size:24px}
-.release .meta{font-size:13px;color:var(--ink2)}
-.release ul{margin:0;padding-left:22px}
-.rel-fallback{font-size:14px}
 
 /* footer */
 .site-footer{border-top:var(--border);background:var(--panel)}
