@@ -43,7 +43,7 @@ except ImportError:
     privacy_module = None
 
 SITE = "https://sunmeld.ipe.rest"
-ASSET_V = "20261101a"  # keep in sync: bump when assets/sunmeld.css or sunmeld.js change
+ASSET_V = "20261112a"  # keep in sync: bump when assets/sunmeld.css or sunmeld.js change
 KST = dt.timezone(dt.timedelta(hours=9))
 SITE_UPDATED = "2026-11-03"  # "Last updated" of home / releases / 404 and sitemap lastmod — bump by hand when their text changes
 OPERATOR = "Davy Kim (ipe Studio)"
