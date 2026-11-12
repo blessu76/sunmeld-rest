@@ -33,7 +33,7 @@ img,svg{max-width:100%;height:auto}
 .nav>a{min-height:44px;display:flex;align-items:center;color:var(--ink);text-decoration:none}
 .nav>a[aria-current="page"]{text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:2px;text-underline-offset:8px}
 .nav>a:hover{color:var(--gold-ink)}
-.langsw{display:flex;border:var(--border);font-size:13px;letter-spacing:.06em}
+.langsw{display:flex;flex-wrap:wrap;max-width:100%;border:var(--border);font-size:13px;letter-spacing:.06em}
 .langsw a{min-height:38px;min-width:44px;display:flex;align-items:center;justify-content:center;color:var(--ink);text-decoration:none;padding:0 8px}
 .langsw a[aria-current="true"]{background:var(--gold);color:var(--on-gold)}
 
