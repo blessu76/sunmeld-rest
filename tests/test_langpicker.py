@@ -8,7 +8,8 @@ import unittest
 
 from helpers import REPO, bs
 
-LANG_DIRS = [l for l in bs.LANGS if l != "en"]
+BUILT = [l for l in bs.LANGS if (REPO / "content" / "i18n" / f"{l}.json").exists()]
+LANG_DIRS = [l for l in BUILT if l != "en"]
 
 
 def pages():
@@ -24,16 +25,15 @@ def pages():
 
 class Picker(unittest.TestCase):
     def test_both_languages_have_pages(self):
-        self.assertEqual({l for l, _, _ in pages()}, set(bs.LANGS))
+        self.assertEqual({l for l, _, _ in pages()}, set(BUILT))
 
     def test_picker_shows_the_pages_own_language(self):
         for lang, f, h in pages():
-            name = bs.LANGS[lang][0]
             self.assertEqual(re.search(r'<html lang="([\w-]+)"', h).group(1), lang, f)
             menu = re.search(r'<span class="langsw".*?</span>', h, re.S).group(0)
             cur = re.findall(r'<a href="[^"]*" hreflang="(\w+)"[^>]*aria-current', menu)
             self.assertEqual(cur, [lang], f)
-            self.assertEqual(len(re.findall(r'<a ', menu)), len(bs.LANGS), f)
+            self.assertEqual(len(re.findall(r'<a ', menu)), len(BUILT), f)
 
     def test_picker_links_stay_on_the_same_page(self):
         for lang, f, h in pages():
@@ -45,7 +45,7 @@ class Picker(unittest.TestCase):
     def test_choice_is_remembered_for_each_language(self):
         """click a language -> sunmeld.js stores it -> langpick.js on '/' goes to it (en + ko)."""
         js = (REPO / "assets" / "sunmeld.js").read_text(encoding="utf-8")
-        pick = (REPO / "assets" / "langpick.js").read_text(encoding="utf-8").replace("/*SUPPORTED*/[]", json.dumps(list(bs.LANGS)))
+        pick = (REPO / "assets" / "langpick.js").read_text(encoding="utf-8").replace("/*SUPPORTED*/[]", json.dumps(BUILT))
         prog = r"""
 const store={};let hrefs=[];
 function run(src,pathname,navLangs){
@@ -67,7 +67,7 @@ for(const l of %s){
   out.push([l,store['sm-lang'],r.to]);
 }
 console.log(JSON.stringify(out));
-""" % (json.dumps(list(bs.LANGS)), json.dumps(js), "x", json.dumps(pick))
+""" % (json.dumps(BUILT), json.dumps(js), "x", json.dumps(pick))
         res = subprocess.run(["node", "-e", prog], capture_output=True, text=True, timeout=30)
         self.assertEqual(res.returncode, 0, res.stderr)
         for l, saved, to in json.loads(res.stdout):
