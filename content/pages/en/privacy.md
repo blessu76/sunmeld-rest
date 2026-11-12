@@ -46,9 +46,9 @@ Google (analytics and fonts) and GitHub (hosting) process data for the website a
 
 To request access, correction, deletion or suspension of processing of your personal information, or to ask any question, write to [{{EMAIL}}](mailto:{{EMAIL}}). We reply within 10 days. The App holds no personal information, and website analytics data is not tied to your name or email, so we usually cannot find an individual in it; email correspondence we can locate and delete.
 
-## 5. Minimum age
+## 5. Children
 
-This service is for users aged 16 and over, and we do not knowingly collect personal information from anyone under 16. The App collects none, and the website asks for none.
+The App is not directed to children under 14 (or the minimum age in your region), and we do not knowingly collect personal information from children. The App collects none, and the website asks for none.
 
 ## 6. Privacy officer
 
