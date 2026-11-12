@@ -15,6 +15,8 @@ You may install and use the App on your device for personal, non-commercial purp
 
 ## 3. Nature of the service
 
+This service may only be used by people aged 16 or older.
+
 Game data is stored on your device. Data may be lost if you change devices, delete the App or reset your device, and we may not be able to restore it.
 
 ## 4. Changes and discontinuation
