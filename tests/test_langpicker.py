@@ -31,14 +31,14 @@ class Picker(unittest.TestCase):
         for lang, f, h in pages():
             self.assertEqual(re.search(r'<html lang="([\w-]+)"', h).group(1), lang, f)
             menu = re.search(r'<span class="langsw".*?</span>', h, re.S).group(0)
-            cur = re.findall(r'<a href="[^"]*" hreflang="(\w+)"[^>]*aria-current', menu)
+            cur = re.findall(r'<a href="[^"]*" hreflang="([\w-]+)"[^>]*aria-current', menu)
             self.assertEqual(cur, [lang], f)
             self.assertEqual(len(re.findall(r'<a ', menu)), len(BUILT), f)
 
     def test_picker_links_stay_on_the_same_page(self):
         for lang, f, h in pages():
             menu = re.search(r'<span class="langsw".*?</span>', h, re.S).group(0)
-            for href, l in re.findall(r'<a href="([^"]*)" hreflang="(\w+)"', menu):
+            for href, l in re.findall(r'<a href="([^"]*)" hreflang="([\w-]+)"', menu):
                 self.assertEqual(href.startswith("/" + l + "/") or (l == "en" and not href.startswith(tuple("/" + x + "/" for x in LANG_DIRS))), True, (f, href))
 
     @unittest.skipUnless(shutil.which("node"), "node required")

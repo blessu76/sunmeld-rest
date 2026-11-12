@@ -79,6 +79,7 @@ OG_LOCALE = {
 LANGS = {l: (languages.NAMES[l], OG_LOCALE[l], "ltr", l.split("-")[0].upper()) for l in languages.SUPPORTED}
 MAIN_LANGS = ("en", "ko")
 PAGE_SLUGS = ("about", "privacy", "support", "terms")  # privacy from markdown (comments=false), privacy.json for future use
+TRANSLATED_SLUGS = ("about", "support")  # other languages translate only these; privacy/terms link to the en page
 CATEGORIES = ("devlog", "art", "design")
 KEYS = (
     "nav_home nav_about nav_journal nav_releases nav_support nav_privacy nav_terms skip lang_label status_badge read_more all_posts "
@@ -582,7 +583,8 @@ def render(ctx, lang, *, path, title, desc, body, graph, alt, updated, og_type="
         esc(path_home(lang)), nav_html, esc(t("lang_label")), switch)
     foot_nav = [(path_home(lang), t("nav_home")), (path_page(lang, "about"), t("nav_about")), (path_journal(lang), t("nav_journal")),
                 (path_releases(lang), t("nav_releases")), (path_page(lang, "support"), t("nav_support")),
-                (path_page(lang, "privacy"), t("nav_privacy")), (path_page(lang, "terms"), t("nav_terms"))]
+                (path_page(lang if lang in MAIN_LANGS else "en", "privacy"), t("nav_privacy")),
+                (path_page(lang if lang in MAIN_LANGS else "en", "terms"), t("nav_terms"))]  # privacy/terms exist only in ko/en
     foot_nav_html = "".join('<a href="%s">%s</a>' % (esc(h), esc(label)) for h, label in foot_nav)
     if lang in MAIN_LANGS:
         foot_nav_html += '<a href="%s">%s</a>' % (esc(path_feed(lang)), esc(t("rss")))
@@ -857,10 +859,9 @@ def sitemap_entries(ctx):
         ents.append((path_releases(l), lastmod_releases(ctx), {x: path_releases(x) for x in ctx.langs}))
     for l in ctx.langs:
         n = len(posts_in(ctx, l))
-        if n or l == "en":
-            ents.append((path_journal(l), lm, {x: path_journal(x) for x in ctx.langs}))
-            for pg in range(2, pages_count(n) + 1):
-                ents.append((path_journal(l, pg), lm, {}))
+        ents.append((path_journal(l), lm, {x: path_journal(x) for x in ctx.langs}))  # also for languages without posts (en fallback)
+        for pg in range(2, pages_count(n) + 1):
+            ents.append((path_journal(l, pg), lm, {}))
     for p in ctx.posts:
         alts = {l: path_post(l, p["slug"]) for l in ctx.langs if l in p["langs"]}
         for l in alts:
@@ -950,11 +951,11 @@ def make_ctx(root, now=None, require_all=False):
     releases, e4 = load_releases(root)
     pp, e5 = load_privacy(root)
     errs += e2 + e3 + e4 + e5 + queue_errors(root)
-    langs = [l for l in LANGS if l in i18n and all((l, s) in pages for s in PAGE_SLUGS)]
+    langs = [l for l in LANGS if l in i18n and all((l, s) in pages for s in (PAGE_SLUGS if l in MAIN_LANGS else TRANSLATED_SLUGS))]
     if pp:
         # Only require privacy langs that are in the site's supported langs
         available_langs = [l for l in MAIN_LANGS if l in pp.langs]
-        langs = [l for l in langs if l in available_langs]
+        langs = [l for l in langs if l in available_langs or l not in MAIN_LANGS]
     if "en" not in langs or "ko" not in langs:
         errs.append("en and ko must both be complete (i18n + %s + privacy.json)" % " + ".join(PAGE_SLUGS))
     for l in LANGS:
@@ -981,7 +982,8 @@ def build_all(ctx):
     for l in ctx.langs:
         put(*build_home(ctx, l))
         for slug in PAGE_SLUGS:
-            put(*build_page(ctx, l, slug))
+            if (l, slug) in ctx.pages:  # privacy/terms are not translated: other languages link to the en page
+                put(*build_page(ctx, l, slug))
         # Privacy pages are generated from ipe_web_kit.privacy module
         if privacy_module:
             pp = privacy_module.load(ctx.root / "privacy.json")

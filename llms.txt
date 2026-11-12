@@ -45,7 +45,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Languages
 
-The site is available in 2 languages: English, 한국어. Each language lives under /<code>/ (English at the root).
+The site is available in 12 languages: English, 한국어, 日本語, 繁體中文, Español, Português (Brasil), Français, Deutsch, Bahasa Indonesia, ไทย, Tiếng Việt, Türkçe. Each language lives under /<code>/ (English at the root).
 
 ## Contact and operator
 
