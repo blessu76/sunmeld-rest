@@ -20,6 +20,8 @@ REPO="${SUNMELD_PUBLISH_DIR:-$HOME/Developer/sunmeld-rest}"
 CHECK_CMD="${SUNMELD_CHECK_CMD:-bash scripts/check.sh}"
 # Everything publish_post.py + build_site.py may create or change. Anything else in the tree after a publish means abort.
 PUBLISH_PATHS="content/journal content/queue index.html 404.html sitemap.xml llms.txt robots.txt journal about privacy support terms ko"
+# Each translated language's home and journal pages list the newest post, so every publish rewrites them (tests/test_publish_daily.py checks this covers LANGS).
+for l in de es fr id ja pt-BR th tr vi zh-Hant; do PUBLISH_PATHS="$PUBLISH_PATHS $l/index.html $l/journal"; done
 
 [ -d "$REPO/.git" ] || skip "$REPO is not a git clone"
 cd "$REPO"

@@ -303,6 +303,14 @@ class OpsFiles(unittest.TestCase):
         comment = t.split("<!--")[1].split("-->")[0]
         self.assertNotIn("__HOME__", comment)
 
+    def test_publish_set_covers_every_translated_language_home_and_journal(self):
+        import re
+        text = SCRIPT.read_text(encoding="utf-8")
+        loop = re.search(r"for l in ([^;]+);\s*do PUBLISH_PATHS=", text).group(1).split()
+        for lang in helpers.bs.LANGS:
+            if lang not in helpers.bs.MAIN_LANGS:
+                self.assertIn(lang, loop, "add %s to the publish set in ops/publish_daily.sh" % lang)
+
     def test_no_personal_absolute_paths_in_the_repo(self):
         """Public repo: no /Users/<name>/ or /home/<name>/ anywhere except files that deliberately name the forbidden string."""
         import re
