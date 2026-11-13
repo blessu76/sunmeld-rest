@@ -5,6 +5,7 @@ slug: twelve-languages
 lang: en
 category: devlog
 keywords: Sunmeld, languages, translation, right to left, journal
+published: 2026-11-13T21:14+09:00
 ---
 The new screens in Sunmeld are available in 12 languages. Here is how that was done and what is still open. The game is still in development for iOS and Android.
 

@@ -5,6 +5,7 @@ slug: twelve-languages
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 언어, 번역, 오른쪽에서 왼쪽, 저널
+published: 2026-11-13T21:14+09:00
 ---
 썬멜드의 새 화면은 12개 언어로 볼 수 있어요. 어떻게 만들었고 무엇이 남았는지 소개해요. 게임은 아직 iOS와 Android용으로 개발 중이에요.
 
