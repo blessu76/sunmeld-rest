@@ -24,3 +24,17 @@ The new screens are available in 12 languages. We wrote the translations ourselv
 ## What is next
 
 We will keep going through screens for fit and clarity. There is no release date yet.
+
+## FAQ
+
+### Can I resume a saved game?
+
+Yes. A saved game resumes right where you left off.
+
+### Does Sunmeld support accessibility?
+
+It has screen reader labels and supports larger text.
+
+### Which languages does Sunmeld support?
+
+The new screens are in 12 languages. Not every language has been reviewed by a native speaker yet, so wording may change.

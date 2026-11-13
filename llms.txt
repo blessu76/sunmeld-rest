@@ -43,6 +43,24 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 - [How a merge scores](https://sunmeld.ipe.rest/journal/how-a-merge-scores/) — 2026-11-01 — A short note on how merging works in Sunmeld and why it decides who leads.
 - [Starting to make Sunmeld](https://sunmeld.ipe.rest/journal/starting-sunmeld/) — 2026-10-31 — The first journal post. What Sunmeld is, and why this journal exists.
 
+## Journal posts (한국어)
+
+- [12개 언어는 이렇게 만들었어요](https://sunmeld.ipe.rest/ko/journal/twelve-languages/) — 2026-11-13 — 썬멜드의 새 화면은 12개 언어로 볼 수 있어요. 번역을 어떻게 했고 아직 확인하지 못한 것은 무엇인지 소개해요.
+- [한 번의 결제, 광고는 없어요](https://sunmeld.ipe.rest/ko/journal/one-purchase/) — 2026-11-11 — 썬멜드의 단 하나뿐인 결제는 이렇게 작동해요. 리그 2를 한 번에 열고 복원도 되며, 다른 건 팔지 않아요.
+- [이어하기, 접근성, 12개 언어](https://sunmeld.ipe.rest/ko/journal/play-your-way/) — 2026-11-10 — 썬멜드를 시작하기 쉽게 만드는 작은 것들, 이어하기와 접근성과 언어 지원을 소개해요.
+- [플레이하며 여는 꾸미기](https://sunmeld.ipe.rest/ko/journal/customization-by-playing/) — 2026-11-09 — 썬멜드의 돌 모양과 통 무늬는 진척에 따라 열리고, 유료 상품은 없어요.
+- [일일 도전](https://sunmeld.ipe.rest/ko/journal/daily-challenge/) — 2026-11-08 — 매일 새 한 판, 그날은 모두 같은 판이에요. 썬멜드의 일일 도전을 소개해요.
+- [역전 장치: 선공 교대와 피날레 존](https://sunmeld.ipe.rest/ko/journal/comeback-devices/) — 2026-11-07 — 썬멜드가 마지막까지 역전의 여지를 남기는 두 가지, 선공 교대와 피날레 존을 소개해요.
+- [특수 돌 세 가지](https://sunmeld.ipe.rest/ko/journal/special-stones/) — 2026-11-06 — 썬멜드의 특수 돌 세 가지, 바람·서리·구멍을 소개해요.
+- [첫 판을 알려 주는 짧은 튜토리얼](https://sunmeld.ipe.rest/ko/journal/first-game-tutorial/) — 2026-11-05 — 썬멜드의 첫 판에서 규칙을 안내하는 튜토리얼을 소개해요.
+- [리그 1과 별 기준](https://sunmeld.ipe.rest/ko/journal/league-one-and-stars/) — 2026-11-04 — 썬멜드 테스트 빌드의 리그 1과 별을 얻는 방법을 소개해요.
+- [저마다 버릇이 있는 상대들](https://sunmeld.ipe.rest/ko/journal/opponents-with-habits/) — 2026-11-03 — 썬멜드의 AI 상대가 서로 다르게 플레이하도록 다듬고 있는 이야기예요.
+- [왜 마지막 돌이 지는 걸까요](https://sunmeld.ipe.rest/ko/journal/why-the-last-stone-loses/) — 2026-11-02 — 썬멜드에서 통이 넘칠 때 마지막에 돌을 놓은 쪽이 지는 이유를 이야기해요.
+- [합치기는 이렇게 점수가 돼요](https://sunmeld.ipe.rest/ko/journal/how-a-merge-scores/) — 2026-11-01 — 썬멜드에서 합치기가 어떻게 이루어지고, 왜 승부를 가르는지 짧게 소개해요.
+- [썬멜드 제작을 시작했어요](https://sunmeld.ipe.rest/ko/journal/starting-sunmeld/) — 2026-10-31 — 썬멜드 저널의 첫 글. 어떤 게임인지, 그리고 왜 저널을 쓰는지 소개해요.
+
+Every journal post ends with an FAQ section. Feeds: https://sunmeld.ipe.rest/journal/feed.xml (English), https://sunmeld.ipe.rest/ko/journal/feed.xml (한국어).
+
 ## Languages
 
 The site is available in 12 languages: English, 한국어, 日本語, 繁體中文, Español, Português (Brasil), Français, Deutsch, Bahasa Indonesia, ไทย, Tiếng Việt, Türkçe. Each language lives under /<code>/ (English at the root).

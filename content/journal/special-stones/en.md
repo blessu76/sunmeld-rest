@@ -24,3 +24,17 @@ The AI opponents can use special stones too, under the same rules. We have been 
 ## What is next
 
 We will keep watching how special stones feel in real games. There is no release date yet.
+
+## FAQ
+
+### What special stones does Sunmeld have?
+
+Three: wind, frost and hole.
+
+### What do they do?
+
+Wind pushes stones in the tub, frost works differently from a normal stone, and hole clears a stone and eases a crowded tub. The game explains each one.
+
+### Can the AI use special stones?
+
+Yes. The AI opponents use them under the same rules as you.

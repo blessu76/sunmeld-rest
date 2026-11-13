@@ -24,3 +24,17 @@ Because the tub is shared, a big stone you leave behind is also a big stone your
 ## What is next
 
 More notes on how the game is built will follow. There is no release date yet. When there is news, it will show up here.
+
+## FAQ
+
+### How does a merge work in Sunmeld?
+
+When two stones of the same stage touch, they become one stone of the next stage, from dust up to a sun.
+
+### Who scores a merge?
+
+The player whose stone causes the merge gets its score.
+
+### Why wait instead of merging right away?
+
+The tub is shared, so a big stone you leave behind is also a big stone your opponent can use. Choosing when to merge is most of the game.

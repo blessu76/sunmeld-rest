@@ -24,3 +24,17 @@ We are playing many rounds against each opponent to check that they feel differe
 ## What is next
 
 The opponents will keep being tuned as the game takes shape. There is no release date yet. When there is news, it will show up here.
+
+## FAQ
+
+### Who do I play against in Sunmeld?
+
+An AI opponent. There is a group of them, and each has its own habits.
+
+### How do the opponents differ?
+
+Some stack tightly and wait for a big merge, some drop fast, some play it safe near the rim, and some take risks.
+
+### What decides a round?
+
+Overflow. The player who placed the last stone loses.

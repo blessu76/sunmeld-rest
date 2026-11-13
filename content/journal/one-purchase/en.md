@@ -24,3 +24,17 @@ Stone shapes and bucket patterns are not part of the purchase. They unlock as yo
 ## Testing it
 
 In the test build, testers try the purchase flow with sandbox accounts only, so no real payment is made. We show the price the store gives us and do not set one ourselves. There is no release date yet.
+
+## FAQ
+
+### Does Sunmeld have ads?
+
+No. Sunmeld is free to try, has no ads, and has one purchase.
+
+### What does the purchase unlock?
+
+League 2, once. It stays unlocked and is not a subscription. League 1 is free.
+
+### Can I restore the purchase on a new phone?
+
+Yes. The purchase screen has a restore button that brings League 2 back without paying again.
