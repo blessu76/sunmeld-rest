@@ -24,3 +24,17 @@ The rule is the same for you and for the AI. Nobody gets a hidden advantage, and
 ## What is next
 
 We will keep testing how this rule feels over a whole round. There is no release date yet. When there is news, it will show up here.
+
+## FAQ
+
+### Who loses when the tub overflows in Sunmeld?
+
+The player who placed the last stone.
+
+### Why that rule?
+
+It gives every stone a small cost that grows as the tub fills, so crowding the tub is never free.
+
+### Is the rule the same for the AI?
+
+Yes. It is the same for you and the AI, so nobody has a hidden advantage.

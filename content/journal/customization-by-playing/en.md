@@ -28,3 +28,17 @@ Choices differ in shape and pattern, not only in color, so they are easy to tell
 ## What is next
 
 We are still looking for the right pace of unlocking, and we will wait for tester feedback. There is no release date yet.
+
+## FAQ
+
+### What can I customize in Sunmeld?
+
+Stone shapes and bucket patterns. They change the look only; rules, scoring and physics stay the same.
+
+### How do I unlock them?
+
+Each choice unlocks as you progress, through stars, leagues and daily challenges. A locked choice shows what it asks for.
+
+### Is customization part of the purchase?
+
+No. Customization is not sold. The game has one in-app purchase, and customization is not part of it.

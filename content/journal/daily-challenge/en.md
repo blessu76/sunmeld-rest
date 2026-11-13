@@ -24,3 +24,17 @@ The league is for learning opponents. The daily challenge is a quick game to com
 ## What is next
 
 We will see how testers use it before changing anything. There is no release date yet.
+
+## FAQ
+
+### What is the Sunmeld daily challenge?
+
+One new game each day, and it is the same for everyone that day.
+
+### Do I keep a streak?
+
+Yes. Your streak and stars are saved. Playing the day's game keeps the streak going.
+
+### Which platforms is Sunmeld for?
+
+Sunmeld is in development for iOS and Android. The daily challenge is in the test build.

@@ -42,7 +42,7 @@ except ImportError:
     privacy_module = None
 
 SITE = "https://sunmeld.ipe.rest"
-ASSET_V = "20261112c"  # keep in sync: bump when assets/sunmeld.css or sunmeld.js change
+ASSET_V = "20261113a"  # keep in sync: bump when assets/sunmeld.css or sunmeld.js change
 KST = dt.timezone(dt.timedelta(hours=9))
 SITE_UPDATED = "2026-11-03"  # "Last updated" of home / 404 and sitemap lastmod — bump by hand when their text changes
 OPERATOR = "Davy Kim (ipe Studio)"
@@ -90,6 +90,8 @@ KEYS = (
     "nf_h nf_p"
 ).split()
 REQUIRED_POST = ("title", "description", "slug", "lang", "category", "published")
+FAQ_HEADINGS = {"faq", "자주 묻는 질문", "よくある質問", "常見問題", "preguntas frecuentes", "perguntas frequentes", "questions fréquentes",
+                "häufige fragen", "pertanyaan umum", "คำถามที่พบบ่อย", "câu hỏi thường gặp", "sık sorulan sorular"}  # H2 text that opens a post's FAQ
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 PUB_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})\+09:00$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -388,6 +390,14 @@ def load_posts(root, now=None, include_dir="journal"):
                 errs.append("%s: published %s is in the future (now %s)" % (tag, meta["published"], now.strftime("%Y-%m-%dT%H:%M")))
             if post["published"] and pub != post["published"]:
                 errs.append("%s: published differs between languages" % tag)
+            upd = meta.get("updated")
+            if upd:
+                if not DATE_RE.match(upd):
+                    errs.append("%s: updated must be YYYY-MM-DD" % tag)
+                elif upd < pub.strftime("%Y-%m-%d"):
+                    errs.append("%s: updated is before published" % tag)
+                elif not post.get("updated") or upd > post["updated"]:
+                    post["updated"] = upd
             post["published"] = post["published"] or pub
             post["category"] = post["category"] or meta["category"]
             if lang not in MAIN_LANGS and meta.get("translation_of") not in MAIN_LANGS:
@@ -444,6 +454,33 @@ def queue_errors(root):
             if need not in langs:
                 errs.append("queue/%s: %s original missing" % (d.name, need))
     return errs
+
+
+def plain(s):
+    s = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", s)
+    s = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", s)
+    return re.sub(r"[*`_]+", "", s).strip()
+
+
+def faq_pairs(body):
+    """[(question, answer)] from the H2 FAQ section of a post body: each H3 is a question, the text under it the answer."""
+    pairs, in_faq, q, ans = [], False, None, []
+
+    def close():
+        if q and ans:
+            pairs.append((q, " ".join(ans)))
+    for ln in body.split("\n"):
+        s = ln.strip()
+        m = re.match(r"^(#{2,3})\s+(.*)$", s)
+        if m and len(m.group(1)) == 2:
+            close(); q, ans = None, []
+            in_faq = plain(m.group(2)).lower().rstrip("?") in FAQ_HEADINGS
+        elif m and in_faq:
+            close(); q, ans = plain(m.group(2)), []
+        elif in_faq and q and s:
+            ans.append(plain(re.sub(r"^(?:[-*]|\d+\.)\s+", "", s)))
+    close()
+    return pairs
 
 
 # ---------------------------------------------------------------- html pieces
@@ -506,6 +543,8 @@ def render(ctx, lang, *, path, title, desc, body, graph, alt, updated, og_type="
              '<link rel="apple-touch-icon" href="/assets/icon-180.png">']
     if lang in MAIN_LANGS:
         head.append('<link rel="alternate" type="application/rss+xml" title="Sunmeld Journal (%s)" href="%s">' % (lang, path_feed(lang)))
+    else:
+        head.append('<link rel="alternate" type="application/rss+xml" title="Sunmeld Journal (en)" href="%s">' % path_feed("en"))
     head.append('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>')
     head.append('<link rel="stylesheet" href="%s">' % FONTS_URL)
     head.append('<link rel="stylesheet" href="/assets/sunmeld.css?v=%s">' % ASSET_V)
@@ -729,14 +768,19 @@ def build_post(ctx, lang, p):
         esc(path_journal(lang)), esc(t("back_journal")))
     posting = {"@type": "BlogPosting", "@id": url(path) + "#post", "mainEntityOfPage": url(path), "url": url(path),
                "headline": d["title"], "description": d["description"], "inLanguage": lang, "datePublished": iso_time(p),
-               "dateModified": iso_time(p), "image": {"@type": "ImageObject", "url": SITE + OG_IMAGE, "width": 1200, "height": 630},
+               "dateModified": p.get("updated") or iso_time(p), "image": {"@type": "ImageObject", "url": SITE + OG_IMAGE, "width": 1200, "height": 630},
                "author": ORG, "publisher": {"@id": ORG_ID}, "isPartOf": {"@id": url(path_journal(lang)) + "#blog"},
-               "about": {"@id": SITE + "/#game"}, "articleSection": p["category"]}
+               "about": {"@type": "VideoGame", "@id": SITE + "/#game", "name": "Sunmeld", "url": url(path_home(lang)),
+                         "genre": ["Puzzle", "Casual"], "gamePlatform": ["iOS", "Android"]}, "articleSection": p["category"]}
     if d["keywords"]:
         posting["keywords"] = d["keywords"]
     if src:
         posting["translationOfWork"] = {"@type": "BlogPosting", "url": url(path_post(src, p["slug"])), "inLanguage": src}
     graph = [ORG, website_ld(lang, ctx), posting, breadcrumb_ld(crumbs)]
+    faq = faq_pairs(d["body"])
+    if faq:
+        graph.append({"@type": "FAQPage", "@id": url(path) + "#faq", "inLanguage": lang, "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]})
     return path, render(ctx, lang, path=path, title="%s — Sunmeld" % d["title"], desc=d["description"], body=body, graph=graph,
                         alt=alt, updated=fmt_date(p), og_type="article", nav="journal")
 
@@ -769,7 +813,7 @@ def sitemap_entries(ctx):
     for p in ctx.posts:
         alts = {l: path_post(l, p["slug"]) for l in ctx.langs if l in p["langs"]}
         for l in alts:
-            ents.append((alts[l], p["published"].strftime("%Y-%m-%d"), alts))
+            ents.append((alts[l], p.get("updated") or p["published"].strftime("%Y-%m-%d"), alts))
     return ents
 
 
@@ -819,6 +863,11 @@ def build_llms(ctx):
     for p in posts_in(ctx, "en"):
         d = p["langs"]["en"]
         rows.append("- [%s](%s) — %s — %s" % (d["title"], url(path_post("en", p["slug"])), fmt_date(p), d["description"]))
+    rows += ["", "## Journal posts (한국어)", ""]
+    for p in posts_in(ctx, "ko"):
+        d = p["langs"]["ko"]
+        rows.append("- [%s](%s) — %s — %s" % (d["title"], url(path_post("ko", p["slug"])), fmt_date(p), d["description"]))
+    rows += ["", "Every journal post ends with an FAQ section. Feeds: %s%s (English), %s%s (한국어)." % (SITE, path_feed("en"), SITE, path_feed("ko"))]
     rows += ["", "## Languages", "", "The site is available in %d languages: %s. Each language lives under /<code>/ (English at the root)." % (
         len(ctx.langs), ", ".join(LANGS[l][0] for l in ctx.langs)), "",
         "## Contact and operator", "", "%s — %s" % (OPERATOR, EMAIL), ""]

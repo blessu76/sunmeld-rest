@@ -24,3 +24,17 @@ A win or a loss tells you little about how a game went. Stars give you something
 ## What is next
 
 League 2 is also in the test build, and we will write about it soon. There is no release date yet.
+
+## FAQ
+
+### What is League 1 in Sunmeld?
+
+A league of AI opponents that each have their own habits. You take them on one at a time and your results are saved.
+
+### How are stars earned?
+
+Each result is scored by stars. A win earns a star, and a wider win with a calm tub earns more. The rule is shown in the game.
+
+### Is this in the released game?
+
+Not yet. It is in the Sunmeld test build, and the game is still in development for iOS and Android.

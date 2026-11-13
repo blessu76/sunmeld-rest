@@ -24,3 +24,17 @@ Arabic is one of the 12 languages, so the screens also have to work right to lef
 ## What is not done
 
 A native speaker has not reviewed these translations yet. Wording may change, and we would like native speakers to look at the languages with different writing systems before any release. There is no release date yet.
+
+## FAQ
+
+### Which languages does Sunmeld support?
+
+The new screens are in 12 languages, and Arabic is one of them, so screens also work right to left.
+
+### How does the game pick a language?
+
+It follows your phone's language list and uses the first supported one, falling back to English. You can also choose in settings.
+
+### Have native speakers reviewed the translations?
+
+Not yet. The translations were made with an AI tool and rewritten to fit the game's tone. Wording may change.

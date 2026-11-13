@@ -24,3 +24,17 @@ Overflow still decides a round, and the player who placed the last stone loses. 
 ## What is next
 
 We checked these with many simulated games, but simulations are not the same as real play. We will watch how testers feel about them. There is no release date yet.
+
+## FAQ
+
+### Who goes first in Sunmeld?
+
+The first move alternates from game to game, so neither side keeps the advantage for long.
+
+### What is the finale zone?
+
+Near the end of a game, a finale zone makes merges count for more, so a player who is behind can still catch up.
+
+### Is Sunmeld out for iOS and Android yet?
+
+No. Sunmeld is still in development for iOS and Android, and there is no release date.

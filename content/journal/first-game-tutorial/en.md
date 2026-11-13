@@ -24,3 +24,17 @@ Special stones now come with an in-game explanation too, so you can read what a 
 ## What is next
 
 We will keep watching where new players hesitate and adjust the tutorial. There is no release date yet.
+
+## FAQ
+
+### Does Sunmeld have a tutorial?
+
+Yes. The test build opens with a short tutorial that walks you through the first game.
+
+### What does the tutorial teach?
+
+How to drop a stone, merge two stones of the same stage, and what happens when the tub overflows.
+
+### Where can I read about special stones?
+
+Special stones come with an in-game explanation, so you can read what a stone does before using it.
