@@ -269,7 +269,9 @@ class OpsFiles(unittest.TestCase):
     def test_plist_template_has_no_personal_paths_and_renders(self):
         t = (REPO / "ops" / "rest.ipe.sunmeld-publish.plist.template").read_text(encoding="utf-8")
         self.assertNotIn("/Users/", t)
-        self.assertIn("<key>Hour</key><integer>18</integer>", t)
+        self.assertIn("<key>Hour</key><integer>12</integer><key>Minute</key><integer>0</integer>", t)
+        self.assertIn("<key>Hour</key><integer>18</integer><key>Minute</key><integer>45</integer>", t)
+        self.assertEqual(t.count("<key>Hour</key>"), 28)  # 12:00-18:45 every 15 min
         self.assertIn("__HOME__/Library/Logs/sunmeld-publish.log", t)
         self.assertIn("SUNMELD_PUBLISH_DIR", t)
         self.assertIn("<key>GIT_TERMINAL_PROMPT</key><string>0</string>", t)
@@ -281,7 +283,7 @@ class OpsFiles(unittest.TestCase):
         out = (tmp / "LA" / "rest.ipe.sunmeld-publish.plist").read_text(encoding="utf-8")
         self.assertNotIn("__HOME__", out)
         self.assertIn(str(tmp / "home" / "Library" / "Logs" / "sunmeld-publish.log"), out)
-        self.assertIn(str(tmp / "home" / "Developer" / "sunmeld-rest" / "ops" / "publish_daily.sh"), out)
+        self.assertIn(str(tmp / "home" / "Developer" / "sunmeld-rest" / "ops" / "publish_gate.py"), out)
         if shutil.which("plutil"):
             self.assertEqual(subprocess.run(["plutil", "-lint", str(tmp / "LA" / "rest.ipe.sunmeld-publish.plist")], capture_output=True).returncode, 0)
 

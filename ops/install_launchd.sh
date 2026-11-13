@@ -1,6 +1,6 @@
 #!/bin/bash
 # Render ops/rest.ipe.sunmeld-publish.plist.template for this user (__HOME__ -> $HOME), lint it, and write it to ~/Library/LaunchAgents.
-# It does NOT load the job — that is a separate, deliberate step (see ops/README.md).
+# The job runs ops/publish_gate.py (every 15 min, 12:00-18:45) from the publish clone. It does NOT load the job — that is a separate, deliberate step (see ops/README.md).
 #   bash ops/install_launchd.sh            # writes ~/Library/LaunchAgents/rest.ipe.sunmeld-publish.plist
 # Test hooks: SUNMELD_LAUNCH_AGENTS_DIR (target dir), SUNMELD_HOME (value for __HOME__, default $HOME).
 set -euo pipefail

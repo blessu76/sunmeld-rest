@@ -1,12 +1,13 @@
 # Daily publish automation (not installed by this repo)
 
-Policy: **one post a day at 18:00 KST** while the app is unreleased (2026-10-29). The publish time recorded in each post is the real time
+Policy: **one post a day at a random time 12:00-17:59 KST** (never in the same hour as the day before; 2026-11-13, was fixed 18:00 since 2026-10-29) while the app is unreleased. The publish time recorded in each post is the real time
 the script ran (HH:MM KST); a future time is refused.
 
 | File | Role |
 |---|---|
+| `publish_gate.py` | launchd entry point, every 15 min 12:00-18:45. Keeps `~/.ipe/queue/sunmeld/slot.json` (`SUNMELD_SLOT_FILE`): `{date,time,prev_date,prev_time,published}`. New day → draws `time`, hour ≠ yesterday's; `now ≥ time` and not published → runs `publish_daily.sh`; `published=true` only when it exited 0 and a post is out (`pushed` / already published today). SKIP, QUEUE_EMPTY, failures stay `false` and are retried on the next tick. No slot file → created as today=published, prev_time 21:15 (random schedule starts the next day) |
 | `publish_daily.sh` | safety checks → push leftovers → `publish_post.py --daily` → green gate → commit → push → live check → IndexNow |
-| `rest.ipe.sunmeld-publish.plist.template` | launchd job template (`__HOME__` placeholder; launchd does not expand `~`), 18:00 every day plus retries at 18:30 and 19:00 (a run after a successful publish does nothing), log `~/Library/Logs/sunmeld-publish.log` |
+| `rest.ipe.sunmeld-publish.plist.template` | launchd job template (`__HOME__` placeholder; launchd does not expand `~`), StartCalendarInterval every 15 min 12:00-18:45 calling `publish_gate.py`, log `~/Library/Logs/sunmeld-publish.log` |
 | `install_launchd.sh` | renders the template for the current user, `plutil -lint`, writes `~/Library/LaunchAgents/…plist` — does **not** load it |
 
 ## Safety rules (tests: `tests/test_publish_daily.py`)
@@ -24,14 +25,14 @@ the script ran (HH:MM KST); a future time is refused.
 ## Install (by the maintainer, once; the repo never does this itself)
 
 1. Make the publish clone: `git clone https://github.com/blessu76/sunmeld-rest.git ~/Developer/sunmeld-rest` (must be on `main`; `git push` must work non-interactively).
-2. The Mac's time zone must be KST (launchd's 18:00 is local time).
+2. The Mac's time zone must be KST (launchd's StartCalendarInterval is local time).
 3. Check that pushing works the way launchd will do it (no terminal, no prompt):
 
 ```
 git -C ~/Developer/sunmeld-rest push --dry-run origin HEAD:main     # must succeed without asking for anything (osxkeychain / ssh key / gh credential helper)
 ```
 
-   [Whether the keychain is reachable from the LaunchAgent session itself is only proven by the first real 18:00 run — watch the log that day.]
+   [Whether the keychain is reachable from the LaunchAgent session itself is only proven by the first real publish run — watch the log that day.]
 4. Install and load:
 
 ```
@@ -46,3 +47,5 @@ Log: `tail -f ~/Library/Logs/sunmeld-publish.log` (lines: `SKIP`, `FAIL`, `ROLLB
 
 Before relying on it: the queue (`content/queue/`) has posts and their translations exist (docs/TRANSLATION.md). When the queue is empty the job does
 nothing and exits 0 — write new posts into `content/queue/NN-slug/` (NN keeps the order).
+
+Gate tests: `tests/test_publish_gate.py` (stubbed publish_daily; hour exclusion, date rollover, already published, before slot, failure keeps `published=false`). Deploy order: push → pull in the publish clone (launchd runs the clone's scripts) → `install_launchd.sh` → bootout/bootstrap.
