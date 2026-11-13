@@ -53,16 +53,15 @@ function run(src,pathname,navLangs){
   const ctx={localStorage:{getItem:k=>store[k]===undefined?null:store[k],setItem:(k,v)=>{store[k]=String(v)}},
     navigator:{languages:navLangs,language:navLangs[0]},
     location:{pathname,search:'',hash:'',replace:u=>{to=u}},
-    document:{querySelector:()=>null,addEventListener:(t,f)=>{if(t==='click'&&!listener)listener=f}},window:{}};
+    document:{querySelector:()=>null,addEventListener:(t,f)=>{if(t==='change'&&!listener)listener=f}},window:{}};
   new Function('localStorage','navigator','location','document','window',src)(ctx.localStorage,ctx.navigator,ctx.location,ctx.document,ctx.window);
   return {listener,to};
 }
 const out=[];
 for(const l of %s){
   for(const k in store)delete store[k];
-  const a={getAttribute:n=>n==='hreflang'?l:null};
   const {listener}=run(%s,'/%s/',['en-US']);
-  listener({target:{closest:()=>a}});
+  listener({target:{matches:()=>true,value:'/',selectedIndex:0,options:[{getAttribute:n=>n==='data-lang'?l:null}]}});
   const r=run(%s,'/',['en-US']);
   out.push([l,store['sm-lang'],r.to]);
 }

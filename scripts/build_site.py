@@ -42,7 +42,7 @@ except ImportError:
     privacy_module = None
 
 SITE = "https://sunmeld.ipe.rest"
-ASSET_V = "20261113a"  # keep in sync: bump when assets/sunmeld.css or sunmeld.js change
+ASSET_V = "20261113b"  # keep in sync: bump when assets/sunmeld.css or sunmeld.js change
 KST = dt.timezone(dt.timedelta(hours=9))
 SITE_UPDATED = "2026-11-03"  # "Last updated" of home / 404 and sitemap lastmod — bump by hand when their text changes
 OPERATOR = "Davy Kim (ipe Studio)"
@@ -558,9 +558,12 @@ def render(ctx, lang, *, path, title, desc, body, graph, alt, updated, og_type="
                 (path_journal(lang), t("nav_journal"), "journal"),
                 (path_page(lang, "support"), t("nav_support"), "support")]
     nav_html = "".join('<a href="%s"%s>%s</a>' % (esc(h), ' aria-current="page"' if nav == k else "", esc(label)) for h, label, k in navlinks)
+    options = "".join('<option value="%s" data-lang="%s"%s>%s</option>' % (
+        esc(alt.get(l) or path_home(l)), l, " selected" if l == lang else "", esc(LANGS[l][0])) for l in ctx.langs)
+    picker = '<span class="langsel" hidden><select aria-label="%s">%s</select></span>' % (esc(t("lang_label")), options)
     header = ('<header class="site-header"><div class="bar"><a class="brand" href="%s" aria-label="Sunmeld">Sun<span>meld</span></a>'
-              '<nav class="nav" aria-label="main">%s<span class="langsw" role="group" aria-label="%s">%s</span></nav></div></header>') % (
-        esc(path_home(lang)), nav_html, esc(t("lang_label")), switch)
+              '<nav class="nav" aria-label="main">%s%s<noscript><span class="langsw" role="group" aria-label="%s">%s</span></noscript></nav></div></header>') % (
+        esc(path_home(lang)), nav_html, picker, esc(t("lang_label")), switch)
     foot_nav = [(path_home(lang), t("nav_home")), (path_page(lang, "about"), t("nav_about")), (path_journal(lang), t("nav_journal")),
                 (path_page(lang, "support"), t("nav_support")),
                 (path_page(lang if lang in MAIN_LANGS else "en", "privacy"), t("nav_privacy")),
@@ -568,13 +571,10 @@ def render(ctx, lang, *, path, title, desc, body, graph, alt, updated, og_type="
     foot_nav_html = "".join('<a href="%s">%s</a>' % (esc(h), esc(label)) for h, label in foot_nav)
     if lang in MAIN_LANGS:
         foot_nav_html += '<a href="%s">%s</a>' % (esc(path_feed(lang)), esc(t("rss")))
-    foot_langs = ('<p class="foot-langs" aria-label="%s">%s</p>' % (esc(t("lang_label")), " ".join(
-        '<a href="%s" hreflang="%s" lang="%s"%s>%s</a>' % (esc(alt.get(l) or path_home(l)), l, l, ' aria-current="true"' if l == lang else "", esc(LANGS[l][0]))
-        for l in ctx.langs))) if len(ctx.langs) > 1 else ""
     footer = ('<footer class="site-footer"><div class="foot-inner"><div class="foot-brand"><span class="logo">Sun<span>meld</span></span>'
               '<span class="foot-small">© 2026 ipe() · %s</span><span class="foot-small">%s <a href="https://ipe.rest/">ipe.rest</a></span></div>'
-              '<nav class="foot-links" aria-label="footer">%s</nav>%s</div></footer>') % (
-        esc(t("status_badge")), esc(t("footer_line")), foot_nav_html, foot_langs)
+              '<nav class="foot-links" aria-label="footer">%s</nav></div></footer>') % (
+        esc(t("status_badge")), esc(t("footer_line")), foot_nav_html)
     last = '<p class="updated">%s: <time datetime="%s">%s</time></p>' % (esc(t("updated_label")), esc(updated), esc(updated))
     return ('<!doctype html>\n<!-- %s -->\n<html lang="%s" dir="%s"><head>%s</head><body>'
             '<a class="skip" href="#main">%s</a>%s<main id="main">%s%s</main>%s'
