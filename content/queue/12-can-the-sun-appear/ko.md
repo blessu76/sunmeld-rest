@@ -5,6 +5,7 @@ slug: can-the-sun-appear
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 밸런스, AI, 테스트, 게임 디자인, 저널
+copy_review: iris 2026-11-14
 ---
 썬멜드는 아직 iOS와 Android용으로 개발 중이에요. 이번 글은 우리의 감을 그대로 믿지 않았기 때문에 찾아낸 문제 이야기예요.
 

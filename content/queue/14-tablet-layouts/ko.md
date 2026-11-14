@@ -5,6 +5,7 @@ slug: tablet-layouts
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 아이패드, 레이아웃, 화면 크기, 테스트, 저널
+copy_review: iris 2026-11-14
 ---
 썬멜드는 아직 iOS와 Android용으로 개발 중이에요. 이번 글은 같은 게임이 훨씬 큰 화면을 만났을 때 이야기예요.
 

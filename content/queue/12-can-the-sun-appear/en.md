@@ -5,6 +5,7 @@ slug: can-the-sun-appear
 lang: en
 category: devlog
 keywords: Sunmeld, balance, AI, testing, game design, journal
+copy_review: iris 2026-11-14
 ---
 Sunmeld is still in development for iOS and Android. This note is about a problem we only found because we did not trust our own feel for the game.
 

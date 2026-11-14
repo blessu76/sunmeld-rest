@@ -5,6 +5,7 @@ slug: two-looks-one-night-sky
 lang: en
 category: devlog
 keywords: Sunmeld, design, theme, dark mode, journal
+copy_review: iris 2026-11-14
 ---
 Sunmeld is still in development for iOS and Android. This note is about how the game got its look, and about a choice we made on purpose.
 

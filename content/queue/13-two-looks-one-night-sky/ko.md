@@ -5,6 +5,7 @@ slug: two-looks-one-night-sky
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 디자인, 테마, 다크 모드, 저널
+copy_review: iris 2026-11-14
 ---
 썬멜드는 아직 iOS와 Android용으로 개발 중이에요. 이번 글은 게임의 모습이 어떻게 만들어졌는지, 그리고 일부러 한 선택 이야기예요.
 
