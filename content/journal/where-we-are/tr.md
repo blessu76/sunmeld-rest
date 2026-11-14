@@ -6,6 +6,7 @@ lang: tr
 category: devlog
 keywords: Sunmeld, ilerleme, durum, günlük
 translation_of: en
+published: 2026-11-14T21:29+09:00
 ---
 Bu yazı, Sunmeld'e bugünkü haliyle kısa bir bakış. Oyun iOS ve Android için hâlâ geliştiriliyor ve çıkış tarihi yok.
 

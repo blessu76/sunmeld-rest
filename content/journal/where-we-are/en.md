@@ -6,6 +6,7 @@ lang: en
 category: devlog
 keywords: Sunmeld, progress, status, journal
 copy_review: iris 2026-11-14
+published: 2026-11-14T21:29+09:00
 ---
 This is a short look at Sunmeld as it is today. The game is still in development for iOS and Android, and there is no release date.
 

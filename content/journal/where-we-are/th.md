@@ -6,6 +6,7 @@ lang: th
 category: devlog
 keywords: Sunmeld, ความคืบหน้า, สถานะ, บันทึก
 translation_of: en
+published: 2026-11-14T21:29+09:00
 ---
 นี่คือภาพรวมสั้น ๆ ของ Sunmeld ในตอนนี้ เกมยังอยู่ระหว่างการพัฒนาสำหรับ iOS และ Android และยังไม่มีวันวางจำหน่าย
 

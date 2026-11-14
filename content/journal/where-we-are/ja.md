@@ -6,6 +6,7 @@ lang: ja
 category: devlog
 keywords: サンメルド, Sunmeld, 進捗, 現状, ジャーナル
 translation_of: en
+published: 2026-11-14T21:29+09:00
 ---
 サンメルドの現在地を、短くお伝えします。ゲームはまだ iOS と Android 向けに開発中で、発売日は決まっていません。
 

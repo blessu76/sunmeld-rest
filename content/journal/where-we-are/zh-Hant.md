@@ -6,6 +6,7 @@ lang: zh-Hant
 category: devlog
 keywords: Sunmeld, 進度, 現況, 日誌
 translation_of: en
+published: 2026-11-14T21:29+09:00
 ---
 這裡簡短說明 Sunmeld 目前的狀況。遊戲仍在開發 iOS 與 Android 版,還沒有上市日期。
 

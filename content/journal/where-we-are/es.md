@@ -6,6 +6,7 @@ lang: es
 category: devlog
 keywords: Sunmeld, progreso, estado, diario
 translation_of: en
+published: 2026-11-14T21:29+09:00
 ---
 Este es un repaso breve de cómo está Sunmeld hoy. El juego sigue en desarrollo para iOS y Android y no hay fecha de lanzamiento.
 

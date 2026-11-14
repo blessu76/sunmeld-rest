@@ -6,6 +6,7 @@ lang: vi
 category: devlog
 keywords: Sunmeld, tiến độ, tình trạng, nhật ký
 translation_of: en
+published: 2026-11-14T21:29+09:00
 ---
 Đây là cái nhìn ngắn về Sunmeld ở thời điểm hiện tại. Trò chơi vẫn đang được phát triển cho iOS và Android, và chưa có ngày phát hành.
 

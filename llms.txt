@@ -29,6 +29,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Journal posts (English)
 
+- [Where Sunmeld stands today](https://sunmeld.ipe.rest/journal/where-we-are/) — 2026-11-14 — A short look at what is in the Sunmeld test build so far, and what is still open.
 - [How the 12 languages were made](https://sunmeld.ipe.rest/journal/twelve-languages/) — 2026-11-13 — Sunmeld's new screens come in 12 languages. Here is how they were translated and what has not been checked yet.
 - [One purchase, no ads](https://sunmeld.ipe.rest/journal/one-purchase/) — 2026-11-11 — How the single purchase in Sunmeld works: League 2 unlocks once, with a restore option, and nothing else is sold.
 - [Resume, accessibility and 12 languages](https://sunmeld.ipe.rest/journal/play-your-way/) — 2026-11-10 — Smaller things that make Sunmeld easier to pick up: saved games, accessibility and language support.
@@ -45,6 +46,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Journal posts (한국어)
 
+- [지금 썬멜드는 어디까지 왔을까](https://sunmeld.ipe.rest/ko/journal/where-we-are/) — 2026-11-14 — 지금까지 썬멜드 테스트 빌드에 들어 있는 것과 아직 남은 것을 짧게 정리해요.
 - [12개 언어는 이렇게 만들었어요](https://sunmeld.ipe.rest/ko/journal/twelve-languages/) — 2026-11-13 — 썬멜드의 새 화면은 12개 언어로 볼 수 있어요. 번역을 어떻게 했고 아직 확인하지 못한 것은 무엇인지 소개해요.
 - [한 번의 결제, 광고는 없어요](https://sunmeld.ipe.rest/ko/journal/one-purchase/) — 2026-11-11 — 썬멜드의 단 하나뿐인 결제는 이렇게 작동해요. 리그 2를 한 번에 열고 복원도 되며, 다른 건 팔지 않아요.
 - [이어하기, 접근성, 12개 언어](https://sunmeld.ipe.rest/ko/journal/play-your-way/) — 2026-11-10 — 썬멜드를 시작하기 쉽게 만드는 작은 것들, 이어하기와 접근성과 언어 지원을 소개해요.

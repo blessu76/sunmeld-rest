@@ -6,6 +6,7 @@ lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 진행 상황, 저널
 copy_review: iris 2026-11-14
+published: 2026-11-14T21:29+09:00
 ---
 오늘의 썬멜드를 짧게 돌아봐요. 게임은 아직 iOS와 Android용으로 개발 중이고, 출시일은 없어요.
 

@@ -6,6 +6,7 @@ lang: id
 category: devlog
 keywords: Sunmeld, perkembangan, status, jurnal
 translation_of: en
+published: 2026-11-14T21:29+09:00
 ---
 Ini gambaran singkat tentang Sunmeld saat ini. Game ini masih dalam pengembangan untuk iOS dan Android, dan belum ada tanggal rilis.
 
