@@ -41,4 +41,4 @@ Hayır. Plan, ücretsiz denenebilen, Lig 2 için tek seferlik satın alma olan v
 
 ### Çeviriler tamamlandı mı?
 
-Henüz değil. Ana dili o dil olan kişilerin incelemesini bekliyorlar.
+Henüz değil. Ana dili konuşurlarının incelemesini bekliyorlar.

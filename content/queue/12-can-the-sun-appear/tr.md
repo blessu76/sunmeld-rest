@@ -39,7 +39,7 @@ Evet. Kurallar yeniden şekillendirildikten sonra, aynı yapay zekâ test oyunla
 
 ### Sorun yapay zekâda mıydı?
 
-Hayır, kurallardaydı. Güneş, bir oyunda düşürülen taşların tekneye getirebileceğinden daha fazla taş hacmi gerektiriyordu.
+Hayır, kurallardaydı. Güneş, bir oyunda düşürülen taşların kaba getirebileceğinden daha fazla taş hacmi gerektiriyordu.
 
 ### Nişan alırken tehlike saati hâlâ işliyor mu?
 

@@ -93,7 +93,7 @@ KEYS = (
 ).split()
 REQUIRED_POST = ("title", "description", "slug", "lang", "category", "published")
 FAQ_HEADINGS = {"faq", "자주 묻는 질문", "よくある質問", "常見問題", "preguntas frecuentes", "perguntas frequentes", "questions fréquentes",
-                "häufige fragen", "pertanyaan umum", "คำถามที่พบบ่อย", "câu hỏi thường gặp", "sık sorulan sorular"}  # H2 text that opens a post's FAQ
+                "häufige fragen", "pertanyaan umum", "คำถามที่พบบ่อย", "câu hỏi thường gặp", "sık sorulan sorular", "sss"}  # H2 text that opens a post's FAQ
 FAQ_MIN_QUEUED = 3  # every queued language file needs this many FAQ questions
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 PUB_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})\+09:00$")

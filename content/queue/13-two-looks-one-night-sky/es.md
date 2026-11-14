@@ -31,9 +31,9 @@ Seguimos revisando cómo se ven las pantallas en tamaños pequeños. Todavía no
 
 ## Preguntas frecuentes
 
-### ¿Por qué la tina se mantiene oscura en el tema claro?
+### ¿Por qué el tarro se mantiene oscuro en el tema claro?
 
-Las piedras con su brillo se ven mejor sobre un cielo oscuro. Tablero que se ve igual en ambos temas también se lee igual para todos.
+Las piedras con su brillo se ven mejor sobre un cielo oscuro. Un tablero que se ve igual en ambos temas también se lee igual para todos.
 
 ### ¿Qué opciones de tema hay?
 

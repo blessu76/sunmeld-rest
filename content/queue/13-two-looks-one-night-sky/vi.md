@@ -31,7 +31,7 @@ Chúng tôi tiếp tục kiểm tra các màn hình trông thế nào ở kích 
 
 ## Câu hỏi thường gặp
 
-### Vì sao khay vẫn tối ở chủ đề sáng?
+### Vì sao thùng vẫn tối ở chủ đề sáng?
 
 Những viên đá có ánh sáng dễ nhìn nhất trên nền trời tối. Bàn chơi giống nhau ở cả hai chủ đề cũng được mọi người đọc giống nhau.
 

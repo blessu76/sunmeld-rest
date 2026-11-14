@@ -39,7 +39,7 @@ Có. Sau khi chỉnh lại luật, các ván thử với AI đã tạo ra mặt 
 
 ### Vấn đề có phải nằm ở AI không?
 
-Không. Vấn đề nằm ở luật. Mặt trời cần nhiều thể tích đá hơn số đá có thể thả vào khay trong một ván.
+Không. Vấn đề nằm ở luật. Mặt trời cần nhiều thể tích đá hơn số đá có thể thả vào thùng trong một ván.
 
 ### Đồng hồ nguy hiểm có còn chạy khi tôi đang ngắm không?
 

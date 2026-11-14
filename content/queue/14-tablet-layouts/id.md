@@ -37,7 +37,7 @@ Ya. Tablet memakai tata letak terpisah untuk potret dan lanskap, yang dipilih da
 
 ### Bagaimana banyak ukuran layar itu diperiksa?
 
-Tes otomatis menggambar layar dalam beberapa ukuran ponsel dan tablet, potret dan lanskap, untuk setiap dari 12 bahasa.
+Tes otomatis menggambar layar dalam beberapa ukuran ponsel dan tablet, potret dan lanskap, untuk masing-masing dari 12 bahasa.
 
 ### Apakah rotasi saat permainan sudah diuji di tablet sungguhan?
 

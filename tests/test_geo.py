@@ -91,6 +91,9 @@ class FaqParser(unittest.TestCase):
         self.assertEqual(bs.faq_pairs(body), [("Q1?", "A one. more"), ("Q2?", "a")])
         self.assertEqual(bs.faq_pairs("## What\n\n### Q?\n\nA\n"), [])
 
+    def test_sss_heading_is_faq(self):
+        self.assertEqual(bs.faq_pairs("## SSS\n\n### Q?\n\nA\n"), [("Q?", "A")])
+
     def test_updated_front_matter_sets_date_modified(self):
         import helpers
         root = helpers.make_site(posts=(("alpha-post", "2026-11-01T18:00+09:00"),))

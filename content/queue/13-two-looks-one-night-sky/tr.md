@@ -31,7 +31,7 @@ Ekranların küçük boyutlarda nasıl göründüğünü kontrol etmeye devam ed
 
 ## Sık sorulan sorular
 
-### Açık temada tekne neden hâlâ koyu?
+### Açık temada kap neden hâlâ koyu?
 
 Parlayan taşlar koyu bir gökyüzünde en iyi görünür. İki temada da aynı görünen bir tahta, herkes için aynı şekilde okunur.
 

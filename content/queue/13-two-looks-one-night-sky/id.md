@@ -31,7 +31,7 @@ Kami terus memeriksa tampilan layar pada ukuran kecil. Belum ada tanggal rilis. 
 
 ## FAQ
 
-### Mengapa bak tetap gelap pada tema terang?
+### Mengapa toples tetap gelap pada tema terang?
 
 Batu dengan cahayanya paling jelas terlihat di langit gelap. Papan yang tampak sama di kedua tema juga terbaca sama bagi semua orang.
 

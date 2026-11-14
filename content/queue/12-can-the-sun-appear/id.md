@@ -39,7 +39,7 @@ Bisa. Setelah aturan dibentuk ulang, permainan uji AI yang sama menghasilkan mat
 
 ### Apakah masalahnya ada di AI?
 
-Tidak. Masalahnya ada di aturan. Matahari membutuhkan volume batu yang lebih besar daripada yang bisa dibawa jatuhan dalam satu permainan ke dalam bak.
+Tidak. Masalahnya ada di aturan. Matahari membutuhkan volume batu yang lebih besar daripada yang bisa dibawa jatuhan dalam satu permainan ke dalam toples.
 
 ### Apakah jam bahaya tetap berjalan saat saya membidik?
 
