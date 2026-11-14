@@ -36,6 +36,10 @@ img,svg{max-width:100%;height:auto}
 .langsw{display:flex;flex-wrap:wrap;max-width:100%;border:var(--border);font-size:13px;letter-spacing:.06em}
 .langsw a{min-height:38px;min-width:44px;display:flex;align-items:center;justify-content:center;color:var(--ink);text-decoration:none;padding:0 8px}
 .langsw a[aria-current="true"]{background:var(--gold);color:var(--on-gold)}
+.langsel{min-width:0;max-width:100%}
+.langsel[hidden]{display:none}
+.langsel select{min-height:44px;max-width:100%;min-width:0;padding:0 34px 0 12px;font:inherit;font-size:14px;letter-spacing:.04em;color:var(--ink);background:var(--panel);border:var(--border);border-radius:var(--radius);cursor:pointer}
+.langsel option{background:var(--panel);color:var(--ink)}
 
 /* hero */
 .hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:48px;align-items:center;padding:40px 0 64px}
@@ -145,8 +149,6 @@ th{font-family:var(--font-mono);font-size:13px;letter-spacing:.06em;text-transfo
 .foot-links{display:flex;flex-wrap:wrap;gap:0 20px;align-content:flex-start;font-family:var(--font-mono);font-size:14px}
 .foot-links a{min-height:44px;display:flex;align-items:center;color:var(--ink);text-decoration:none}
 .foot-links a:hover{color:var(--gold-ink)}
-.foot-langs{flex-basis:100%;margin:0;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:14px}
-.foot-langs a[aria-current="true"]{color:var(--ink);text-decoration:none}
 
 @media (max-width:520px){
   :root{--gutter:16px}
