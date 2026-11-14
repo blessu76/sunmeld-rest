@@ -28,3 +28,21 @@ Le texte sur les boutons dorés et roses avait besoin de sa propre encre sombre 
 ## La suite
 
 Nous continuons de vérifier l'aspect des écrans en petite taille. Il n'y a pas encore de date de sortie. Quand il y aura du nouveau, cela apparaîtra ici.
+
+## Questions fréquentes
+
+### Pourquoi la cuve reste-t-elle sombre en thème clair ?
+
+Les pierres avec leur halo se lisent mieux sur un ciel sombre. Un plateau identique dans les deux thèmes se lit aussi de la même façon pour tout le monde.
+
+### Quels thèmes peut-on choisir ?
+
+Dans les réglages, vous pouvez choisir suivre le système, sombre ou clair.
+
+### Le jeu suit-il le thème de mon téléphone ?
+
+Oui, si vous choisissez suivre le système. Le jeu change avec le téléphone, même lorsqu'une feuille est ouverte.
+
+### Les règles ont-elles changé avec le nouveau style ?
+
+Non. Les règles et le moteur n'ont pas été touchés. Seul l'aspect a changé.

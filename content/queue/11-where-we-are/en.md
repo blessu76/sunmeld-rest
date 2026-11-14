@@ -24,3 +24,21 @@ The first move alternates between games and a finale zone adds a last push near 
 ## What is still open
 
 League 2 can be unlocked with one purchase, and that flow is still being tested with sandbox accounts. The translations are waiting for native speaker review. We keep checking screens for fit and clarity. Free to try, one purchase, no ads: that is the plan.
+
+## FAQ
+
+### Can I play Sunmeld yet?
+
+There is a test build, and the game is still in development for iOS and Android. There is no release date yet.
+
+### How is League 2 unlocked?
+
+League 2 can be unlocked with one purchase. That flow is still being tested with sandbox accounts.
+
+### Will Sunmeld have ads?
+
+No. The plan is free to try, one purchase for League 2, and no ads.
+
+### Are the translations finished?
+
+Not yet. They are waiting for review by native speakers.

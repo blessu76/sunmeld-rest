@@ -28,3 +28,21 @@ Chữ trên các nút màu vàng và hồng cần một màu mực tối riêng 
 ## Tiếp theo là gì
 
 Chúng tôi tiếp tục kiểm tra các màn hình trông thế nào ở kích thước nhỏ. Hiện chưa có ngày phát hành. Khi có tin, bạn sẽ thấy nó ở đây.
+
+## Câu hỏi thường gặp
+
+### Vì sao khay vẫn tối ở chủ đề sáng?
+
+Những viên đá có ánh sáng dễ nhìn nhất trên nền trời tối. Bàn chơi giống nhau ở cả hai chủ đề cũng được mọi người đọc giống nhau.
+
+### Có những lựa chọn chủ đề nào?
+
+Trong cài đặt, bạn có thể chọn theo hệ thống, tối hoặc sáng.
+
+### Trò chơi có đổi theo chủ đề điện thoại không?
+
+Có, nếu bạn chọn theo hệ thống. Trò chơi đổi theo điện thoại, kể cả khi đang mở một bảng.
+
+### Luật có thay đổi cùng giao diện mới không?
+
+Không. Luật và bộ máy không bị đụng tới. Chỉ có giao diện thay đổi.

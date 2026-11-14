@@ -28,3 +28,21 @@ Một điều bất ngờ nằm ở các công cụ chụp màn hình. Trên h�
 ## Những gì chưa được kiểm tra
 
 Chúng tôi chưa xem một ván chơi bị xoay giữa chừng trên máy tính bảng thật, và những cửa sổ hẹp gần bằng điện thoại sẽ quay về bố cục điện thoại, mà chúng tôi cũng chưa xem kỹ. Khi có thay đổi, chúng tôi sẽ nói ở đây. Hiện chưa có ngày phát hành.
+
+## Câu hỏi thường gặp
+
+### Máy tính bảng có bố cục riêng không?
+
+Có. Máy tính bảng dùng bố cục dọc và ngang riêng, được chọn theo chiều rộng cửa sổ chứ không theo tên thiết bị. Điện thoại vẫn giữ màn hình riêng.
+
+### Làm sao kiểm tra được nhiều kích thước màn hình như vậy?
+
+Các bài kiểm tra tự động vẽ màn hình ở nhiều kích thước điện thoại và máy tính bảng, cả dọc lẫn ngang, cho cả 12 ngôn ngữ.
+
+### Đã thử xoay màn hình giữa ván trên máy tính bảng thật chưa?
+
+Chưa. Chúng tôi chưa từng thấy một ván bị xoay giữa chừng trên máy tính bảng thật.
+
+### Đã có ngày phát hành chưa?
+
+Chưa. Hiện chưa có ngày phát hành.

@@ -24,3 +24,21 @@ Le premier coup alterne d'une partie à l'autre, et une zone finale donne un der
 ## Ce qui reste ouvert
 
 La Ligue 2 se débloque avec un seul achat, et ce parcours est encore testé avec des comptes sandbox. Les traductions attendent la relecture de locuteurs natifs. Nous continuons de vérifier que les écrans s'affichent bien et restent clairs. Gratuit à l'essai, un seul achat, sans publicité : c'est le plan.
+
+## Questions fréquentes
+
+### Puis-je déjà jouer à Sunmeld ?
+
+Il existe une version de test, et le jeu est encore en développement pour iOS et Android. Il n'y a pas encore de date de sortie.
+
+### Comment débloque-t-on la Ligue 2 ?
+
+La Ligue 2 peut être débloquée par un achat unique. Ce parcours est encore testé avec des comptes sandbox.
+
+### Sunmeld aura-t-il des publicités ?
+
+Non. Le projet est un essai gratuit, un achat pour la Ligue 2 et aucune publicité.
+
+### Les traductions sont-elles terminées ?
+
+Pas encore. Elles attendent la relecture de locuteurs natifs.

@@ -30,3 +30,21 @@ The test runs also showed that a game played in real time ended by overflow more
 ## Why we tell you this
 
 Playtesting by hand would have taken a long time to notice that the sun was out of reach. A few lines of arithmetic and a lot of automatic games found it in an afternoon. There is no release date yet. When there is news, it will show up here.
+
+## FAQ
+
+### Can the top stone really be reached?
+
+Yes. After the rules were reshaped, the same AI test games produced suns, though rarely. That was the goal for a final stage.
+
+### Was the problem the AI?
+
+No. The problem was the rules. The sun needs more stone volume than the drops allowed in a game could ever bring into the tub.
+
+### Does the danger clock still run while I aim?
+
+No. The overflow clock now waits while a player is aiming.
+
+### Is there a release date?
+
+No. There is no release date yet.

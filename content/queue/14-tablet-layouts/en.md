@@ -28,3 +28,21 @@ One surprise was in the screenshot tools. On a newer tablet system, the simulato
 ## What is not checked yet
 
 We have not yet watched a game get rotated halfway through on a real tablet, and windows that are about as narrow as a phone fall back to the phone layout, which we have not looked at closely either. We will say so here when that changes. There is no release date yet.
+
+## FAQ
+
+### Does a tablet get its own layout?
+
+Yes. Tablets use separate portrait and landscape layouts, chosen from the window width rather than the device name. Phones keep their own screen.
+
+### How are so many screen sizes checked?
+
+Automatic tests draw the screens at several phone and tablet sizes, in portrait and landscape, for each of the 12 languages.
+
+### Has rotation during a game been tested on a real tablet?
+
+Not yet. We have not yet watched a game get rotated halfway through on a real tablet.
+
+### Is there a release date?
+
+No. There is no release date yet.

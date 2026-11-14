@@ -28,3 +28,21 @@ Uma surpresa veio das ferramentas de captura de tela. Num sistema de tablet mais
 ## O que ainda não foi conferido
 
 Ainda não vimos uma partida ser girada no meio, num tablet real, e janelas tão estreitas quanto um celular voltam ao layout de celular, que também ainda não examinamos de perto. Avisaremos aqui quando isso mudar. Ainda não há data de lançamento.
+
+## Perguntas frequentes
+
+### O tablet tem um layout próprio?
+
+Tem. Tablets usam layouts separados em retrato e paisagem, escolhidos pela largura da janela e não pelo nome do aparelho. Celulares mantêm a própria tela.
+
+### Como são testados tantos tamanhos de tela?
+
+Testes automáticos desenham as telas em vários tamanhos de celular e tablet, em retrato e paisagem, para cada um dos 12 idiomas.
+
+### Já foi testado girar durante uma partida em um tablet real?
+
+Ainda não. Ainda não vimos uma partida ser girada no meio do jogo em um tablet real.
+
+### Existe data de lançamento?
+
+Não. Ainda não há data de lançamento.

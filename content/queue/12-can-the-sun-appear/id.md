@@ -30,3 +30,21 @@ Hasil uji juga menunjukkan bahwa game yang dimainkan secara real time lebih seri
 ## Mengapa kami menceritakan ini
 
 Bermain uji secara manual akan butuh waktu lama untuk menyadari bahwa matahari tidak terjangkau. Beberapa baris hitungan dan banyak game otomatis menemukannya dalam satu sore. Belum ada tanggal rilis. Kalau ada kabar, akan muncul di sini.
+
+## FAQ
+
+### Apakah batu tertinggi benar-benar bisa dicapai?
+
+Bisa. Setelah aturan dibentuk ulang, permainan uji AI yang sama menghasilkan matahari, meski jarang. Itu memang tujuan untuk tahap terakhir.
+
+### Apakah masalahnya ada di AI?
+
+Tidak. Masalahnya ada di aturan. Matahari membutuhkan volume batu yang lebih besar daripada yang bisa dibawa jatuhan dalam satu permainan ke dalam bak.
+
+### Apakah jam bahaya tetap berjalan saat saya membidik?
+
+Tidak. Jam luapan sekarang menunggu selama pemain membidik.
+
+### Apakah ada tanggal rilis?
+
+Belum. Belum ada tanggal rilis.

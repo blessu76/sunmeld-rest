@@ -28,3 +28,21 @@ Une surprise est venue des outils de capture. Sur un système de tablette plus r
 ## Ce qui n'est pas encore vérifié
 
 Nous n'avons pas encore vu une partie pivoter en plein milieu sur une vraie tablette, et les fenêtres à peu près aussi étroites qu'un téléphone retombent sur la mise en page téléphone, que nous n'avons pas non plus regardée de près. Nous le dirons ici quand cela changera. Il n'y a pas encore de date de sortie.
+
+## Questions fréquentes
+
+### Une tablette a-t-elle sa propre mise en page ?
+
+Oui. Les tablettes utilisent des mises en page séparées en portrait et en paysage, choisies selon la largeur de la fenêtre et non le nom de l'appareil. Les téléphones gardent leur propre écran.
+
+### Comment vérifie-t-on autant de tailles d'écran ?
+
+Des tests automatiques dessinent les écrans à plusieurs tailles de téléphone et de tablette, en portrait et en paysage, pour chacune des 12 langues.
+
+### La rotation en cours de partie a-t-elle été testée sur une vraie tablette ?
+
+Pas encore. Nous n'avons pas encore vu une partie tourner en plein milieu sur une vraie tablette.
+
+### Y a-t-il une date de sortie ?
+
+Non. Il n'y a pas encore de date de sortie.

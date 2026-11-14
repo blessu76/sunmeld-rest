@@ -24,3 +24,21 @@ Người đi trước thay đổi luân phiên giữa các ván, và vùng chung
 ## Những gì còn bỏ ngỏ
 
 Giải 2 có thể mở khóa bằng một lần mua, và luồng này vẫn đang được thử với tài khoản sandbox. Các bản dịch đang chờ người bản ngữ xem lại. Chúng tôi vẫn tiếp tục kiểm tra xem các màn hình có vừa khít và dễ hiểu hay không. Chơi thử miễn phí, mua một lần, không quảng cáo: đó là kế hoạch.
+
+## Câu hỏi thường gặp
+
+### Đã chơi được Sunmeld chưa?
+
+Đã có bản thử nghiệm, và trò chơi vẫn đang phát triển cho iOS và Android. Chưa có ngày phát hành.
+
+### Mở khóa Giải 2 bằng cách nào?
+
+Giải 2 có thể mở khóa bằng một lần mua. Quy trình này vẫn đang được thử nghiệm với tài khoản sandbox.
+
+### Sunmeld có quảng cáo không?
+
+Không. Kế hoạch là dùng thử miễn phí, mua một lần cho Giải 2, và không có quảng cáo.
+
+### Bản dịch đã hoàn chỉnh chưa?
+
+Chưa. Các bản dịch đang chờ người bản ngữ xem lại.

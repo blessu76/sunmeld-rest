@@ -28,3 +28,21 @@ Text on gold and pink buttons needed its own dark ink so it stays readable. The 
 ## What is next
 
 We keep checking how screens look at small sizes. There is no release date yet. When there is news, it will show up here.
+
+## FAQ
+
+### Why does the tub stay dark in the light theme?
+
+The stones with their glow read best against a dark sky. A board that looks the same in both themes also reads the same way for everyone.
+
+### What theme choices are there?
+
+In settings you can pick follow the system, dark, or light.
+
+### Does the game switch with my phone's theme?
+
+Yes, if you pick follow the system. The game switches with your phone, even while a sheet is open.
+
+### Did the rules change with the new look?
+
+No. The rules and the engine were not touched. Only the look changed.

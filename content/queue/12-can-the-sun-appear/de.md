@@ -30,3 +30,21 @@ Die Testläufe zeigten außerdem, dass eine in Echtzeit gespielte Partie häufig
 ## Warum wir das erzählen
 
 Von Hand zu testen hätte lange gebraucht, um zu merken, dass die Sonne außer Reichweite war. Ein paar Zeilen Rechnung und viele automatische Partien haben es an einem Nachmittag gefunden. Ein Erscheinungsdatum gibt es noch nicht. Gibt es Neuigkeiten, erscheinen sie hier.
+
+## Häufige Fragen
+
+### Kann man den höchsten Stein wirklich erreichen?
+
+Ja. Nach der Überarbeitung der Regeln entstanden in den KI-Testspielen wieder Sonnen, allerdings selten. Das war das Ziel für eine letzte Stufe.
+
+### Lag das Problem an der KI?
+
+Nein, es lag an den Regeln. Die Sonne braucht mehr Steinmasse, als die Tropfen in einem Spiel überhaupt in die Wanne bringen konnten.
+
+### Läuft die Gefahrenuhr noch, während ich ziele?
+
+Nein. Die Überlauf-Uhr wartet jetzt, während ein Spieler zielt.
+
+### Gibt es einen Veröffentlichungstermin?
+
+Nein. Einen Termin gibt es noch nicht.

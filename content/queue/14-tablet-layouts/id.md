@@ -28,3 +28,21 @@ Satu kejutan ada pada alat tangkapan layar. Pada sistem tablet yang lebih baru, 
 ## Yang belum diperiksa
 
 Kami belum melihat game diputar di tengah permainan pada tablet sungguhan, dan jendela yang sesempit ponsel kembali ke tata letak ponsel, yang juga belum kami periksa dengan saksama. Kami akan menyampaikannya di sini kalau itu berubah. Belum ada tanggal rilis.
+
+## FAQ
+
+### Apakah tablet mendapat tata letak sendiri?
+
+Ya. Tablet memakai tata letak terpisah untuk potret dan lanskap, yang dipilih dari lebar jendela, bukan dari nama perangkat. Ponsel tetap memakai layarnya sendiri.
+
+### Bagaimana banyak ukuran layar itu diperiksa?
+
+Tes otomatis menggambar layar dalam beberapa ukuran ponsel dan tablet, potret dan lanskap, untuk setiap dari 12 bahasa.
+
+### Apakah rotasi saat permainan sudah diuji di tablet sungguhan?
+
+Belum. Kami belum melihat permainan diputar di tengah jalan pada tablet sungguhan.
+
+### Apakah ada tanggal rilis?
+
+Belum. Belum ada tanggal rilis.

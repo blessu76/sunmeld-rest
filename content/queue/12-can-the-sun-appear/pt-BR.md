@@ -30,3 +30,21 @@ Os testes também mostraram que uma partida jogada em tempo real terminava por t
 ## Por que contamos isso
 
 Testar à mão levaria muito tempo para notar que o sol estava fora de alcance. Algumas linhas de aritmética e muitas partidas automáticas encontraram o problema numa tarde. Ainda não há data de lançamento. Quando houver novidades, elas aparecerão aqui.
+
+## Perguntas frequentes
+
+### A pedra mais alta pode mesmo ser alcançada?
+
+Pode. Depois de reformular as regras, os mesmos jogos de teste com IA passaram a produzir sóis, ainda que raramente. Esse era o objetivo para um estágio final.
+
+### O problema era a IA?
+
+Não. O problema estava nas regras. O sol precisa de mais volume de pedra do que as quedas permitidas em uma partida conseguiam trazer para a cuba.
+
+### O relógio de perigo continua correndo enquanto eu miro?
+
+Não. O relógio de transbordamento agora espera enquanto um jogador mira.
+
+### Existe data de lançamento?
+
+Não. Ainda não há data de lançamento.

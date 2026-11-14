@@ -28,3 +28,21 @@ Altın ve pembe düğmelerin üzerindeki yazı, okunur kalması için kendi koyu
 ## Sırada ne var
 
 Ekranların küçük boyutlarda nasıl göründüğünü kontrol etmeye devam ediyoruz. Henüz çıkış tarihi yok. Haber olduğunda burada görünecek.
+
+## Sık sorulan sorular
+
+### Açık temada tekne neden hâlâ koyu?
+
+Parlayan taşlar koyu bir gökyüzünde en iyi görünür. İki temada da aynı görünen bir tahta, herkes için aynı şekilde okunur.
+
+### Hangi tema seçenekleri var?
+
+Ayarlarda sistemi izle, koyu veya açık seçebilirsiniz.
+
+### Oyun telefonumun temasıyla değişir mi?
+
+Evet, sistemi izle seçtiyseniz. Bir panel açıkken bile oyun telefonla birlikte değişir.
+
+### Yeni görünümle kurallar değişti mi?
+
+Hayır. Kurallara ve motora dokunulmadı. Yalnızca görünüm değişti.

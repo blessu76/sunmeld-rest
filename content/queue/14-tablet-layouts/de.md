@@ -28,3 +28,21 @@ Eine Überraschung steckte in den Screenshot-Werkzeugen. Auf einem neueren Table
 ## Was noch nicht geprüft ist
 
 Wir haben noch nicht gesehen, wie eine Partie auf einem echten Tablet mittendrin gedreht wird, und Fenster, die etwa so schmal sind wie ein Handy, fallen auf das Handy-Layout zurück, das wir ebenfalls noch nicht genau angesehen haben. Wir sagen es hier, sobald sich das ändert. Ein Erscheinungsdatum gibt es noch nicht.
+
+## Häufige Fragen
+
+### Bekommt ein Tablet ein eigenes Layout?
+
+Ja. Tablets nutzen getrennte Layouts für Hoch- und Querformat, die anhand der Fensterbreite gewählt werden, nicht anhand des Gerätenamens. Telefone behalten ihren eigenen Bildschirm.
+
+### Wie werden so viele Bildschirmgrößen geprüft?
+
+Automatische Tests zeichnen die Bildschirme in mehreren Telefon- und Tablet-Größen, im Hoch- und Querformat, für jede der 12 Sprachen.
+
+### Wurde das Drehen während eines Spiels auf einem echten Tablet getestet?
+
+Noch nicht. Wir haben noch nicht gesehen, wie ein Spiel auf einem echten Tablet mitten im Spiel gedreht wird.
+
+### Gibt es einen Veröffentlichungstermin?
+
+Nein. Einen Termin gibt es noch nicht.

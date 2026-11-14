@@ -28,3 +28,21 @@ El texto de los botones dorados y rosas necesitaba su propia tinta oscura para s
 ## Lo que viene
 
 Seguimos revisando cómo se ven las pantallas en tamaños pequeños. Todavía no hay fecha de lanzamiento. Cuando haya novedades, aparecerán aquí.
+
+## Preguntas frecuentes
+
+### ¿Por qué la tina se mantiene oscura en el tema claro?
+
+Las piedras con su brillo se ven mejor sobre un cielo oscuro. Tablero que se ve igual en ambos temas también se lee igual para todos.
+
+### ¿Qué opciones de tema hay?
+
+En ajustes puedes elegir seguir el sistema, oscuro o claro.
+
+### ¿El juego cambia con el tema de mi teléfono?
+
+Sí, si eliges seguir el sistema. El juego cambia con el teléfono, incluso con una hoja abierta.
+
+### ¿Cambiaron las reglas con el nuevo aspecto?
+
+No. Las reglas y el motor no se tocaron. Solo cambió el aspecto.

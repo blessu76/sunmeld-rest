@@ -28,3 +28,21 @@ Bir sürpriz ekran görüntüsü araçlarındaydı. Daha yeni bir tablet sistemi
 ## Henüz kontrol edilmeyenler
 
 Gerçek bir tablette oyunun yarıda döndürüldüğünü henüz izlemedik; telefon kadar dar pencereler de telefon yerleşimine geri dönüyor, ona da henüz yakından bakmadık. Bu değiştiğinde burada söyleyeceğiz. Henüz çıkış tarihi yok.
+
+## Sık sorulan sorular
+
+### Tabletin kendi yerleşimi var mı?
+
+Var. Tabletler dikey ve yatay için ayrı yerleşimler kullanır. Bunlar cihaz adına göre değil, pencere genişliğine göre seçilir. Telefonlar kendi ekranını korur.
+
+### Bu kadar çok ekran boyutu nasıl kontrol ediliyor?
+
+Otomatik testler, 12 dilin her biri için birkaç telefon ve tablet boyutunda, dikey ve yatay ekranları çizer.
+
+### Oyun sırasında döndürme gerçek bir tablette test edildi mi?
+
+Henüz değil. Gerçek bir tablette bir oyunun yarıda döndürüldüğünü henüz görmedik.
+
+### Yayın tarihi var mı?
+
+Hayır. Henüz bir yayın tarihi yok.

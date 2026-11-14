@@ -24,3 +24,21 @@ Giliran pertama bergantian antar game, dan zona final memberi dorongan terakhir 
 ## Yang masih terbuka
 
 Liga 2 bisa dibuka dengan satu kali pembelian, dan alur itu masih diuji dengan akun sandbox. Terjemahannya masih menunggu tinjauan penutur asli. Kami terus memeriksa apakah tampilan layar pas dan jelas. Gratis dicoba, sekali beli, tanpa iklan: itulah rencananya.
+
+## FAQ
+
+### Apakah Sunmeld sudah bisa dimainkan?
+
+Sudah ada build uji, dan gim ini masih dikembangkan untuk iOS dan Android. Belum ada tanggal rilis.
+
+### Bagaimana cara membuka Liga 2?
+
+Liga 2 bisa dibuka dengan satu kali pembelian. Alurnya masih diuji dengan akun sandbox.
+
+### Apakah Sunmeld akan ada iklan?
+
+Tidak. Rencananya gratis untuk dicoba, satu kali pembelian untuk Liga 2, dan tanpa iklan.
+
+### Apakah terjemahannya sudah selesai?
+
+Belum. Terjemahan masih menunggu peninjauan dari penutur asli.

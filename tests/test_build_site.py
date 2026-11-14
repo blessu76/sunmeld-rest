@@ -5,7 +5,7 @@ import shutil
 import unittest
 from pathlib import Path
 
-from helpers import NOW, REPO, bs, build, jsonld, make_site
+from helpers import NOW, REPO, bs, build, jsonld, make_site, post_text
 
 PAGES = ["", "about/", "privacy/", "support/", "terms/", "journal/"]
 
@@ -175,6 +175,13 @@ class Rules(unittest.TestCase):
     def test_missing_page_or_key_rejected(self):
         (self.root / "content" / "pages" / "ko" / "terms.md").unlink()
         self.assertTrue(any("en and ko must both be complete" in e for e in self.errs()))
+
+    def test_queued_post_needs_faq(self):
+        self.assertEqual(self.errs(), [])
+        d = self.root / "content" / "queue" / "09-no-faq"
+        d.mkdir(parents=True)
+        (d / "en.md").write_text(post_text("no-faq", "en", "No FAQ"), encoding="utf-8")
+        self.assertTrue(any("queue/09-no-faq/en.md: FAQ section missing" in e for e in self.errs()))
 
     def test_page_needs_updated_date(self):
         f = self.root / "content" / "pages" / "en" / "privacy.md"

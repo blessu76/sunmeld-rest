@@ -30,3 +30,21 @@ Les tests ont aussi montré qu'une partie jouée en temps réel se terminait plu
 ## Pourquoi nous te le racontons
 
 Tester à la main aurait mis longtemps à remarquer que le soleil était hors de portée. Quelques lignes de calcul et beaucoup de parties automatiques l'ont trouvé en un après-midi. Il n'y a pas encore de date de sortie. Quand il y aura du nouveau, cela apparaîtra ici.
+
+## Questions fréquentes
+
+### Peut-on vraiment atteindre la pierre la plus haute ?
+
+Oui. Après la refonte des règles, les mêmes parties de test avec IA ont produit des soleils, mais rarement. C'était l'objectif pour un stade final.
+
+### Le problème venait-il de l'IA ?
+
+Non, il venait des règles. Le soleil demande plus de volume de pierre que ce que les lâchers d'une partie pouvaient apporter dans la cuve.
+
+### L'horloge de danger tourne-t-elle encore pendant que je vise ?
+
+Non. L'horloge de débordement attend désormais pendant qu'un joueur vise.
+
+### Y a-t-il une date de sortie ?
+
+Non. Il n'y a pas encore de date de sortie.

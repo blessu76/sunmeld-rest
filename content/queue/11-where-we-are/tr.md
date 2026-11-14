@@ -24,3 +24,21 @@ Günlük bir görev var: her gün herkes için aynı olan yeni bir oyun. Oynayar
 ## Hâlâ açık olanlar
 
 Lig 2, tek bir satın almayla açılabiliyor ve bu akış hâlâ sandbox hesaplarıyla test ediliyor. Çeviriler ana dili konuşanların incelemesini bekliyor. Ekranların sığıp sığmadığını ve anlaşılır olup olmadığını kontrol etmeye devam ediyoruz. Ücretsiz dene, tek satın alma, reklam yok: plan bu.
+
+## Sık sorulan sorular
+
+### Sunmeld'i şimdiden oynayabilir miyim?
+
+Bir test sürümü var, ama oyun iOS ve Android için hâlâ geliştiriliyor. Henüz bir yayın tarihi yok.
+
+### Lig 2 nasıl açılıyor?
+
+Lig 2, tek seferlik bir satın almayla açılabiliyor. Bu süreç hâlâ sandbox hesaplarıyla test ediliyor.
+
+### Sunmeld'de reklam olacak mı?
+
+Hayır. Plan, ücretsiz denenebilen, Lig 2 için tek seferlik satın alma olan ve reklamsız bir oyun.
+
+### Çeviriler tamamlandı mı?
+
+Henüz değil. Ana dili o dil olan kişilerin incelemesini bekliyorlar.

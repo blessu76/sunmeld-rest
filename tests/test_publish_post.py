@@ -29,6 +29,16 @@ class Publish(unittest.TestCase):
         with self.assertRaises(SystemExit):
             pp.publish(self.root, "nope", now=NOW)
 
+    def test_queued_post_without_faq_refused_and_nothing_moved(self):
+        f = self.root / "content/queue/01-first-up/ko.md"
+        f.write_text(f.read_text(encoding="utf-8").split("\n## FAQ")[0] + "\n", encoding="utf-8")
+        with self.assertRaises(SystemExit) as cm:
+            pp.publish(self.root, now=NOW)
+        self.assertIn("queue/01-first-up/ko.md", str(cm.exception))
+        self.assertIn("FAQ section missing", str(cm.exception))
+        self.assertTrue((self.root / "content/queue/01-first-up").exists())
+        self.assertFalse((self.root / "content/journal/first-up").exists())
+
     def test_future_time_refused(self):
         with self.assertRaises(SystemExit) as cm:
             pp.publish(self.root, at="2026-11-03T20:01+09:00", now=NOW)

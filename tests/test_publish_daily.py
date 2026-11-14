@@ -202,7 +202,7 @@ class PublishDaily(unittest.TestCase):
             d = q / ("0%d-extra-%d" % (n, n))
             d.mkdir()
             for lang in ("en", "ko"):
-                (d / (lang + ".md")).write_text(helpers.post_text("extra-%d" % n, lang, "Queued extra %d %s" % (n, lang)), encoding="utf-8")
+                (d / (lang + ".md")).write_text(helpers.post_text("extra-%d" % n, lang, "Queued extra %d %s" % (n, lang)) + helpers.FAQ_BLOCK, encoding="utf-8")
         git(self.clone, "add", "-A")
         git(self.clone, "commit", "-qm", "more queue")
         git(self.clone, "push", "-q", "origin", "main")

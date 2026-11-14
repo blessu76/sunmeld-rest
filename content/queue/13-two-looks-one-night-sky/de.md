@@ -28,3 +28,21 @@ Text auf den goldenen und rosa Buttons brauchte eine eigene dunkle Schriftfarbe,
 ## Wie es weitergeht
 
 Wir prüfen weiter, wie die Bildschirme in kleinen Größen aussehen. Ein Erscheinungsdatum gibt es noch nicht. Gibt es Neuigkeiten, erscheinen sie hier.
+
+## Häufige Fragen
+
+### Warum bleibt die Wanne im hellen Design dunkel?
+
+Die Steine mit ihrem Leuchten wirken vor einem dunklen Himmel am besten. Ein Spielfeld, das in beiden Designs gleich aussieht, wird für alle gleich gelesen.
+
+### Welche Designs gibt es?
+
+In den Einstellungen kannst du Systemeinstellung folgen, Dunkel oder Hell wählen.
+
+### Wechselt das Spiel mit dem Design meines Telefons?
+
+Ja, wenn du Systemeinstellung folgen wählst. Das Spiel wechselt mit dem Telefon, auch wenn ein Fenster offen ist.
+
+### Haben sich mit dem neuen Look die Regeln geändert?
+
+Nein. Die Regeln und die Engine wurden nicht angefasst. Nur das Aussehen hat sich geändert.

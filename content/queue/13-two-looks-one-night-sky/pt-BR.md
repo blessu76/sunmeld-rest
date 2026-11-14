@@ -28,3 +28,21 @@ O texto sobre os botões dourados e rosa precisou de uma tinta escura própria p
 ## O que vem a seguir
 
 Continuamos conferindo como as telas ficam em tamanhos pequenos. Ainda não há data de lançamento. Quando houver novidades, elas aparecerão aqui.
+
+## Perguntas frequentes
+
+### Por que a cuba continua escura no tema claro?
+
+As pedras com seu brilho se leem melhor sobre um céu escuro. Um tabuleiro que parece igual nos dois temas também é lido do mesmo jeito por todos.
+
+### Quais temas existem?
+
+Nos ajustes você pode escolher seguir o sistema, escuro ou claro.
+
+### O jogo muda com o tema do meu celular?
+
+Sim, se você escolher seguir o sistema. O jogo muda junto com o celular, mesmo com uma janela aberta.
+
+### As regras mudaram com o novo visual?
+
+Não. As regras e o motor não foram alterados. Só o visual mudou.

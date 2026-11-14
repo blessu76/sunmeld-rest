@@ -94,6 +94,7 @@ KEYS = (
 REQUIRED_POST = ("title", "description", "slug", "lang", "category", "published")
 FAQ_HEADINGS = {"faq", "자주 묻는 질문", "よくある質問", "常見問題", "preguntas frecuentes", "perguntas frequentes", "questions fréquentes",
                 "häufige fragen", "pertanyaan umum", "คำถามที่พบบ่อย", "câu hỏi thường gặp", "sık sorulan sorular"}  # H2 text that opens a post's FAQ
+FAQ_MIN_QUEUED = 3  # every queued language file needs this many FAQ questions
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 PUB_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})\+09:00$")
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -452,6 +453,9 @@ def queue_errors(root):
             if f.stem not in MAIN_LANGS and meta.get("translation_of") not in MAIN_LANGS:
                 errs.append("%s: translation_of: ko|en required" % tag)
             errs += text_problems(tag, meta.get("title", "") + meta.get("description", "") + body)
+            e = faq_error(tag, body)
+            if e:
+                errs.append(e)
         for need in MAIN_LANGS:
             if need not in langs:
                 errs.append("queue/%s: %s original missing" % (d.name, need))
@@ -462,6 +466,13 @@ def plain(s):
     s = re.sub(r"!\[[^\]]*\]\([^)]*\)", "", s)
     s = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", s)
     return re.sub(r"[*`_]+", "", s).strip()
+
+
+def faq_error(tag, body):
+    n = len(faq_pairs(body))
+    if n >= FAQ_MIN_QUEUED:
+        return None
+    return "%s: FAQ section missing — needs an H2 FAQ heading with at least %d H3 questions, found %d" % (tag, FAQ_MIN_QUEUED, n)
 
 
 def faq_pairs(body):

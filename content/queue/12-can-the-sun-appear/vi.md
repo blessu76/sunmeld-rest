@@ -30,3 +30,21 @@ Các lượt chạy thử còn cho thấy một ván chơi theo thời gian th�
 ## Vì sao chúng tôi kể điều này
 
 Nếu tự thử bằng tay, chúng tôi sẽ mất rất lâu mới nhận ra mặt trời nằm ngoài tầm với. Vài dòng tính toán và rất nhiều ván tự động đã tìm ra điều đó chỉ trong một buổi chiều. Hiện chưa có ngày phát hành. Khi có tin, bạn sẽ thấy nó ở đây.
+
+## Câu hỏi thường gặp
+
+### Có thể thật sự chạm tới viên đá cao nhất không?
+
+Có. Sau khi chỉnh lại luật, các ván thử với AI đã tạo ra mặt trời, dù hiếm. Đó là mục tiêu cho một giai đoạn cuối.
+
+### Vấn đề có phải nằm ở AI không?
+
+Không. Vấn đề nằm ở luật. Mặt trời cần nhiều thể tích đá hơn số đá có thể thả vào khay trong một ván.
+
+### Đồng hồ nguy hiểm có còn chạy khi tôi đang ngắm không?
+
+Không. Đồng hồ tràn giờ sẽ chờ trong lúc người chơi đang ngắm.
+
+### Đã có ngày phát hành chưa?
+
+Chưa. Hiện chưa có ngày phát hành.

@@ -30,3 +30,21 @@ Test çalışmaları, gerçek zamanlı oynanan bir oyunun taşmayla, aynı oyunu
 ## Bunu neden anlatıyoruz
 
 Elle oyun testi yapsaydık güneşin erişilmez olduğunu fark etmemiz çok uzun sürerdi. Birkaç satır hesap ve çok sayıda otomatik oyun bunu bir öğleden sonrada buldu. Henüz çıkış tarihi yok. Haber olduğunda burada görünecek.
+
+## Sık sorulan sorular
+
+### En üstteki taşa gerçekten ulaşılabiliyor mu?
+
+Evet. Kurallar yeniden şekillendirildikten sonra, aynı yapay zekâ test oyunları güneşler üretmeye başladı, ama nadiren. Son aşama için hedef buydu.
+
+### Sorun yapay zekâda mıydı?
+
+Hayır, kurallardaydı. Güneş, bir oyunda düşürülen taşların tekneye getirebileceğinden daha fazla taş hacmi gerektiriyordu.
+
+### Nişan alırken tehlike saati hâlâ işliyor mu?
+
+Hayır. Taşma saati artık bir oyuncu nişan alırken bekliyor.
+
+### Yayın tarihi var mı?
+
+Hayır. Henüz bir yayın tarihi yok.

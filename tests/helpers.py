@@ -11,6 +11,7 @@ sys.path.insert(0, str(REPO / "scripts"))
 import build_site as bs  # noqa: E402
 
 NOW = dt.datetime(2026, 11, 3, 20, 0, tzinfo=bs.KST)
+FAQ_BLOCK = "\n## FAQ\n\n### Q one?\n\nA one.\n\n### Q two?\n\nA two.\n\n### Q three?\n\nA three.\n"
 
 
 def post_text(slug, lang, title, published=None, extra=""):
@@ -41,7 +42,7 @@ def make_site(langs=("en", "ko"), posts=(("alpha-post", "2026-11-01T18:00+09:00"
         d = root / "content" / "queue" / ("%02d-%s" % (i, slug))
         d.mkdir(parents=True)
         for l in ("en", "ko"):
-            (d / (l + ".md")).write_text(post_text(slug, l, "Queued %s %s" % (slug, l)), encoding="utf-8")
+            (d / (l + ".md")).write_text(post_text(slug, l, "Queued %s %s" % (slug, l)) + FAQ_BLOCK, encoding="utf-8")
     shutil.copy(REPO / "privacy.json", root / "privacy.json")
     shutil.copytree(REPO / "assets", root / "assets")
     shutil.copytree(REPO / "vendor", root / "vendor", ignore=shutil.ignore_patterns("__pycache__"))

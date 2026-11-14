@@ -24,3 +24,21 @@ Der erste Zug wechselt von Partie zu Partie, und eine Finalzone gibt gegen Ende 
 ## Was noch offen ist
 
 Liga 2 lässt sich mit einem einmaligen Kauf freischalten, und dieser Ablauf wird noch mit Sandbox-Konten getestet. Die Übersetzungen warten auf die Prüfung durch Muttersprachler. Wir prüfen weiter, ob die Bildschirme passen und verständlich sind. Kostenlos testen, ein einmaliger Kauf, keine Werbung: So ist es geplant.
+
+## Häufige Fragen
+
+### Kann ich Sunmeld schon spielen?
+
+Es gibt eine Testversion. Das Spiel ist noch in Entwicklung für iOS und Android, und es gibt noch keinen Veröffentlichungstermin.
+
+### Wie wird Liga 2 freigeschaltet?
+
+Liga 2 kann mit einem einmaligen Kauf freigeschaltet werden. Dieser Ablauf wird noch mit Sandbox-Konten getestet.
+
+### Gibt es Werbung in Sunmeld?
+
+Nein. Geplant ist: kostenlos ausprobieren, ein Kauf für Liga 2 und keine Werbung.
+
+### Sind die Übersetzungen fertig?
+
+Noch nicht. Sie warten auf die Prüfung durch Muttersprachler.

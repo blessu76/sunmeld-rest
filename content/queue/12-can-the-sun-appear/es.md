@@ -30,3 +30,21 @@ Las pruebas también mostraron que una partida jugada en tiempo real terminaba p
 ## Por qué te lo contamos
 
 Probar a mano habría tardado mucho en descubrir que el sol estaba fuera de alcance. Unas líneas de aritmética y muchas partidas automáticas lo encontraron en una tarde. Todavía no hay fecha de lanzamiento. Cuando haya novedades, aparecerán aquí.
+
+## Preguntas frecuentes
+
+### ¿Se puede llegar de verdad a la piedra más alta?
+
+Sí. Después de rediseñar las reglas, los mismos juegos de prueba con IA produjeron soles, aunque poco a menudo. Ese era el objetivo para una etapa final.
+
+### ¿El problema era la IA?
+
+No. El problema eran las reglas. El sol necesita más volumen de piedra del que los lanzamientos de una partida podían llevar a la tina.
+
+### ¿El reloj de peligro sigue corriendo mientras apunto?
+
+No. El reloj de desbordamiento ahora espera mientras un jugador apunta.
+
+### ¿Hay fecha de lanzamiento?
+
+No. Todavía no hay fecha de lanzamiento.

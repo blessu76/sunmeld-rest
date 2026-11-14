@@ -85,6 +85,12 @@ def publish(root, slug=None, at=None, dry=False, now=None):
     for need in bs.MAIN_LANGS:
         if need not in langs:
             raise SystemExit("%s: %s original missing — refusing to publish" % (slug, need))
+    faq_errs = []
+    for f in files:
+        _, body = bs.parse_front(f.read_text(encoding="utf-8"))
+        faq_errs += [e for e in [bs.faq_error("queue/%s/%s" % (src.name, f.name), body)] if e]
+    if faq_errs:
+        raise SystemExit("refusing to publish %s:\n  %s" % (slug, "\n  ".join(faq_errs)))
     missing = [l for l in bs.LANGS if l not in langs]
     if missing:
         print("warning: translations missing for %s: %s (published without them)" % (slug, ", ".join(missing)), file=sys.stderr)

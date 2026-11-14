@@ -28,3 +28,21 @@ Una sorpresa estuvo en las herramientas de captura. En un sistema de tableta má
 ## Lo que aún no está comprobado
 
 Todavía no hemos visto cómo se gira una partida a medias en una tableta real, y las ventanas tan estrechas como un teléfono vuelven al diseño de teléfono, que tampoco hemos mirado de cerca. Lo diremos aquí cuando cambie. Todavía no hay fecha de lanzamiento.
+
+## Preguntas frecuentes
+
+### ¿Una tableta tiene su propio diseño?
+
+Sí. Las tabletas usan diseños separados en vertical y horizontal, elegidos según el ancho de la ventana y no por el nombre del dispositivo. Los teléfonos mantienen su propia pantalla.
+
+### ¿Cómo se comprueban tantos tamaños de pantalla?
+
+Pruebas automáticas dibujan las pantallas en varios tamaños de teléfono y tableta, en vertical y horizontal, para cada uno de los 12 idiomas.
+
+### ¿Se ha probado girar el dispositivo durante una partida en una tableta real?
+
+Todavía no. Aún no hemos visto una partida girarse a mitad de juego en una tableta real.
+
+### ¿Hay fecha de lanzamiento?
+
+No. Todavía no hay fecha de lanzamiento.

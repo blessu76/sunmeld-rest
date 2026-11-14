@@ -28,3 +28,21 @@ Teks pada tombol emas dan merah muda membutuhkan tinta gelap tersendiri agar tet
 ## Selanjutnya
 
 Kami terus memeriksa tampilan layar pada ukuran kecil. Belum ada tanggal rilis. Kalau ada kabar, akan muncul di sini.
+
+## FAQ
+
+### Mengapa bak tetap gelap pada tema terang?
+
+Batu dengan cahayanya paling jelas terlihat di langit gelap. Papan yang tampak sama di kedua tema juga terbaca sama bagi semua orang.
+
+### Pilihan tema apa saja yang ada?
+
+Di pengaturan, Anda bisa memilih ikuti sistem, gelap, atau terang.
+
+### Apakah gim ikut berganti dengan tema ponsel saya?
+
+Ya, jika Anda memilih ikuti sistem. Gim berganti mengikuti ponsel, bahkan saat ada lembar yang terbuka.
+
+### Apakah aturan berubah dengan tampilan baru?
+
+Tidak. Aturan dan mesinnya tidak diubah. Hanya tampilannya yang berubah.

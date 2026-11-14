@@ -24,3 +24,21 @@ El primer movimiento se alterna entre partidas, y una zona final añade un últi
 ## Qué sigue abierto
 
 La Liga 2 se puede desbloquear con una sola compra, y ese flujo todavía se está probando con cuentas de sandbox. Las traducciones esperan la revisión de hablantes nativos. Seguimos comprobando que las pantallas encajen y se entiendan bien. Gratis para probar, una sola compra, sin anuncios: ese es el plan.
+
+## Preguntas frecuentes
+
+### ¿Ya puedo jugar a Sunmeld?
+
+Hay una versión de prueba, y el juego sigue en desarrollo para iOS y Android. Todavía no hay fecha de lanzamiento.
+
+### ¿Cómo se desbloquea la Liga 2?
+
+La Liga 2 se puede desbloquear con una sola compra. Ese proceso todavía se está probando con cuentas de sandbox.
+
+### ¿Tendrá anuncios Sunmeld?
+
+No. El plan es poder probarlo gratis, una compra para la Liga 2 y sin anuncios.
+
+### ¿Las traducciones ya están terminadas?
+
+Todavía no. Están esperando la revisión de hablantes nativos.
