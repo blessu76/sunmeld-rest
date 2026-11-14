@@ -54,17 +54,16 @@ class Built(unittest.TestCase):
     def test_cache_busting_and_design_tokens(self):
         h = self.read("index.html")
         self.assertIn("/assets/sunmeld.css?v=%s" % bs.ASSET_V, h)
-        self.assertIn("/assets/sunmeld.js?v=%s" % bs.ASSET_V, h)
         css = (REPO / "assets" / "sunmeld.css").read_text(encoding="utf-8")
         for token in ("--bg:#0A0612", "--panel:#160F22", "--gold:#FFB23F", "--rival:#FF5C8A", "--font-head", "--font-body"):
             self.assertIn(token, css)
         self.assertIn("Unbounded", h)
         self.assertIn("Manrope", h)
 
-    def test_root_inlines_language_picker_only_on_home(self):
-        self.assertIn("sm-lang", self.read("index.html"))
-        self.assertNotIn("sm-lang", self.read("about/index.html"))
-        self.assertNotIn("sm-lang", self.read("ko/index.html"))
+    def test_root_loads_kit_language_detection_only_on_home(self):
+        self.assertRegex(self.read("index.html"), r'<script src="/assets/ipe-lang\.js\?v=[^"]+" data-redirect defer></script>')
+        self.assertNotIn("ipe-lang.js", self.read("about/index.html"))
+        self.assertNotIn("ipe-lang.js", self.read("ko/index.html"))
 
     def test_store_badges_are_not_links(self):
         for lang_dir in ("", "ko/"):
@@ -138,7 +137,7 @@ class Built(unittest.TestCase):
         for f in self.root.rglob("*.html"):
             if "assets" in f.parts:
                 continue
-            self.assertIn('<meta name="viewport" content="width=device-width,initial-scale=1">', f.read_text(encoding="utf-8"))
+            self.assertRegex(f.read_text(encoding="utf-8"), r'<meta name="viewport" content="width=device-width, ?initial-scale=1">')
 
 
 class Rules(unittest.TestCase):

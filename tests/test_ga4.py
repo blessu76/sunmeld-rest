@@ -15,7 +15,7 @@ class Ga4(unittest.TestCase):
         cls.root = make_site()
         cls.ctx = build(cls.root)
         cls.pages = {str(p.relative_to(cls.root)): p.read_text(encoding="utf-8") for p in cls.root.rglob("*.html")
-                     if not str(p.relative_to(cls.root)).startswith(("assets/", "content/"))}
+                     if not str(p.relative_to(cls.root)).startswith(("assets/", "content/") + tuple(d + "/" for d in bs.redirects.LEGACY_REDIRECTS))}
 
     @classmethod
     def tearDownClass(cls):
@@ -38,7 +38,7 @@ class Ga4(unittest.TestCase):
                 self.assertEqual(text.count("window.gtag('config',GA_ID)"), 1)
 
     def test_no_snippet_outside_html(self):
-        for rel in ("assets/sunmeld.js", "assets/sunmeld.css"):
+        for rel in ("assets/sunmeld.css",):
             self.assertNotIn(GA_ID, (self.root / rel).read_text(encoding="utf-8"))
 
     def test_privacy_matches_the_tracking(self):
@@ -48,7 +48,7 @@ class Ga4(unittest.TestCase):
                 self.assertIn("Google Analytics", text)
                 self.assertIn("_ga", text)
                 self.assertIn("https://tools.google.com/dlpage/gaoptout", text)
-                self.assertIn("sm-lang", text)
+                self.assertIn("ipe_lang", text)
                 self.assertIn(bs.EFFECTIVE, text)
 
     def test_privacy_sources_are_dated_with_effective(self):

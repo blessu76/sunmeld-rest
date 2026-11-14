@@ -23,7 +23,7 @@ We use Google Analytics 4 to see which pages are read. It records page views, th
 
 ### Stored in your browser
 
-When you pick a language on the home page, we may save that choice in your browser's local storage (under the name `sm-lang`). It stays on your device and is never sent to us. You can clear it in your browser settings. Fonts are loaded from Google Fonts, so ordinary web request information (such as your IP address) may be sent to Google.
+When you pick a language on the home page, we may save that choice in your browser's local storage (under the name `ipe_lang`). It stays on your device and is never sent to us. You can clear it in your browser settings. Fonts are loaded from Google Fonts, so ordinary web request information (such as your IP address) may be sent to Google.
 
 ### Your choices
 

@@ -30,7 +30,7 @@ class JsonLd(unittest.TestCase):
     def test_every_html_page_parses(self):
         n = 0
         for f in REPO.rglob("*.html"):
-            if {"vendor", ".git", "assets", "content"} & set(f.relative_to(REPO).parts) or f.name == "404.html":
+            if {"vendor", ".git", "assets", "content"} & set(f.relative_to(REPO).parts) or f.name == "404.html" or f.relative_to(REPO).parts[0] in bs.redirects.LEGACY_REDIRECTS:  # legacy redirect pages carry no JSON-LD
                 continue
             graph_of(f)
             n += 1
@@ -81,7 +81,7 @@ class JsonLd(unittest.TestCase):
         for src in sorted((REPO / "content" / "journal").glob("*/*.md")):
             _, body = bs.parse_front(src.read_text(encoding="utf-8"))
             first = body.split("\n\n")[0]
-            self.assertRegex(first, r"Sunmeld|썬멜드", src)
+            self.assertRegex(first, r"Sunmeld|썬멜드|サンメルド", src)
             self.assertIn("iOS", first, src)
 
 

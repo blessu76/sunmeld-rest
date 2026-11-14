@@ -1,51 +1,90 @@
-"""Header language <select> and footer legal links: on every built page the nav has no privacy/terms link,
-the footer has both, the language select lists all languages with the page's own one selected, and the
-old footer language row is gone (the same choice is in the select, with a noscript link list in the header)."""
+"""Header language select = ipe_web_kit.langswitch (v0.7.2): one select per page in the header, all 12 languages, the page's own
+language selected, same page in each language; privacy/terms only in the footer; no footer language row; dropped-language
+addresses (pt zh ar hi ru) are redirect pages that are not in the sitemap."""
 import re
 import unittest
 
 from helpers import REPO, bs
-from test_langpicker import pages
+
+LANG_DIRS = [l for l in bs.LANGS if l != "en"]
+SKIP = ("tests", "scripts", "docs", "ops", "content", "assets", "vendor") + tuple(bs.redirects.LEGACY_REDIRECTS)
+
+
+def pages():
+    out = []
+    for p in REPO.rglob("index.html"):
+        rel = p.relative_to(REPO).parts
+        if rel[0] in SKIP:
+            continue
+        lang = rel[0] if rel[0] in LANG_DIRS else "en"
+        out.append((lang, str(p.relative_to(REPO)), p.read_text(encoding="utf-8")))
+    return out
 
 
 class LangSelect(unittest.TestCase):
+    def test_all_languages_have_pages(self):
+        self.assertEqual({l for l, _, _ in pages()}, set(bs.LANGS))
+
+    def test_one_select_in_the_header_with_all_languages(self):
+        self.assertEqual(len(bs.LANGS), 12)
+        for lang, f, h in pages():
+            if "/privacy/" in "/" + f:
+                continue  # privacy pages come from the kit privacy module with their own layout
+            header = re.search(r"<header.*?</header>", h, re.S).group(0)
+            self.assertEqual(header.count("<select"), 1, f)
+            self.assertEqual(h.count("<select"), 1, f)
+            sel = re.search(r"<select[^>]*>(.*?)</select>", header, re.S).group(1)
+            opts = re.findall(r'<option value="([^"]*)" lang="([\w-]+)"( selected)?>', sel)
+            self.assertEqual([l for _, l, _ in opts], list(bs.LANGS), f)
+            self.assertEqual([l for _, l, s in opts if s], [lang], f)
+
+    def test_select_values_are_the_same_page_in_each_language(self):
+        for lang, f, h in pages():
+            if "/privacy/" in "/" + f:
+                continue
+            for value, l, _ in re.findall(r'<option value="([^"]*)" lang="([\w-]+)"( selected)?>', h):
+                self.assertTrue(value.startswith("/") and value.endswith("/"), (f, value))
+                if l == "en":
+                    self.assertFalse(value.startswith(tuple("/" + x + "/" for x in LANG_DIRS)), (f, value))
+                else:
+                    self.assertTrue(value.startswith("/" + l + "/"), (f, l, value))
+
     def test_privacy_and_terms_only_in_footer(self):
         for lang, f, h in pages():
-            nav = re.search(r'<nav class="nav".*?</nav>', h, re.S).group(0).split('<span class="langsel"')[0]
+            if "/privacy/" in "/" + f:
+                continue
+            nav = re.search(r'<header class="site-header".*?</header>', h, re.S).group(0)
+            nav = re.sub(r'<div class="ipe-lang">.*?</div>', "", nav, flags=re.S)
             self.assertIsNone(re.search(r'href="[^"]*/(privacy|terms)/"', nav), f)
             foot = re.search(r'<nav class="foot-links".*?</nav>', h, re.S).group(0)
             self.assertIsNotNone(re.search(r'href="[^"]*/privacy/"', foot), f)
             self.assertIsNotNone(re.search(r'href="[^"]*/terms/"', foot), f)
-
-    def test_language_select_has_all_languages_and_current_selected(self):
-        self.assertEqual(len(bs.LANGS), 12)
-        for lang, f, h in pages():
-            sel = re.search(r'<span class="langsel" hidden><select aria-label="[^"]+">(.*?)</select></span>', h, re.S)
-            self.assertIsNotNone(sel, f)
-            opts = re.findall(r'<option value="([^"]*)" data-lang="([\w-]+)"( selected)?>', sel.group(1))
-            self.assertEqual(len(opts), 12, f)
-            self.assertEqual([d for _, d, _ in opts], list(bs.LANGS), f)
-            self.assertEqual([d for _, d, s in opts if s], [lang], f)
-
-    def test_select_values_are_the_same_page_in_each_language(self):
-        for lang, f, h in pages():
-            sel = re.search(r'<select aria-label="[^"]+">(.*?)</select>', h, re.S).group(1)
-            for value, l in re.findall(r'<option value="([^"]*)" data-lang="([\w-]+)"', sel):
-                self.assertTrue(value.startswith("/") and value.endswith("/"), (f, value))
-                if l == "en":
-                    self.assertFalse(value.startswith(tuple("/" + x + "/" for x in bs.LANGS if x != "en")), (f, value))
-                else:
-                    self.assertTrue(value.startswith("/" + l + "/"), (f, l, value))
-
-    def test_no_footer_language_row(self):
-        for lang, f, h in pages():
             self.assertNotIn("foot-langs", h, f)
-        self.assertNotIn("foot-langs", (REPO / "assets" / "sunmeld.css").read_text(encoding="utf-8"))
 
-    def test_noscript_link_list_keeps_language_links(self):
-        for lang, f, h in pages():
-            ns = re.search(r'<noscript><span class="langsw".*?</noscript>', h, re.S).group(0)
-            self.assertEqual(len(re.findall(r'<a href="[^"]*" hreflang="[\w-]+"', ns)), 12, f)
+    def test_no_own_picker_left(self):
+        css = (REPO / "assets" / "sunmeld.css").read_text(encoding="utf-8")
+        for old in ("langsel", "langsw", "foot-langs"):
+            self.assertNotIn(old, css)
+        self.assertFalse((REPO / "assets" / "langpick.js").exists())
+        self.assertFalse((REPO / "assets" / "sunmeld.js").exists())
+
+    def test_ipe_lang_js_is_the_kit_file(self):
+        self.assertEqual((REPO / "assets" / "ipe-lang.js").read_text(encoding="utf-8"), bs.langswitch.JS.read_text(encoding="utf-8"))
+
+    def test_dropped_language_addresses_redirect(self):
+        want = {"pt": "pt-BR/", "zh": "zh-Hant/", "ar": "", "hi": "", "ru": ""}
+        for old, new in want.items():
+            for rest in bs.LEGACY_PATHS:
+                f = REPO / old / rest / "index.html"
+                self.assertTrue(f.is_file(), f)
+                h = f.read_text(encoding="utf-8")
+                self.assertIn('http-equiv="refresh"', h)
+                self.assertIn("noindex", h)
+                if rest == "":
+                    self.assertIn('rel="canonical" href="%s/%s"' % (bs.SITE, new), h)
+        sm = (REPO / "sitemap.xml").read_text(encoding="utf-8")
+        for old in want:
+            self.assertNotIn("%s/%s/" % (bs.SITE, old), sm)
 
 
 if __name__ == "__main__":
