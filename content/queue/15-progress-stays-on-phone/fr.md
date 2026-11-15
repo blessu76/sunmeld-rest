@@ -21,9 +21,9 @@ Si tu joues à Sunmeld sur un autre appareil avec le même compte Apple, la prog
 
 La synchronisation entre tes appareils prend du temps que Apple contrôle, généralement quelques secondes à quelques minutes. Tu devras peut-être attendre un instant ou revenir au jeu après un moment pour voir la progression de l'autre appareil.
 
-## Ce qui n'est pas encore synchronisé
+## Réglages et pseudo
 
-Tes paramètres — le thème que tu as choisi, la langue que tu as sélectionnée et les sons que tu as activés ou désactivés — sont également synchronisés entre les appareils. Cependant, le surnom reçoit un traitement spécial : si tu changes ton surnom sur un appareil et que la version d'un autre appareil n'avait pas été vérifiée depuis un certain temps, le changement le plus récent gagne.
+Tes réglages — le thème, la langue et les sons activés ou désactivés — sont eux aussi synchronisés entre tes appareils. Le pseudo suit sa propre règle : si tu le modifies sur deux appareils, la modification la plus récente l'emporte, et un appareil sans pseudo n'efface jamais celui qui existe déjà.
 
 ## Pourquoi c'est important
 

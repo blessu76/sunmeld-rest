@@ -21,9 +21,9 @@ Nếu bạn chơi Sunmeld trên thiết bị khác với cùng tài khoản Appl
 
 Đồng bộ hóa giữa các thiết bị của bạn mất thời gian do Apple kiểm soát, thường là vài giây đến vài phút. Bạn có thể cần chờ một chút hoặc quay lại trò chơi sau một lúc để xem tiến độ của thiết bị khác.
 
-## Những gì chưa được đồng bộ hóa
+## Cài đặt và biệt danh
 
-Cài đặt của bạn — chủ đề bạn chọn, ngôn ngữ bạn chọn và âm thanh bạn bật hoặc tắt — cũng được đồng bộ hóa trên các thiết bị. Tuy nhiên, biệt danh nhận được xử lý đặc biệt: nếu bạn thay đổi biệt danh của bạn trên một thiết bị và phiên bản của thiết bị khác chưa được kiểm tra trong một thời gian, thay đổi gần đây nhất sẽ giành chiến thắng.
+Cài đặt của bạn — chủ đề, ngôn ngữ và âm thanh bạn bật hoặc tắt — cũng được đồng bộ giữa các thiết bị. Biệt danh theo quy tắc riêng: nếu bạn đổi ở hai thiết bị, thay đổi mới nhất được áp dụng, và thiết bị chưa có biệt danh sẽ không xóa biệt danh đã có.
 
 ## Tại sao điều này lại quan trọng
 

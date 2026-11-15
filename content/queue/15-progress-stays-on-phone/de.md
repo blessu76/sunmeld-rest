@@ -21,9 +21,9 @@ Wenn du Sunmeld auf einem anderen Gerät mit demselben Apple-Konto spielst, wird
 
 Die Synchronisierung zwischen deinen Geräten braucht Zeit, die Apple kontrolliert, normalerweise einige Sekunden bis wenige Minuten. Du musst möglicherweise einen Moment warten oder das Spiel nach einer Weile erneut öffnen, um den Fortschritt des anderen Geräts zu sehen.
 
-## Was noch nicht synchronisiert wird
+## Einstellungen und Spitzname
 
-Deine Einstellungen — das von dir gewählte Design, die Sprache und die Sounds, die du ein- oder ausgeschaltet hast — werden auch zwischen Geräten synchronisiert. Der Spitzname erhält jedoch eine spezielle Behandlung: Wenn du deinen Spitznamen auf einem Gerät änderst und die Version eines anderen Geräts nicht überprüft wurde, gewinnt die neueste Änderung.
+Auch deine Einstellungen — das Design, die Sprache und die ein- oder ausgeschalteten Sounds — werden zwischen deinen Geräten synchronisiert. Für den Spitznamen gilt eine eigene Regel: Änderst du ihn auf zwei Geräten, gewinnt die jüngste Änderung, und ein Gerät ohne Spitznamen löscht nie einen vorhandenen.
 
 ## Warum das wichtig ist
 

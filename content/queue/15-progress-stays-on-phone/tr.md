@@ -21,9 +21,9 @@ Aynı Apple hesabıyla başka bir cihazda Sunmeld oynadığınızda, her iki cih
 
 Cihazlarınız arasında senkronizasyon, Apple'ın kontrol ettiği bir zaman alır, genellikle birkaç saniye ile birkaç dakika arasında. Biraz beklemeniz veya başka bir cihazın ilerlenmesini görmek için oyuna biraz sonra geri dönmeniz gerekebilir.
 
-## Henüz senkronize olmayan şeyler
+## Ayarlar ve takma ad
 
-Ayarlarınız — seçtiğiniz tema, seçtiğiniz dil ve açtığınız veya kapattığınız sesler — de cihazlar arasında senkronize edilir. Ancak takma adınız özel bir muamele alır: bir cihazda takma adınızı değiştirirseniz ve başka bir cihazın sürümü biraz süredir kontrol edilmediyse, en son değişiklik kazanır.
+Ayarlarınız — tema, dil ve açıp kapattığınız sesler — cihazlarınız arasında senkronize edilir. Takma ad kendi kuralını izler: iki cihazda da değiştirirseniz en son değişiklik geçerli olur ve takma adı olmayan bir cihaz, var olan takma adı asla silmez.
 
 ## Bunun neden önemli olduğu
 

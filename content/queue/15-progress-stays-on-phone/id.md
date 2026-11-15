@@ -21,9 +21,9 @@ Jika kamu bermain Sunmeld di perangkat lain dengan akun Apple yang sama, kemajua
 
 Sinkronisasi antar perangkatmu memerlukan waktu yang dikendalikan Apple, biasanya beberapa detik hingga beberapa menit. Kamu mungkin harus menunggu sebentar atau kembali ke permainan setelah beberapa saat untuk melihat kemajuan perangkat lain.
 
-## Apa yang belum disinkronkan
+## Pengaturan dan nama panggilan
 
-Pengaturanmu — tema yang kamu pilih, bahasa yang kamu pilih, dan suara yang kamu nyalakan atau matikan — juga disinkronkan antar perangkat. Namun, nama panggilanmu menerima perlakuan khusus: jika kamu mengubah nama panggilanmu di satu perangkat dan versi perangkat lain tidak diperiksa untuk waktu yang lama, perubahan paling baru menang.
+Pengaturanmu — tema, bahasa, dan suara yang kamu aktifkan atau matikan — juga disinkronkan antar perangkat. Nama panggilan mengikuti aturannya sendiri: jika kamu mengubahnya di dua perangkat, perubahan terbaru yang berlaku, dan perangkat tanpa nama panggilan tidak akan menghapus yang sudah ada.
 
 ## Mengapa ini penting
 

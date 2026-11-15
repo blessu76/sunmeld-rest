@@ -21,9 +21,9 @@ Si juegas a Sunmeld en otro dispositivo con la misma cuenta de Apple, el progres
 
 La sincronización entre tus dispositivos toma tiempo que Apple controla, normalmente unos segundos a varios minutos. Puede que tengas que esperar un momento o volver al juego después de un rato para ver el progreso del otro dispositivo.
 
-## Lo que aún no se sincroniza
+## Ajustes y apodo
 
-Tu configuración — el tema que elegiste, el idioma que seleccionaste y los sonidos que encendiste o apagaste — también se sincronizan entre dispositivos. Sin embargo, el apodo recibe un trato especial: si cambias tu apodo en un dispositivo y la versión de otro dispositivo no se había verificado en un tiempo, el cambio más reciente gana.
+Tus ajustes — el tema, el idioma y los sonidos que activaste o desactivaste — también se sincronizan entre tus dispositivos. El apodo sigue su propia regla: si lo cambias en dos dispositivos, gana el cambio más reciente, y un dispositivo sin apodo nunca borra el que ya existe.
 
 ## Por qué esto importa
 

@@ -15,19 +15,19 @@ Your progress — the stars you have earned, the records you have set, the leagu
 
 ## Playing on another device
 
-If you play Sunmeld on another device with the same Apple account, the progress from both devices gets merged. When you come back to the game on a device, or when you wake your phone, the app checks iCloud for newer progress and brings it in. The merge rule is simple: for each piece of progress like a record or a league level, we keep the one that is further along. We do not add them together. If one device has cleared league 2 and another has cleared league 1, the device with league 1 gets updated to league 2.
+If you play Sunmeld on another device with the same Apple account, the progress from both devices gets merged. Whenever you open the game or come back to it, the app checks iCloud for newer progress and brings it in. The merge rule is simple: for each piece of progress like a record or a league level, we keep the one that is further along. We do not add them together. If one device has cleared league 2 and another has cleared league 1, the device with league 1 gets updated to league 2.
 
-## Device sync speed
+## How fast devices sync
 
 The sync between your devices takes time that Apple controls, usually a few seconds to a few minutes. You may have to wait for a moment or come back to the game after a little while to see the other device's progress.
 
-## What is not synced yet
+## Settings and nickname
 
-Your settings — the theme you chose, the language you picked, and the sounds you turned on or off — are also synced across devices. However, the nickname gets special treatment: if you change your nickname on one device and another device's version was not checked for a while, the most recent change wins.
+Your settings — the theme, the language and the sounds you turned on or off — sync across your devices too. Your nickname follows its own rule: if you change it on two devices, the most recent change wins, and a device that has no nickname never erases one that does.
 
 ## Why this matters
 
-The phone is still the device you hold. Your progress is there first, safe from internet problems. If iCloud goes down or you do not have a connection, the game still works. The sync is optional, for players who want to pick up where they left off on a different device without losing any progress.
+The phone is still the device you hold. Your progress is there first, safe from internet problems. If iCloud goes down or you do not have a connection, the game still works. Sync is there for players who want to pick up where they left off on a different device without losing any progress.
 
 ## FAQ
 
@@ -37,7 +37,7 @@ Your progress is saved on your phone first. A copy is also sent to iCloud so it 
 
 ### What happens if I play on two devices at the same time?
 
-When you come back to either device or wake the app, it will check iCloud for newer progress and merge what it finds. The merge keeps the progress that is further along for each record, league, or stars.
+When you come back to the game on either device, the app checks iCloud for newer progress and merges what it finds. The merge keeps the progress that is further along for each record, league, or star count.
 
 ### How long does it take for progress to sync between devices?
 
