@@ -6,6 +6,7 @@ lang: pt-BR
 category: devlog
 keywords: Sunmeld, equilíbrio, IA, testes, design de jogos, diário
 translation_of: en
+published: 2026-11-15T17:15+09:00
 ---
 O Sunmeld ainda está em desenvolvimento para iOS e Android. Esta nota fala de um problema que só encontramos porque não confiamos na nossa própria sensação do jogo.
 

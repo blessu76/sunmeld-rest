@@ -6,6 +6,7 @@ lang: zh-Hant
 category: devlog
 keywords: Sunmeld, 平衡, AI, 測試, 遊戲設計, 日誌
 translation_of: en
+published: 2026-11-15T17:15+09:00
 ---
 Sunmeld 仍在開發 iOS 與 Android 版。這篇筆記談的是一個問題,而我們之所以發現它,是因為沒有完全相信自己對遊戲的手感。
 

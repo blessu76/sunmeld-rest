@@ -6,6 +6,7 @@ lang: id
 category: devlog
 keywords: Sunmeld, keseimbangan, AI, pengujian, desain game, jurnal
 translation_of: en
+published: 2026-11-15T17:15+09:00
 ---
 Sunmeld masih dalam pengembangan untuk iOS dan Android. Catatan ini tentang masalah yang baru kami temukan karena kami tidak mempercayai perasaan kami sendiri terhadap game ini.
 

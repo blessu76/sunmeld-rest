@@ -6,6 +6,7 @@ lang: tr
 category: devlog
 keywords: Sunmeld, denge, yapay zekâ, test, oyun tasarımı, günlük
 translation_of: en
+published: 2026-11-15T17:15+09:00
 ---
 Sunmeld iOS ve Android için hâlâ geliştiriliyor. Bu not, yalnızca oyun hakkındaki kendi hissimize güvenmediğimiz için fark ettiğimiz bir sorunla ilgili.
 

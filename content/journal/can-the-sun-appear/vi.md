@@ -6,6 +6,7 @@ lang: vi
 category: devlog
 keywords: Sunmeld, cân bằng, AI, kiểm thử, thiết kế game, nhật ký
 translation_of: en
+published: 2026-11-15T17:15+09:00
 ---
 Sunmeld vẫn đang được phát triển cho iOS và Android. Ghi chép này nói về một vấn đề mà chúng tôi chỉ phát hiện ra vì không tin vào cảm giác của chính mình về trò chơi.
 

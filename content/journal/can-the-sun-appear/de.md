@@ -6,6 +6,7 @@ lang: de
 category: devlog
 keywords: Sunmeld, Balancing, KI, Tests, Spieldesign, Journal
 translation_of: en
+published: 2026-11-15T17:15+09:00
 ---
 Sunmeld ist weiterhin in Entwicklung für iOS und Android. Diese Notiz handelt von einem Problem, das wir nur gefunden haben, weil wir unserem eigenen Spielgefühl nicht getraut haben.
 

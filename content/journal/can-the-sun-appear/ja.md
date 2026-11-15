@@ -6,6 +6,7 @@ lang: ja
 category: devlog
 keywords: サンメルド, Sunmeld, バランス, AI, テスト, ゲームデザイン, ジャーナル
 translation_of: en
+published: 2026-11-15T17:15+09:00
 ---
 サンメルドは、まだ iOS と Android 向けに開発中です。このノートは、自分たちの感覚を信じきらなかったからこそ見つかった問題についてです。
 
