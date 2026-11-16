@@ -6,6 +6,7 @@ lang: vi
 category: devlog
 keywords: Sunmeld, thiết kế, giao diện, chế độ tối, nhật ký
 translation_of: en
+published: 2026-11-16T15:15+09:00
 ---
 Sunmeld vẫn đang được phát triển cho iOS và Android. Ghi chép này nói về cách trò chơi có được diện mạo của mình, và về một lựa chọn chúng tôi cố ý đưa ra.
 

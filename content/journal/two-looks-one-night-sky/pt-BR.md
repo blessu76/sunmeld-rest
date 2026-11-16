@@ -6,6 +6,7 @@ lang: pt-BR
 category: devlog
 keywords: Sunmeld, design, tema, modo escuro, diário
 translation_of: en
+published: 2026-11-16T15:15+09:00
 ---
 O Sunmeld ainda está em desenvolvimento para iOS e Android. Esta nota fala de como o jogo ganhou seu visual e de uma escolha que fizemos de propósito.
 

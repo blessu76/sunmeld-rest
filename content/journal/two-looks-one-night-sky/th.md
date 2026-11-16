@@ -6,6 +6,7 @@ lang: th
 category: devlog
 keywords: Sunmeld, ดีไซน์, ธีม, โหมดมืด, บันทึก
 translation_of: en
+published: 2026-11-16T15:15+09:00
 ---
 Sunmeld ยังอยู่ระหว่างการพัฒนาสำหรับ iOS และ Android บันทึกนี้เล่าว่าเกมได้หน้าตาอย่างไร และเรื่องที่เราตั้งใจเลือกไว้
 

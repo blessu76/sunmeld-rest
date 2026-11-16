@@ -6,6 +6,7 @@ lang: tr
 category: devlog
 keywords: Sunmeld, tasarım, tema, karanlık mod, günlük
 translation_of: en
+published: 2026-11-16T15:15+09:00
 ---
 Sunmeld iOS ve Android için hâlâ geliştiriliyor. Bu not, oyunun görünümünü nasıl kazandığıyla ve bilerek yaptığımız bir seçimle ilgili.
 

@@ -6,6 +6,7 @@ lang: ja
 category: devlog
 keywords: サンメルド, Sunmeld, デザイン, テーマ, ダークモード, ジャーナル
 translation_of: en
+published: 2026-11-16T15:15+09:00
 ---
 サンメルドは、まだ iOS と Android 向けに開発中です。このノートは、ゲームの見た目がどう決まったか、そして私たちがあえて選んだひとつの選択についてです。
 

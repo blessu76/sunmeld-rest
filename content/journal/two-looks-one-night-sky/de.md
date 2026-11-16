@@ -6,6 +6,7 @@ lang: de
 category: devlog
 keywords: Sunmeld, Design, Theme, Dark Mode, Journal
 translation_of: en
+published: 2026-11-16T15:15+09:00
 ---
 Sunmeld ist weiterhin in Entwicklung für iOS und Android. Diese Notiz handelt davon, wie das Spiel zu seinem Aussehen kam, und von einer Entscheidung, die wir bewusst getroffen haben.
 

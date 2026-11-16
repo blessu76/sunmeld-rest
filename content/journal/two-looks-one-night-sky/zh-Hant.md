@@ -6,6 +6,7 @@ lang: zh-Hant
 category: devlog
 keywords: Sunmeld, 設計, 主題, 深色模式, 日誌
 translation_of: en
+published: 2026-11-16T15:15+09:00
 ---
 Sunmeld 仍在開發 iOS 與 Android 版。這篇筆記談的是遊戲的外觀怎麼來的,以及我們刻意做的一個選擇。
 
