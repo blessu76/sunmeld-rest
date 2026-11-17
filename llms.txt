@@ -29,6 +29,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Journal posts (English)
 
+- [A screen of its own for tablets](https://sunmeld.ipe.rest/journal/tablet-layouts/) — 2026-11-17 — Why Sunmeld on a tablet is not just the phone screen stretched, and how we check many screen sizes.
 - [One night sky, two looks](https://sunmeld.ipe.rest/journal/two-looks-one-night-sky/) — 2026-11-16 — How Sunmeld's look was redone, and why the tub stays dark even when you choose the light theme.
 - [Could the sun ever appear?](https://sunmeld.ipe.rest/journal/can-the-sun-appear/) — 2026-11-15 — What happened when we let AI players play Sunmeld over and over: the top stone almost never showed up, and the fix was in the rules, not the AI.
 - [Where Sunmeld stands today](https://sunmeld.ipe.rest/journal/where-we-are/) — 2026-11-14 — A short look at what is in the Sunmeld test build so far, and what is still open.
@@ -48,6 +49,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Journal posts (한국어)
 
+- [태블릿만을 위한 화면](https://sunmeld.ipe.rest/ko/journal/tablet-layouts/) — 2026-11-17 — 썬멜드가 태블릿에서 폰 화면을 늘린 것이 아닌 이유와, 여러 화면 크기를 확인하는 방법이에요.
 - [하나의 밤하늘, 두 가지 모습](https://sunmeld.ipe.rest/ko/journal/two-looks-one-night-sky/) — 2026-11-16 — 썬멜드의 모습을 다시 만든 이야기와, 밝은 테마에서도 통을 어둡게 둔 이유예요.
 - [태양은 과연 나올 수 있을까](https://sunmeld.ipe.rest/ko/journal/can-the-sun-appear/) — 2026-11-15 — AI 플레이어끼리 썬멜드를 거듭 두게 했더니 가장 높은 돌이 거의 나오지 않았고, 고칠 곳은 AI가 아니라 규칙이었다는 이야기예요.
 - [지금 썬멜드는 어디까지 왔을까](https://sunmeld.ipe.rest/ko/journal/where-we-are/) — 2026-11-14 — 지금까지 썬멜드 테스트 빌드에 들어 있는 것과 아직 남은 것을 짧게 정리해요.

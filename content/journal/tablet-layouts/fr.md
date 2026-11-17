@@ -6,6 +6,7 @@ lang: fr
 category: devlog
 keywords: Sunmeld, iPad, mise en page, taille d'écran, tests, journal
 translation_of: en
+published: 2026-11-17T17:15+09:00
 ---
 Sunmeld est toujours en développement pour iOS et Android. Cette note parle de ce qui se passe quand le même jeu rencontre un écran bien plus grand.
 

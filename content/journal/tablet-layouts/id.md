@@ -6,6 +6,7 @@ lang: id
 category: devlog
 keywords: Sunmeld, iPad, tata letak, ukuran layar, pengujian, jurnal
 translation_of: en
+published: 2026-11-17T17:15+09:00
 ---
 Sunmeld masih dalam pengembangan untuk iOS dan Android. Catatan ini tentang apa yang terjadi saat game yang sama bertemu layar yang jauh lebih besar.
 

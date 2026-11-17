@@ -6,6 +6,7 @@ lang: ja
 category: devlog
 keywords: サンメルド, Sunmeld, iPad, レイアウト, 画面サイズ, テスト, ジャーナル
 translation_of: en
+published: 2026-11-17T17:15+09:00
 ---
 サンメルドは、まだ iOS と Android 向けに開発中です。このノートは、同じゲームがずっと大きな画面に出会うと何が起きるか、についてです。
 

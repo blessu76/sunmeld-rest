@@ -6,6 +6,7 @@ lang: th
 category: devlog
 keywords: Sunmeld, iPad, เลย์เอาต์, ขนาดหน้าจอ, การทดสอบ, บันทึก
 translation_of: en
+published: 2026-11-17T17:15+09:00
 ---
 Sunmeld ยังอยู่ระหว่างการพัฒนาสำหรับ iOS และ Android บันทึกนี้เล่าว่าเกิดอะไรขึ้นเมื่อเกมเดียวกันไปเจอหน้าจอที่ใหญ่กว่ามาก
 

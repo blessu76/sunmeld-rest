@@ -6,6 +6,7 @@ lang: zh-Hant
 category: devlog
 keywords: Sunmeld, iPad, 版面, 螢幕尺寸, 測試, 日誌
 translation_of: en
+published: 2026-11-17T17:15+09:00
 ---
 Sunmeld 仍在開發 iOS 與 Android 版。這篇筆記談的是同一款遊戲遇上大得多的螢幕時會發生什麼事。
 

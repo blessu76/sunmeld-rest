@@ -6,6 +6,7 @@ lang: vi
 category: devlog
 keywords: Sunmeld, iPad, bố cục, kích thước màn hình, kiểm thử, nhật ký
 translation_of: en
+published: 2026-11-17T17:15+09:00
 ---
 Sunmeld vẫn đang được phát triển cho iOS và Android. Ghi chép này nói về chuyện xảy ra khi cùng một trò chơi gặp một màn hình lớn hơn nhiều.
 
