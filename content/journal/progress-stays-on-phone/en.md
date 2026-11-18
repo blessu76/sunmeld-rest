@@ -6,6 +6,7 @@ lang: en
 category: devlog
 keywords: Sunmeld, progress, save, iCloud, sync, storage
 copy_review: iris 2026-11-15
+published: 2026-11-18T14:30+09:00
 ---
 Sunmeld is still in development for iOS and Android. This note is about how your game progress is saved and shared across your devices.
 

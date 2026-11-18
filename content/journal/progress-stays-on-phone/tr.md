@@ -6,6 +6,7 @@ lang: tr
 category: devlog
 keywords: Sunmeld, ilerleme, kaydet, iCloud, senkronize
 translation_of: en
+published: 2026-11-18T14:30+09:00
 ---
 Sunmeld hala iOS ve Android için geliştirilmektedir. Bu not, oyun ilerlemenizin nasıl kaydedildiğini ve cihazlarınız arasında nasıl paylaşıldığını hakkında.
 

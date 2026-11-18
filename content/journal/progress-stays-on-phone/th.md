@@ -6,6 +6,7 @@ lang: th
 category: devlog
 keywords: Sunmeld, ความก้าวหน้า, บันทึก, iCloud, ซิงค์
 translation_of: en
+published: 2026-11-18T14:30+09:00
 ---
 Sunmeld ยังคงอยู่ในขั้นตอนการพัฒนาสำหรับ iOS และ Android บันทึกนี้เกี่ยวกับวิธีการบันทึกและแบ่งปันความก้าวหน้าของเกมของคุณระหว่างอุปกรณ์ของคุณ
 

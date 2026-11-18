@@ -6,6 +6,7 @@ lang: vi
 category: devlog
 keywords: Sunmeld, tiến độ, lưu, iCloud, đồng bộ hóa
 translation_of: en
+published: 2026-11-18T14:30+09:00
 ---
 Sunmeld vẫn đang được phát triển cho iOS và Android. Ghi chú này liên quan đến cách tiến độ trò chơi của bạn được lưu lại và chia sẻ trên các thiết bị của bạn.
 

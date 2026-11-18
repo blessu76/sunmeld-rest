@@ -6,6 +6,7 @@ lang: zh-Hant
 category: devlog
 keywords: Sunmeld, 進度, 保存, iCloud, 同步
 translation_of: en
+published: 2026-11-18T14:30+09:00
 ---
 Sunmeld 仍在 iOS 和 Android 的開發中。本文介紹您的遊戲進度如何被保存以及在您的設備間如何共享。
 

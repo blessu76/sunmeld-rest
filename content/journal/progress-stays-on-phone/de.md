@@ -6,6 +6,7 @@ lang: de
 category: devlog
 keywords: Sunmeld, Fortschritt, Speichern, iCloud, Synchronisierung
 translation_of: en
+published: 2026-11-18T14:30+09:00
 ---
 Sunmeld ist weiterhin in Entwicklung für iOS und Android. Diese Notiz handelt davon, wie dein Spielfortschritt gespeichert und über deine Geräte geteilt wird.
 

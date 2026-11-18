@@ -6,6 +6,7 @@ lang: ja
 category: devlog
 keywords: Sunmeld, 進捗, 保存, iCloud, 同期
 translation_of: en
+published: 2026-11-18T14:30+09:00
 ---
 Sunmeld は iOS と Android 向けでまだ開発中です。このノートはゲームの進捗がどのように保存され、デバイス間で共有されるかについてです。
 

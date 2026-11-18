@@ -7,6 +7,7 @@ category: devlog
 keywords: Sunmeld, 썬멜드, 진행, 저장, iCloud, 동기화
 copy_review: iris 2026-11-15
 translation_of: en
+published: 2026-11-18T14:30+09:00
 ---
 썬멜드는 iOS와 Android에서 아직 개발 중입니다. 이 글은 게임 진행이 어떻게 저장되고, 여러 기기에서 동기화되는지에 대해 알려줍니다.
 

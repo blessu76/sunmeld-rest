@@ -6,6 +6,7 @@ lang: id
 category: devlog
 keywords: Sunmeld, kemajuan, simpan, iCloud, sinkronisasi
 translation_of: en
+published: 2026-11-18T14:30+09:00
 ---
 Sunmeld masih dalam pengembangan untuk iOS dan Android. Catatan ini tentang bagaimana kemajuan permainanmu disimpan dan dibagikan di seluruh perangkatmu.
 
