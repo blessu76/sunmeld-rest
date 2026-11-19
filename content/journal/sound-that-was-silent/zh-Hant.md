@@ -6,6 +6,7 @@ lang: zh-Hant
 category: devlog
 keywords: Sunmeld, 聲音, 音效, 設定, 靜音模式, 日誌
 translation_of: en
+published: 2026-11-19T17:45+09:00
 ---
 Sunmeld 仍在 iOS 與 Android 上開發中。這篇筆記談的是一個存在、卻什麼也做不了的設定。
 

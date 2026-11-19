@@ -6,6 +6,7 @@ lang: vi
 category: devlog
 keywords: Sunmeld, âm thanh, âm thanh game, cài đặt, chế độ im lặng, nhật ký
 translation_of: en
+published: 2026-11-19T17:45+09:00
 ---
 Sunmeld vẫn đang được phát triển cho iOS và Android. Ghi chú này nói về một cài đặt đã có nhưng không thể làm gì.
 

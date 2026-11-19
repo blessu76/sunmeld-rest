@@ -6,6 +6,7 @@ lang: id
 category: devlog
 keywords: Sunmeld, suara, audio, pengaturan, mode senyap, jurnal
 translation_of: en
+published: 2026-11-19T17:45+09:00
 ---
 Sunmeld masih dalam pengembangan untuk iOS dan Android. Catatan ini membahas pengaturan yang ada tetapi tidak bisa berbuat apa-apa.
 

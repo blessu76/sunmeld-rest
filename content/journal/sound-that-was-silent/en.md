@@ -5,6 +5,7 @@ slug: sound-that-was-silent
 lang: en
 category: devlog
 keywords: Sunmeld, sound, audio, settings, silent mode, journal
+published: 2026-11-19T17:45+09:00
 ---
 Sunmeld is still in development for iOS and Android. This note is about a setting that existed but could not do anything.
 

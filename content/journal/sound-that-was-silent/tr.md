@@ -6,6 +6,7 @@ lang: tr
 category: devlog
 keywords: Sunmeld, ses, ses efektleri, ayarlar, sessiz mod, günlük
 translation_of: en
+published: 2026-11-19T17:45+09:00
 ---
 Sunmeld, iOS ve Android için hâlâ geliştirme aşamasında. Bu not, var olan ama hiçbir şey yapamayan bir ayar hakkında.
 

@@ -6,6 +6,7 @@ lang: de
 category: devlog
 keywords: Sunmeld, Ton, Audio, Einstellungen, lautloser Modus, Journal
 translation_of: en
+published: 2026-11-19T17:45+09:00
 ---
 Sunmeld ist weiterhin in Entwicklung für iOS und Android. Diese Notiz handelt von einer Einstellung, die es gab, die aber nichts bewirken konnte.
 

@@ -5,6 +5,7 @@ slug: sound-that-was-silent
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 소리, 설정, 무음, 저널
+published: 2026-11-19T17:45+09:00
 ---
 썬멜드는 아직 iOS와 Android용으로 개발 중이에요. 이번 글은 있기는 했지만 아무것도 하지 못하던 설정에 관한 이야기예요.
 

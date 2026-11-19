@@ -6,6 +6,7 @@ lang: th
 category: devlog
 keywords: Sunmeld, เสียง, เสียงในเกม, การตั้งค่า, โหมดเงียบ, บันทึก
 translation_of: en
+published: 2026-11-19T17:45+09:00
 ---
 Sunmeld ยังอยู่ในระหว่างการพัฒนาสำหรับ iOS และ Android บันทึกนี้เล่าเรื่องการตั้งค่าที่มีอยู่จริง แต่ทำอะไรไม่ได้
 

@@ -6,6 +6,7 @@ lang: pt-BR
 category: devlog
 keywords: Sunmeld, som, áudio, configurações, modo silencioso, diário
 translation_of: en
+published: 2026-11-19T17:45+09:00
 ---
 O Sunmeld ainda está em desenvolvimento para iOS e Android. Esta nota trata de uma configuração que existia, mas não conseguia fazer nada.
 

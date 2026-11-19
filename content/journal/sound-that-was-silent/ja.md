@@ -6,6 +6,7 @@ lang: ja
 category: devlog
 keywords: Sunmeld, 音, オーディオ, 設定, サイレント, ジャーナル
 translation_of: en
+published: 2026-11-19T17:45+09:00
 ---
 Sunmeld は iOS と Android 向けに開発中です。このノートは、存在はしていたのに何もできなかった設定についての話です。
 

@@ -6,6 +6,7 @@ lang: fr
 category: devlog
 keywords: Sunmeld, son, audio, réglages, mode silencieux, journal
 translation_of: en
+published: 2026-11-19T17:45+09:00
 ---
 Sunmeld est toujours en développement pour iOS et Android. Cette note parle d'un réglage qui existait mais ne pouvait rien faire.
 
