@@ -155,6 +155,17 @@ class SiteFiles(unittest.TestCase):
             self.assertNotIn("Disallow", m.group(1))
         self.assertIn("Sitemap: https://sunmeld.ipe.rest/sitemap.xml", t)
 
+    def test_support_pages_have_faqpage_matching_their_faq_section(self):
+        for f in sorted(REPO.glob("support/index.html")) + sorted(REPO.glob("*/support/index.html")):
+            if 'content="noindex' in f.read_text(encoding="utf-8"):  # retired languages redirect and are not indexed
+                continue
+            g = graph_of(f)
+            faq = next((x for x in g if x["@type"] == "FAQPage"), None)
+            self.assertIsNotNone(faq, "%s: support FAQ has no FAQPage" % f)
+            self.assertGreaterEqual(len(faq["mainEntity"]), 2, f)
+            for q in faq["mainEntity"]:
+                self.assertTrue(q["name"] and q["acceptedAnswer"]["text"], f)
+
 
 if __name__ == "__main__":
     unittest.main()

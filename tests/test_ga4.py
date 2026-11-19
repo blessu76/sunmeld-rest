@@ -83,6 +83,11 @@ class Ga4(unittest.TestCase):
         text = (self.root / "llms.txt").read_text(encoding="utf-8")
         self.assertIn("website collects only basic visit statistics through Google Analytics", text)
 
+    def test_snippet_sends_nothing_from_local_hosts(self):
+        self.assertIn("location.hostname))return;", bs.GA_SNIPPET)
+        self.assertIn("localhost", bs.GA_SNIPPET)
+        self.assertIn(r"127\.0\.0\.1", bs.GA_SNIPPET)
+
 
 if __name__ == "__main__":
     unittest.main()

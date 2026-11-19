@@ -54,6 +54,7 @@ TERMS_EFFECTIVE = "2026-10-31"  # terms are unchanged by GA4 -> keep their own d
 GA_MEASUREMENT_ID = "G-XG4BH800J0"
 GA_SNIPPET = (
     "<script>(function(){var GA_ID='%s';"
+    "if(/^(localhost|127\\.0\\.0\\.1|\\[::1\\])$/.test(location.hostname))return;"  # local previews send nothing
     "var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);"
     "window.dataLayer=window.dataLayer||[];window.gtag=function(){window.dataLayer.push(arguments)};"
     "window.gtag('js',new Date());window.gtag('config',GA_ID);"
@@ -93,7 +94,8 @@ KEYS = (
 ).split()
 REQUIRED_POST = ("title", "description", "slug", "lang", "category", "published")
 FAQ_HEADINGS = {"faq", "자주 묻는 질문", "よくある質問", "常見問題", "preguntas frecuentes", "perguntas frequentes", "questions fréquentes",
-                "häufige fragen", "pertanyaan umum", "คำถามที่พบบ่อย", "câu hỏi thường gặp", "sık sorulan sorular", "sss"}  # H2 text that opens a post's FAQ
+                "häufige fragen", "pertanyaan umum", "คำถามที่พบบ่อย", "câu hỏi thường gặp", "sık sorulan sorular", "sss",
+                "frequently asked questions", "häufig gestellte fragen", "pertanyaan yang sering diajukan"}  # H2 text that opens a post's or page's FAQ
 FAQ_MIN_QUEUED = 3  # every queued language file needs this many FAQ questions
 SLUG_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 PUB_RE = re.compile(r"^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})\+09:00$")
@@ -704,6 +706,10 @@ def build_page(ctx, lang, slug):
     graph = [ORG, website_ld(lang, ctx), page_ld, breadcrumb_ld(crumbs)]
     if slug == "about":
         graph.append(game_ld(lang, ctx))
+    faq = faq_pairs(md)  # a page's H2 FAQ section (support) gets FAQPage too, same as a journal post
+    if faq:
+        graph.append({"@type": "FAQPage", "@id": url(path_page(lang, slug)) + "#faq", "inLanguage": lang, "mainEntity": [
+            {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in faq]})
     alt = {l: path_page(l, slug) for l in ctx.langs if (l, slug) in ctx.pages}
     return path_page(lang, slug), render(ctx, lang, path=path_page(lang, slug), title="%s — Sunmeld" % meta["title"],
                                          desc=meta["description"], body=body, graph=graph, alt=alt, updated=meta["updated"],
