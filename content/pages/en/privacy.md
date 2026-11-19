@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
 description: Privacy policy for Sunmeld. The app collects no personal information. The website collects basic visit statistics through Google Analytics.
-updated: 2026-11-01
+updated: 2026-11-19
 ---
 **In short:** the Sunmeld app collects no personal information. This website collects basic visit statistics through Google Analytics, remembers your language in your own browser, and asks for no name, email or account. Neither shows ads, and we do not sell data.
 
@@ -9,9 +9,13 @@ Effective date: {{EFFECTIVE}} · Operator: {{OPERATOR}}
 
 ## 1. Information we collect
 
-Sunmeld ("the App") is a mobile game operated by an individual developer, {{OPERATOR}}. The App has no accounts or sign-in, and it does not collect or send to any server any personal information such as your name, email, contact details, location or device identifiers. Your game progress and settings are stored only on your device and are deleted when you delete the App.
+Sunmeld ("the App") is a mobile game operated by an individual developer, {{OPERATOR}}. The App has no accounts or sign-in, and it does not collect or send to any server any personal information such as your name, email, contact details, location or device identifiers. Your game progress, records and settings are stored on your device and are deleted from it when you delete the App. On iPhone and iPad, they can also sync through your own iCloud, as described below.
 
 The App contains no advertising, analytics or tracking SDKs. The website is different: it collects basic visit statistics through Google Analytics 4, as described in section 2.
+
+### iCloud sync (iPhone and iPad)
+
+On iPhone and iPad, if iCloud is turned on for your Apple Account, the App saves your progress, records and settings (such as language and theme) to your own iCloud so your other devices signed in to the same Apple Account can pick up where you left off. This data is kept by Apple in your iCloud account under Apple's privacy policy. It does not pass through any server of ours, and we cannot read or receive it. If iCloud is off or you are signed out, the App keeps working and the data stays on your device. You can turn iCloud off, or manage what it stores, in your device's iCloud settings. On Android, the App does not sync and keeps data only on your device.
 
 ## 2. The website
 
@@ -44,7 +48,7 @@ Google (analytics and fonts) and GitHub (hosting) process data for the website a
 
 ## 4. Questions and your rights
 
-To request access, correction, deletion or suspension of processing of your personal information, or to ask any question, write to [{{EMAIL}}](mailto:{{EMAIL}}). We reply within 10 days. The App holds no personal information, and website analytics data is not tied to your name or email, so we usually cannot find an individual in it; email correspondence we can locate and delete.
+To request access, correction, deletion or suspension of processing of your personal information, or to ask any question, write to [{{EMAIL}}](mailto:{{EMAIL}}). We reply within 10 days. We hold no personal information from the App, and website analytics data is not tied to your name or email, so we usually cannot find an individual in it; email correspondence we can locate and delete.
 
 ## 5. Children
 

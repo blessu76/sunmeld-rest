@@ -10,7 +10,7 @@ REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "scripts"))
 import build_site as bs  # noqa: E402
 
-NOW = dt.datetime(2026, 11, 3, 20, 0, tzinfo=bs.KST)
+NOW = dt.datetime(2026, 11, 19, 20, 0, tzinfo=bs.KST)
 FAQ_BLOCK = "\n## FAQ\n\n### Q one?\n\nA one.\n\n### Q two?\n\nA two.\n\n### Q three?\n\nA three.\n"
 
 

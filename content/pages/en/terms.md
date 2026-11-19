@@ -1,7 +1,7 @@
 ---
 title: Terms of Use
 description: Terms of Use for Sunmeld.
-updated: 2026-10-31
+updated: 2026-11-19
 ---
 Effective date: {{TERMS_EFFECTIVE}} · Operator: {{OPERATOR}}
 
@@ -15,7 +15,7 @@ You may install and use the App on your device for personal, non-commercial purp
 
 ## 3. Nature of the service
 
-Game data is stored on your device. Data may be lost if you change devices, delete the App or reset your device, and we may not be able to restore it.
+Game data is stored on your device, and on iPhone and iPad it can also sync through your own iCloud if you have it turned on. Data may be lost if you change devices without iCloud, delete the App or reset your device, and we may not be able to restore it.
 
 ## 4. Changes and discontinuation
 

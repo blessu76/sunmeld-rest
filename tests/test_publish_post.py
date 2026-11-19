@@ -16,11 +16,11 @@ class Publish(unittest.TestCase):
     def test_takes_queue_head_and_stamps_every_language(self):
         slug, when, files = pp.publish(self.root, now=NOW)
         self.assertEqual(slug, "first-up")
-        self.assertEqual(when, "2026-11-03T20:00+09:00")
+        self.assertEqual(when, "2026-11-19T20:00+09:00")
         self.assertFalse((self.root / "content/queue/01-first-up").exists())
         for l in ("en", "ko"):
             t = (self.root / ("content/journal/first-up/%s.md" % l)).read_text()
-            self.assertIn("published: 2026-11-03T20:00+09:00", t)
+            self.assertIn("published: 2026-11-19T20:00+09:00", t)
         self.assertEqual([p["slug"] for p in bs.load_posts(self.root, NOW)[0]][0], "first-up")
         self.assertEqual(bs.load_posts(self.root, NOW)[1], [])
 
@@ -41,12 +41,12 @@ class Publish(unittest.TestCase):
 
     def test_future_time_refused(self):
         with self.assertRaises(SystemExit) as cm:
-            pp.publish(self.root, at="2026-11-03T20:01+09:00", now=NOW)
+            pp.publish(self.root, at="2026-11-19T20:01+09:00", now=NOW)
         self.assertIn("future", str(cm.exception))
         self.assertTrue((self.root / "content/queue/01-first-up").exists())  # nothing moved
 
     def test_explicit_past_time_ok_but_not_before_latest_post(self):
-        self.assertEqual(pp.publish(self.root, at="2026-11-03T19:00+09:00", now=NOW)[1], "2026-11-03T19:00+09:00")
+        self.assertEqual(pp.publish(self.root, at="2026-11-19T19:00+09:00", now=NOW)[1], "2026-11-19T19:00+09:00")
         with self.assertRaises(SystemExit):
             pp.publish(self.root, at="2026-11-01T19:00+09:00", now=NOW)
 
@@ -65,7 +65,7 @@ class Publish(unittest.TestCase):
 
     def test_stamp_replaces_existing_line(self):
         t = "---\ntitle: x\npublished: 2020-01-01T00:00+09:00\n---\nbody\n"
-        self.assertEqual(pp.stamp(t, "2026-11-03T20:00+09:00"), "---\ntitle: x\npublished: 2026-11-03T20:00+09:00\n---\nbody\n")
+        self.assertEqual(pp.stamp(t, "2026-11-19T20:00+09:00"), "---\ntitle: x\npublished: 2026-11-19T20:00+09:00\n---\nbody\n")
 
     def test_daily_skips_when_already_published_today(self):
         # last post is 2026-11-02; "today" in the CLI is the real clock, so build a post stamped with the real today

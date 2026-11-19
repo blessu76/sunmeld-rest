@@ -47,7 +47,7 @@ KST = dt.timezone(dt.timedelta(hours=9))
 SITE_UPDATED = "2026-11-03"  # "Last updated" of home / 404 and sitemap lastmod — bump by hand when their text changes
 OPERATOR = "Davy Kim (ipe Studio)"
 EMAIL = "ipe.haven@gmail.com"
-EFFECTIVE = "2026-11-01"  # privacy policy effective date (GA4 added)
+EFFECTIVE = "2026-11-19"  # privacy policy effective date (GA4 added)
 TERMS_EFFECTIVE = "2026-10-31"  # terms are unchanged by GA4 -> keep their own date
 # GA4 (same property as ipe.rest). Inserted once into every page by render(); the privacy policy (section 2), the support FAQ,
 # llms.txt and CLAUDE.md say so -> change them together with this.
