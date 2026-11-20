@@ -6,6 +6,7 @@ lang: id
 category: devlog
 keywords: Sunmeld, Flame, mesin, animasi, performa, jurnal
 translation_of: en
+published: 2026-11-20T16:00+09:00
 ---
 Sunmeld masih dalam pengembangan untuk iOS dan Android. Catatan ini membahas cara bagian-bagian bergerak dalam game digambar.
 

@@ -6,6 +6,7 @@ lang: ja
 category: devlog
 keywords: Sunmeld, Flame, エンジン, アニメーション, パフォーマンス, ジャーナル
 translation_of: en
+published: 2026-11-20T16:00+09:00
 ---
 Sunmeld は iOS と Android 向けに開発中です。このノートは、ゲームの動く要素がどのように描かれているかについての話です。
 

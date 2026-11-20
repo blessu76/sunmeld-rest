@@ -5,6 +5,7 @@ slug: stones-on-a-game-engine
 lang: en
 category: devlog
 keywords: Sunmeld, Flame, engine, animation, performance, journal
+published: 2026-11-20T16:00+09:00
 ---
 Sunmeld is still in development for iOS and Android. This note is about how the moving parts of the game are drawn.
 

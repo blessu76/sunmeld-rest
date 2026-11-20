@@ -6,6 +6,7 @@ lang: de
 category: devlog
 keywords: Sunmeld, Flame, Engine, Animation, Leistung, Journal
 translation_of: en
+published: 2026-11-20T16:00+09:00
 ---
 Sunmeld ist weiterhin in Entwicklung für iOS und Android. Diese Notiz handelt davon, wie die bewegten Teile des Spiels gezeichnet werden.
 

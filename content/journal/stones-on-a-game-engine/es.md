@@ -6,6 +6,7 @@ lang: es
 category: devlog
 keywords: Sunmeld, Flame, motor, animación, rendimiento, diario
 translation_of: en
+published: 2026-11-20T16:00+09:00
 ---
 Sunmeld sigue en desarrollo para iOS y Android. Esta nota trata de cómo se dibujan las partes en movimiento del juego.
 

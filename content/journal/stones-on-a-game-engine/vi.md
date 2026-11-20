@@ -6,6 +6,7 @@ lang: vi
 category: devlog
 keywords: Sunmeld, Flame, động cơ, hoạt ảnh, hiệu năng, nhật ký
 translation_of: en
+published: 2026-11-20T16:00+09:00
 ---
 Sunmeld vẫn đang được phát triển cho iOS và Android. Ghi chú này nói về cách các phần chuyển động của trò chơi được vẽ.
 

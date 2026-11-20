@@ -29,6 +29,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Journal posts (English)
 
+- [Moving the stones onto a game engine](https://sunmeld.ipe.rest/journal/stones-on-a-game-engine/) — 2026-11-20 — Why Sunmeld's falling stones and other moving parts now run on a game engine, and how we checked them.
 - [The sound switch that did nothing](https://sunmeld.ipe.rest/journal/sound-that-was-silent/) — 2026-11-19 — Why Sunmeld's sound setting stayed silent for a while, and what we added so that a merge can be heard.
 - [Progress stays on the phone — and can sync across your devices](https://sunmeld.ipe.rest/journal/progress-stays-on-phone/) — 2026-11-18 — How Sunmeld saves your game progress locally, and what happens when you play on another device with the same Apple account.
 - [A screen of its own for tablets](https://sunmeld.ipe.rest/journal/tablet-layouts/) — 2026-11-17 — Why Sunmeld on a tablet is not just the phone screen stretched, and how we check many screen sizes.
@@ -51,6 +52,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Journal posts (한국어)
 
+- [돌의 움직임을 게임 엔진으로 옮기다](https://sunmeld.ipe.rest/ko/journal/stones-on-a-game-engine/) — 2026-11-20 — 썬멜드에서 떨어지는 돌과 그 밖의 움직임을 게임 엔진 위에서 그리게 된 이유와, 그것을 어떻게 확인했는지 이야기해요.
 - [아무 일도 하지 않던 소리 설정](https://sunmeld.ipe.rest/ko/journal/sound-that-was-silent/) — 2026-11-19 — 썬멜드의 소리 설정이 한동안 조용했던 이유와, 합치기 소리가 들리도록 무엇을 붙였는지 이야기해요.
 - [진행은 폰에 남는다 — 기기 간 동기화](https://sunmeld.ipe.rest/ko/journal/progress-stays-on-phone/) — 2026-11-18 — 썬멜드가 게임 진행을 폰에 저장하고, 같은 Apple 계정으로 다른 기기를 사용할 때 어떻게 동기화하는지
 - [태블릿만을 위한 화면](https://sunmeld.ipe.rest/ko/journal/tablet-layouts/) — 2026-11-17 — 썬멜드가 태블릿에서 폰 화면을 늘린 것이 아닌 이유와, 여러 화면 크기를 확인하는 방법이에요.

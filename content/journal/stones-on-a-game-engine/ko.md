@@ -5,6 +5,7 @@ slug: stones-on-a-game-engine
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, Flame, 엔진, 애니메이션, 성능, 저널
+published: 2026-11-20T16:00+09:00
 ---
 썬멜드는 아직 iOS와 Android용으로 개발 중이에요. 이번 글은 게임의 움직이는 부분을 어떻게 그리는지에 관한 이야기예요.
 

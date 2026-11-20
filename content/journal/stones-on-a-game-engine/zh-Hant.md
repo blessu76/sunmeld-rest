@@ -6,6 +6,7 @@ lang: zh-Hant
 category: devlog
 keywords: Sunmeld, Flame, 引擎, 動畫, 效能, 日誌
 translation_of: en
+published: 2026-11-20T16:00+09:00
 ---
 Sunmeld 仍在 iOS 與 Android 上開發中。這篇筆記談的是遊戲中移動的元件如何繪製。
 

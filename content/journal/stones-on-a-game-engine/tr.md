@@ -6,6 +6,7 @@ lang: tr
 category: devlog
 keywords: Sunmeld, Flame, motor, animasyon, performans, günlük
 translation_of: en
+published: 2026-11-20T16:00+09:00
 ---
 Sunmeld, iOS ve Android için hâlâ geliştirme aşamasında. Bu not, oyunun hareketli parçalarının nasıl çizildiği hakkında.
 

@@ -6,6 +6,7 @@ lang: th
 category: devlog
 keywords: Sunmeld, Flame, เอนจิน, แอนิเมชัน, ประสิทธิภาพ, บันทึก
 translation_of: en
+published: 2026-11-20T16:00+09:00
 ---
 Sunmeld ยังอยู่ในระหว่างการพัฒนาสำหรับ iOS และ Android บันทึกนี้เล่าเรื่องวิธีการวาดส่วนที่เคลื่อนไหวของเกม
 
