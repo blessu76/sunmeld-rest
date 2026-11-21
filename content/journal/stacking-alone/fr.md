@@ -6,6 +6,7 @@ lang: fr
 category: devlog
 keywords: Sunmeld, solo, empilement, fusion, mode, journal
 translation_of: en
+published: 2026-11-21T17:15+09:00
 ---
 Sunmeld est toujours en développement pour iOS et Android. Cette note parle d'un mode dans lequel tu joues seul.
 

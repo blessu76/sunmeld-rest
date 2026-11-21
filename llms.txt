@@ -29,6 +29,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Journal posts (English)
 
+- [Stacking alone, a mode for one player](https://sunmeld.ipe.rest/journal/stacking-alone/) — 2026-11-21 — How a solo mode came to Sunmeld, what it shares with the main game, and what it changes.
 - [Moving the stones onto a game engine](https://sunmeld.ipe.rest/journal/stones-on-a-game-engine/) — 2026-11-20 — Why Sunmeld's falling stones and other moving parts now run on a game engine, and how we checked them.
 - [The sound switch that did nothing](https://sunmeld.ipe.rest/journal/sound-that-was-silent/) — 2026-11-19 — Why Sunmeld's sound setting stayed silent for a while, and what we added so that a merge can be heard.
 - [Progress stays on the phone — and can sync across your devices](https://sunmeld.ipe.rest/journal/progress-stays-on-phone/) — 2026-11-18 — How Sunmeld saves your game progress locally, and what happens when you play on another device with the same Apple account.
@@ -52,6 +53,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Journal posts (한국어)
 
+- [혼자 쌓기, 한 사람을 위한 모드](https://sunmeld.ipe.rest/ko/journal/stacking-alone/) — 2026-11-21 — 썬멜드에 혼자 하는 모드가 생기게 된 이유와, 본 게임과 무엇을 나누고 무엇을 바꿨는지 이야기해요.
 - [돌의 움직임을 게임 엔진으로 옮기다](https://sunmeld.ipe.rest/ko/journal/stones-on-a-game-engine/) — 2026-11-20 — 썬멜드에서 떨어지는 돌과 그 밖의 움직임을 게임 엔진 위에서 그리게 된 이유와, 그것을 어떻게 확인했는지 이야기해요.
 - [아무 일도 하지 않던 소리 설정](https://sunmeld.ipe.rest/ko/journal/sound-that-was-silent/) — 2026-11-19 — 썬멜드의 소리 설정이 한동안 조용했던 이유와, 합치기 소리가 들리도록 무엇을 붙였는지 이야기해요.
 - [진행은 폰에 남는다 — 기기 간 동기화](https://sunmeld.ipe.rest/ko/journal/progress-stays-on-phone/) — 2026-11-18 — 썬멜드가 게임 진행을 폰에 저장하고, 같은 Apple 계정으로 다른 기기를 사용할 때 어떻게 동기화하는지

@@ -6,6 +6,7 @@ lang: ja
 category: devlog
 keywords: Sunmeld, ソロ, 積み上げ, 合体, モード, ジャーナル
 translation_of: en
+published: 2026-11-21T17:15+09:00
 ---
 Sunmeld は iOS と Android 向けに開発中です。このノートは、ひとりで遊ぶモードについての話です。
 

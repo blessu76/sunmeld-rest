@@ -6,6 +6,7 @@ lang: vi
 category: devlog
 keywords: Sunmeld, một mình, xếp chồng, hợp nhất, chế độ, nhật ký
 translation_of: en
+published: 2026-11-21T17:15+09:00
 ---
 Sunmeld vẫn đang được phát triển cho iOS và Android. Ghi chú này nói về một chế độ bạn chơi một mình.
 

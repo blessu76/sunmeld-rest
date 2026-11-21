@@ -6,6 +6,7 @@ lang: tr
 category: devlog
 keywords: Sunmeld, tek kişilik, istiflemek, birleşme, mod, günlük
 translation_of: en
+published: 2026-11-21T17:15+09:00
 ---
 Sunmeld, iOS ve Android için hâlâ geliştirme aşamasında. Bu not, tek başınıza oynadığınız bir mod hakkında.
 

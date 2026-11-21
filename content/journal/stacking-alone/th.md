@@ -6,6 +6,7 @@ lang: th
 category: devlog
 keywords: Sunmeld, เล่นคนเดียว, การซ้อน, การรวม, โหมด, บันทึก
 translation_of: en
+published: 2026-11-21T17:15+09:00
 ---
 Sunmeld ยังอยู่ในระหว่างการพัฒนาสำหรับ iOS และ Android บันทึกนี้เล่าเรื่องโหมดที่คุณเล่นคนเดียว
 

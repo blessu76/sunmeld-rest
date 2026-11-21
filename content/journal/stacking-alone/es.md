@@ -6,6 +6,7 @@ lang: es
 category: devlog
 keywords: Sunmeld, solitario, apilar, fusión, modo, diario
 translation_of: en
+published: 2026-11-21T17:15+09:00
 ---
 Sunmeld sigue en desarrollo para iOS y Android. Esta nota trata de un modo en el que juegas tú solo.
 

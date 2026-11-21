@@ -5,6 +5,7 @@ slug: stacking-alone
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 혼자 쌓기, 합치기, 모드, 저널
+published: 2026-11-21T17:15+09:00
 ---
 썬멜드는 아직 iOS와 Android용으로 개발 중이에요. 이번 글은 혼자서 하는 모드에 관한 이야기예요.
 

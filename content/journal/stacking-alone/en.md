@@ -5,6 +5,7 @@ slug: stacking-alone
 lang: en
 category: devlog
 keywords: Sunmeld, solo, stacking, merge, mode, journal
+published: 2026-11-21T17:15+09:00
 ---
 Sunmeld is still in development for iOS and Android. This note is about a mode where you play by yourself.
 
