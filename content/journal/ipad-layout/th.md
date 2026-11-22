@@ -6,6 +6,7 @@ lang: th
 category: devlog
 keywords: Sunmeld, iPad, หน้าหลัก, แนวนอน, เลย์เอาต์, บันทึก
 translation_of: en
+published: 2026-11-22T15:45+09:00
 ---
 Sunmeld ยังอยู่ในระหว่างการพัฒนาสำหรับ iOS และ Android บันทึกนี้เล่าว่าหน้าหลักและแผ่นหน้าต่างถูกจัดใหม่อย่างไรสำหรับหน้าจอกว้างของ iPad
 

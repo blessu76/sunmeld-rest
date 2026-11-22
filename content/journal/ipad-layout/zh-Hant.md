@@ -6,6 +6,7 @@ lang: zh-Hant
 category: devlog
 keywords: Sunmeld, iPad, 主畫面, 橫向, 版面, 日誌
 translation_of: en
+published: 2026-11-22T15:45+09:00
 ---
 Sunmeld 仍在 iOS 與 Android 上開發中。這篇筆記談的是主畫面與面板如何為 iPad 的寬螢幕重新安排。
 

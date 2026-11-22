@@ -5,6 +5,7 @@ slug: ipad-layout
 lang: en
 category: devlog
 keywords: Sunmeld, iPad, home screen, landscape, layout, journal
+published: 2026-11-22T15:45+09:00
 ---
 Sunmeld is still in development for iOS and Android. This note is about how the home screen and the sheets were rebuilt for the wide screen of an iPad.
 

@@ -6,6 +6,7 @@ lang: fr
 category: devlog
 keywords: Sunmeld, iPad, écran d'accueil, paysage, disposition, journal
 translation_of: en
+published: 2026-11-22T15:45+09:00
 ---
 Sunmeld est toujours en développement pour iOS et Android. Cette note raconte comment l'écran d'accueil et les feuilles ont été refaits pour le grand écran de l'iPad.
 

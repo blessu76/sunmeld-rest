@@ -6,6 +6,7 @@ lang: ja
 category: devlog
 keywords: Sunmeld, iPad, ホーム画面, 横向き, レイアウト, ジャーナル
 translation_of: en
+published: 2026-11-22T15:45+09:00
 ---
 Sunmeld は iOS と Android 向けに開発中です。このノートは、iPad の広い画面に合わせてホーム画面とシートを組み直した話です。
 

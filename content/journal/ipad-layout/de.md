@@ -6,6 +6,7 @@ lang: de
 category: devlog
 keywords: Sunmeld, iPad, Startbildschirm, Querformat, Layout, Journal
 translation_of: en
+published: 2026-11-22T15:45+09:00
 ---
 Sunmeld ist weiterhin in Entwicklung für iOS und Android. Diese Notiz handelt davon, wie Startbildschirm und Fenster für den breiten iPad-Bildschirm neu aufgebaut wurden.
 

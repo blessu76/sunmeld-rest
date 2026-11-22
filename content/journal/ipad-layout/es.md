@@ -6,6 +6,7 @@ lang: es
 category: devlog
 keywords: Sunmeld, iPad, pantalla de inicio, horizontal, diseño, diario
 translation_of: en
+published: 2026-11-22T15:45+09:00
 ---
 Sunmeld sigue en desarrollo para iOS y Android. Esta nota trata de cómo se rehicieron la pantalla de inicio y las hojas para la pantalla ancha del iPad.
 

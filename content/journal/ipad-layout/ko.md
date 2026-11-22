@@ -5,6 +5,7 @@ slug: ipad-layout
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 아이패드, 홈 화면, 가로 화면, 레이아웃, 저널
+published: 2026-11-22T15:45+09:00
 ---
 썬멜드는 아직 iOS와 Android용으로 개발 중이에요. 이번 글은 아이패드의 넓은 화면에서 홈 화면과 창들을 어떻게 다시 짰는지에 관한 이야기예요.
 
