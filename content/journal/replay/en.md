@@ -5,6 +5,7 @@ slug: replay
 lang: en
 category: devlog
 keywords: Sunmeld, replay, rewatch, game, journal
+published: 2026-11-23T18:00+09:00
 ---
 Sunmeld is still in development for iOS and Android. This note is about a feature that lets you watch a finished game again, one move at a time.
 

@@ -6,6 +6,7 @@ lang: pt-BR
 category: devlog
 keywords: Sunmeld, replay, rever, partida, diário
 translation_of: en
+published: 2026-11-23T18:00+09:00
 ---
 O Sunmeld ainda está em desenvolvimento para iOS e Android. Esta nota trata de um recurso que permite rever uma partida terminada, jogada por jogada.
 

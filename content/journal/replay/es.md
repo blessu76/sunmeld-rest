@@ -6,6 +6,7 @@ lang: es
 category: devlog
 keywords: Sunmeld, repetición, volver a ver, partida, diario
 translation_of: en
+published: 2026-11-23T18:00+09:00
 ---
 Sunmeld sigue en desarrollo para iOS y Android. Esta nota trata de una función que te deja volver a ver una partida terminada, jugada a jugada.
 

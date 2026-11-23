@@ -6,6 +6,7 @@ lang: fr
 category: devlog
 keywords: Sunmeld, replay, revoir, partie, journal
 translation_of: en
+published: 2026-11-23T18:00+09:00
 ---
 Sunmeld est toujours en développement pour iOS et Android. Cette note parle d'une fonction qui permet de revoir une partie terminée, coup par coup.
 

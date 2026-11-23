@@ -6,6 +6,7 @@ lang: vi
 category: devlog
 keywords: Sunmeld, xem lại, phát lại, ván chơi, nhật ký
 translation_of: en
+published: 2026-11-23T18:00+09:00
 ---
 Sunmeld vẫn đang được phát triển cho iOS và Android. Ghi chú này nói về một tính năng cho phép bạn xem lại ván đã kết thúc, từng nước một.
 

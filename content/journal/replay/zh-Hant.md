@@ -6,6 +6,7 @@ lang: zh-Hant
 category: devlog
 keywords: Sunmeld, 重播, 重看, 對局, 日誌
 translation_of: en
+published: 2026-11-23T18:00+09:00
 ---
 Sunmeld 仍在 iOS 與 Android 上開發中。這篇筆記談的是一個能讓您一步一步重看已結束對局的功能。
 

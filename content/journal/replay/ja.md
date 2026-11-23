@@ -6,6 +6,7 @@ lang: ja
 category: devlog
 keywords: Sunmeld, リプレイ, 見直す, 対局, ジャーナル
 translation_of: en
+published: 2026-11-23T18:00+09:00
 ---
 Sunmeld は iOS と Android 向けに開発中です。このノートは、終わった対局を一手ずつ見直せる機能についての話です。
 

@@ -6,6 +6,7 @@ lang: th
 category: devlog
 keywords: Sunmeld, เล่นซ้ำ, ดูอีกครั้ง, เกม, บันทึก
 translation_of: en
+published: 2026-11-23T18:00+09:00
 ---
 Sunmeld ยังอยู่ในระหว่างการพัฒนาสำหรับ iOS และ Android บันทึกนี้เล่าเรื่องฟีเจอร์ที่ให้คุณดูเกมที่จบแล้วอีกครั้งทีละตา
 

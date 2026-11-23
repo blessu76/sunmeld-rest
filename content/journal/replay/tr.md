@@ -6,6 +6,7 @@ lang: tr
 category: devlog
 keywords: Sunmeld, tekrar, yeniden izle, oyun, günlük
 translation_of: en
+published: 2026-11-23T18:00+09:00
 ---
 Sunmeld, iOS ve Android için hâlâ geliştirme aşamasında. Bu not, biten bir oyunu hamle hamle yeniden izlemenizi sağlayan bir özellik hakkında.
 

@@ -5,6 +5,7 @@ slug: replay
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 다시 보기, 리플레이, 대국, 저널
+published: 2026-11-23T18:00+09:00
 ---
 썬멜드는 아직 iOS와 Android용으로 개발 중이에요. 이번 글은 끝난 대국을 한 수씩 다시 보는 기능에 관한 이야기예요.
 

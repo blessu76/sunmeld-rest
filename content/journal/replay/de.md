@@ -6,6 +6,7 @@ lang: de
 category: devlog
 keywords: Sunmeld, Wiederholung, nochmal ansehen, Spiel, Journal
 translation_of: en
+published: 2026-11-23T18:00+09:00
 ---
 Sunmeld ist weiterhin in Entwicklung für iOS und Android. Diese Notiz handelt von einer Funktion, mit der du ein beendetes Spiel Zug für Zug noch einmal ansehen kannst.
 

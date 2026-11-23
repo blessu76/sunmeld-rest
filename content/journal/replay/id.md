@@ -6,6 +6,7 @@ lang: id
 category: devlog
 keywords: Sunmeld, ulangan, tonton ulang, permainan, jurnal
 translation_of: en
+published: 2026-11-23T18:00+09:00
 ---
 Sunmeld masih dalam pengembangan untuk iOS dan Android. Catatan ini membahas fitur yang memungkinkan kamu menonton ulang permainan yang sudah selesai, satu langkah demi satu.
 
