@@ -6,6 +6,7 @@ lang: vi
 category: devlog
 keywords: Sunmeld, giải đấu, thành tích, đối thủ, iCloud, nhật ký
 translation_of: en
+published: 2026-11-24T17:00+09:00
 ---
 Sunmeld vẫn đang được phát triển cho iOS và Android. Ghi chú này nói về một bảng mới trong giải đấu: bạn đã thắng và chơi bao nhiêu trận với từng đối thủ.
 

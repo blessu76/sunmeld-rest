@@ -6,6 +6,7 @@ lang: th
 category: devlog
 keywords: Sunmeld, ลีก, สถิติ, คู่แข่ง, iCloud, บันทึก
 translation_of: en
+published: 2026-11-24T17:00+09:00
 ---
 Sunmeld ยังอยู่ในระหว่างการพัฒนาสำหรับ iOS และ Android บันทึกนี้พูดถึงตารางใหม่ในลีก ซึ่งบอกว่าคุณชนะและเล่นกับคู่แข่งแต่ละคนไปกี่เกม
 

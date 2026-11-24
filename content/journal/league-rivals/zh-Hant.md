@@ -6,6 +6,7 @@ lang: zh-Hant
 category: devlog
 keywords: Sunmeld, 聯賽, 戰績, 對手, iCloud, 日誌
 translation_of: en
+published: 2026-11-24T17:00+09:00
 ---
 Sunmeld 仍在為 iOS 與 Android 開發中。這篇筆記談的是聯賽裡新加的一張表：你和每位對手各贏了幾局、各下了幾局。
 

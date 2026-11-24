@@ -29,6 +29,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Journal posts (English)
 
+- [Who you beat in the league, one rival at a time](https://sunmeld.ipe.rest/journal/league-rivals/) — 2026-11-24 — How the league now keeps a win and game count against each opponent, and how those counts are merged between your devices.
 - [Watching a finished game again, one move at a time](https://sunmeld.ipe.rest/journal/replay/) — 2026-11-23 — How the replay of a finished Sunmeld game works and how we checked that it plays back the same.
 - [What to do with the extra room on a big screen](https://sunmeld.ipe.rest/journal/ipad-layout/) — 2026-11-22 — How Sunmeld's iPad layout rebuilds the home screen, the sheets and the text size instead of stretching the phone screen.
 - [Stacking alone, a mode for one player](https://sunmeld.ipe.rest/journal/stacking-alone/) — 2026-11-21 — How a solo mode came to Sunmeld, what it shares with the main game, and what it changes.
@@ -55,6 +56,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Journal posts (한국어)
 
+- [리그에서 상대마다 몇 판을 이겼는지](https://sunmeld.ipe.rest/ko/journal/league-rivals/) — 2026-11-24 — 리그가 상대마다 승과 판을 세는 방법과, 두 기기 사이에서 그 기록이 어떻게 합쳐지는지 이야기해요.
 - [끝난 대국을 한 수씩 다시 보기](https://sunmeld.ipe.rest/ko/journal/replay/) — 2026-11-23 — 썬멜드에서 끝난 대국을 한 수씩 되돌려 보는 기능이 어떻게 동작하는지와 어떻게 확인했는지 이야기해요.
 - [넓은 화면에서 남는 자리를 어떻게 쓸까](https://sunmeld.ipe.rest/ko/journal/ipad-layout/) — 2026-11-22 — 썬멜드의 아이패드 배치에서 홈 화면과 시트, 글자 크기를 어떻게 다시 짰는지 이야기해요.
 - [혼자 쌓기, 한 사람을 위한 모드](https://sunmeld.ipe.rest/ko/journal/stacking-alone/) — 2026-11-21 — 썬멜드에 혼자 하는 모드가 생기게 된 이유와, 본 게임과 무엇을 나누고 무엇을 바꿨는지 이야기해요.

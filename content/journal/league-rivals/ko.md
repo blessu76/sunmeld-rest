@@ -5,6 +5,7 @@ slug: league-rivals
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 리그, 전적, 상대, 아이클라우드, 저널
+published: 2026-11-24T17:00+09:00
 ---
 썬멜드는 아직 iOS와 Android용으로 개발 중이에요. 이번 글은 리그에 새로 생긴 표, 곧 상대마다 이긴 판과 둔 판을 세는 기록에 관한 이야기예요.
 

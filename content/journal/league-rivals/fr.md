@@ -6,6 +6,7 @@ lang: fr
 category: devlog
 keywords: Sunmeld, ligue, bilan, adversaire, iCloud, journal
 translation_of: en
+published: 2026-11-24T17:00+09:00
 ---
 Sunmeld est toujours en développement pour iOS et Android. Cette note parle d'un nouveau tableau dans la ligue : combien de parties tu as gagnées et jouées contre chaque adversaire.
 

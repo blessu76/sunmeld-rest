@@ -6,6 +6,7 @@ lang: de
 category: devlog
 keywords: Sunmeld, Liga, Bilanz, Gegner, iCloud, Journal
 translation_of: en
+published: 2026-11-24T17:00+09:00
 ---
 Sunmeld ist weiterhin in Entwicklung für iOS und Android. Diese Notiz handelt von einer neuen Tabelle in der Liga: wie viele Partien du gegen jeden Gegner gewonnen und gespielt hast.
 

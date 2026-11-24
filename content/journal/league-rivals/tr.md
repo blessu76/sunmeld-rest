@@ -6,6 +6,7 @@ lang: tr
 category: devlog
 keywords: Sunmeld, lig, kayıt, rakip, iCloud, günlük
 translation_of: en
+published: 2026-11-24T17:00+09:00
 ---
 Sunmeld hâlâ iOS ve Android için geliştiriliyor. Bu not, ligde yeni eklenen bir tabloyla ilgili: her rakibe karşı kaç maç kazandığını ve kaç maç oynadığını gösteriyor.
 

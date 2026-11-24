@@ -6,6 +6,7 @@ lang: ja
 category: devlog
 keywords: Sunmeld, リーグ, 戦績, 相手, iCloud, ジャーナル
 translation_of: en
+published: 2026-11-24T17:00+09:00
 ---
 Sunmeld は iOS と Android 向けに開発中です。このノートは、リーグに加わった新しい表についての話です。相手ごとに、何勝何対局したかを数えます。
 

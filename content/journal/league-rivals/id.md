@@ -6,6 +6,7 @@ lang: id
 category: devlog
 keywords: Sunmeld, liga, catatan, lawan, iCloud, jurnal
 translation_of: en
+published: 2026-11-24T17:00+09:00
 ---
 Sunmeld masih dalam pengembangan untuk iOS dan Android. Catatan ini membahas tabel baru di liga: berapa kali kamu menang dan bermain melawan setiap lawan.
 

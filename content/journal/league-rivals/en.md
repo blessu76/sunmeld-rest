@@ -5,6 +5,7 @@ slug: league-rivals
 lang: en
 category: devlog
 keywords: Sunmeld, league, record, rival, iCloud, journal
+published: 2026-11-24T17:00+09:00
 ---
 Sunmeld is still in development for iOS and Android. This note is about a new table in the league: how many games you have won and played against each opponent.
 

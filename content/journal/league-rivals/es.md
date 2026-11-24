@@ -6,6 +6,7 @@ lang: es
 category: devlog
 keywords: Sunmeld, liga, historial, rival, iCloud, diario
 translation_of: en
+published: 2026-11-24T17:00+09:00
 ---
 Sunmeld sigue en desarrollo para iOS y Android. Esta nota trata de una tabla nueva en la liga: cuántas partidas has ganado y jugado contra cada rival.
 
