@@ -6,6 +6,7 @@ lang: de
 category: devlog
 keywords: Sunmeld, neuer Rekord, Ergebnis, Siegesserie, Übung, Journal
 translation_of: en
+published: 2026-11-25T14:30+09:00
 ---
 Sunmeld ist weiterhin in Entwicklung für iOS und Android. Diese Notiz handelt von einer kleinen Marke auf dem Ergebnisbildschirm, die erscheint, wenn eine Übungspartie einen neuen Rekord aufstellt.
 

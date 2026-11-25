@@ -6,6 +6,7 @@ lang: fr
 category: devlog
 keywords: Sunmeld, nouveau record, résultat, série, entraînement, journal
 translation_of: en
+published: 2026-11-25T14:30+09:00
 ---
 Sunmeld est toujours en développement pour iOS et Android. Cette note parle d'une petite marque sur l'écran de résultat, qui apparaît quand une partie d'entraînement établit un nouveau record.
 

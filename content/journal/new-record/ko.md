@@ -5,6 +5,7 @@ slug: new-record
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 새 기록, 결과, 연승, 연습, 저널
+published: 2026-11-25T14:30+09:00
 ---
 썬멜드는 아직 iOS와 Android용으로 개발 중이에요. 이번 글은 연습 대결에서 새 기록을 세웠을 때 결과 화면에 뜨는 작은 표시에 관한 이야기예요.
 

@@ -6,6 +6,7 @@ lang: pt-BR
 category: devlog
 keywords: Sunmeld, novo recorde, resultado, sequência, treino, diário
 translation_of: en
+published: 2026-11-25T14:30+09:00
 ---
 O Sunmeld continua em desenvolvimento para iOS e Android. Esta nota fala de uma pequena marca na tela de resultado que aparece quando uma partida de treino estabelece um novo recorde.
 

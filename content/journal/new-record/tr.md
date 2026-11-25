@@ -6,6 +6,7 @@ lang: tr
 category: devlog
 keywords: Sunmeld, yeni rekor, sonuç, seri, alıştırma, günlük
 translation_of: en
+published: 2026-11-25T14:30+09:00
 ---
 Sunmeld hâlâ iOS ve Android için geliştiriliyor. Bu not, bir alıştırma maçı yeni bir rekor kırdığında sonuç ekranında çıkan küçük bir işaretle ilgili.
 

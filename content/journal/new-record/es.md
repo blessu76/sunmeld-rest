@@ -6,6 +6,7 @@ lang: es
 category: devlog
 keywords: Sunmeld, nuevo récord, resultado, racha, práctica, diario
 translation_of: en
+published: 2026-11-25T14:30+09:00
 ---
 Sunmeld sigue en desarrollo para iOS y Android. Esta nota trata de una pequeña marca en la pantalla de resultados que aparece cuando una partida de práctica establece un nuevo récord.
 

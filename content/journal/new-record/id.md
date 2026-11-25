@@ -6,6 +6,7 @@ lang: id
 category: devlog
 keywords: Sunmeld, rekor baru, hasil, rentetan menang, latihan, jurnal
 translation_of: en
+published: 2026-11-25T14:30+09:00
 ---
 Sunmeld masih dalam pengembangan untuk iOS dan Android. Catatan ini membahas tanda kecil di layar hasil yang muncul ketika permainan latihan mencetak rekor baru.
 

@@ -6,6 +6,7 @@ lang: ja
 category: devlog
 keywords: Sunmeld, 新記録, 結果, 連勝, 練習, ジャーナル
 translation_of: en
+published: 2026-11-25T14:30+09:00
 ---
 Sunmeld は iOS と Android 向けに開発中です。このノートは、練習対局で新しい記録が出たときに結果画面へ出る小さな印についての話です。
 

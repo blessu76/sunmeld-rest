@@ -6,6 +6,7 @@ lang: vi
 category: devlog
 keywords: Sunmeld, kỷ lục mới, kết quả, chuỗi thắng, luyện tập, nhật ký
 translation_of: en
+published: 2026-11-25T14:30+09:00
 ---
 Sunmeld vẫn đang được phát triển cho iOS và Android. Ghi chú này nói về một dấu nhỏ trên màn hình kết quả, xuất hiện khi một trận luyện tập lập kỷ lục mới.
 

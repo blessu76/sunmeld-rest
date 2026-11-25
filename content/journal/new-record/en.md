@@ -5,6 +5,7 @@ slug: new-record
 lang: en
 category: devlog
 keywords: Sunmeld, new record, result, streak, practice, journal
+published: 2026-11-25T14:30+09:00
 ---
 Sunmeld is still in development for iOS and Android. This note is about a small mark on the result screen that shows when a practice match sets a new record.
 

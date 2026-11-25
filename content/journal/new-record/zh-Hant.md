@@ -6,6 +6,7 @@ lang: zh-Hant
 category: devlog
 keywords: Sunmeld, 新紀錄, 結果, 連勝, 練習, 日誌
 translation_of: en
+published: 2026-11-25T14:30+09:00
 ---
 Sunmeld 仍在為 iOS 與 Android 開發中。這篇筆記談的是練習對局創下新紀錄時，結果畫面上出現的一個小標記。
 
