@@ -2,6 +2,7 @@
 import os
 import shutil
 import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -39,10 +40,104 @@ class PublishDaily(unittest.TestCase):
         git(site, "push", "-q", "origin", "main")
         self.check_cmd = "true"
 
-    def run_script(self, check_cmd=None, publish_dir=None):
+    def run_script(self, check_cmd=None, publish_dir=None, live_env=None):
         env = {**os.environ, "SUNMELD_PUBLISH_DIR": str(publish_dir or self.clone), "SUNMELD_CHECK_CMD": check_cmd or self.check_cmd,
                "SUNMELD_SKIP_NET": "1", "GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@t", "GIT_COMMITTER_NAME": "t", "GIT_COMMITTER_EMAIL": "t@t"}
+        env.update(live_env or {})
         return subprocess.run(["bash", str(SCRIPT)], capture_output=True, text=True, env=env)
+
+    def stub_live_commands(self, *, passes_on=0, auth_status=0, dispatch_status=0, with_gh=True):
+        bin_dir = self.tmp / "bin"
+        bin_dir.mkdir()
+        self.live_events = self.tmp / "live-events"
+        self.live_events.touch()
+        commands = {
+            "python3": """case "$1 $2" in
+  "scripts/check_sitemap.py --live")
+    echo live >> "$LIVE_EVENTS"
+    [ "$(grep -c '^live$' "$LIVE_EVENTS")" -eq "$LIVE_PASSES_ON" ]
+    ;;
+  "scripts/indexnow.py "*)
+    echo indexnow >> "$LIVE_EVENTS"
+    ;;
+  *) exec "$REAL_PYTHON" "$@" ;;
+esac
+""",
+            "sleep": 'echo "sleep $*" >> "$LIVE_EVENTS"\n',
+            "gh": """echo "gh $*" >> "$LIVE_EVENTS"
+case "$*" in
+  "auth status --hostname github.com") exit "$GH_AUTH_STATUS" ;;
+  "workflow run deploy.yml --ref main") exit "$GH_DISPATCH_STATUS" ;;
+  *) exit 99 ;;
+esac
+""",
+        }
+        if not with_gh:
+            del commands["gh"]
+            for name in "bash cat date find git grep head mkdir rm sed tail tr wc".split():
+                (bin_dir / name).symlink_to(shutil.which(name))
+        for name, body in commands.items():
+            stub = bin_dir / name
+            stub.write_text("#!/bin/sh\n" + body, encoding="utf-8")
+            stub.chmod(0o755)
+        return {
+            "SUNMELD_SKIP_NET": "0",
+            "PATH": str(bin_dir) + (os.pathsep + os.environ["PATH"] if with_gh else ""),
+            "LIVE_EVENTS": str(self.live_events),
+            "REAL_PYTHON": sys.executable,
+            "LIVE_PASSES_ON": str(passes_on),
+            "GH_AUTH_STATUS": str(auth_status),
+            "GH_DISPATCH_STATUS": str(dispatch_status),
+        }
+
+    def test_live_on_first_check_does_not_dispatch(self):
+        r = self.run_script(live_env=self.stub_live_commands(passes_on=1))
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        self.assertEqual(self.live_events.read_text().splitlines(), ["sleep 120", "live", "indexnow"])
+
+    def test_live_after_first_dispatch_does_not_dispatch_again(self):
+        r = self.run_script(live_env=self.stub_live_commands(passes_on=2))
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        self.assertEqual(self.live_events.read_text().splitlines(), [
+            "sleep 120", "live", "gh auth status --hostname github.com",
+            "gh workflow run deploy.yml --ref main", "sleep 120", "live", "indexnow",
+        ])
+        self.assertEqual(self.head(), self.origin_head())
+
+    def test_live_after_second_dispatch(self):
+        r = self.run_script(live_env=self.stub_live_commands(passes_on=3))
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        self.assertEqual(self.live_events.read_text().splitlines(), [
+            "sleep 120", "live", "gh auth status --hostname github.com",
+            "gh workflow run deploy.yml --ref main", "sleep 120", "live",
+            "gh workflow run deploy.yml --ref main", "sleep 120", "live", "indexnow",
+        ])
+
+    def test_exhausted_dispatches_keep_the_push_and_report_live_failure(self):
+        r = self.run_script(live_env=self.stub_live_commands(dispatch_status=1))
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        self.assertIn("Pages workflow dispatch failed (2/2)", r.stdout)
+        self.assertIn("live check failed — retry later", r.stdout)
+        self.assertEqual(self.head(), self.origin_head())
+        self.assertEqual(self.live_events.read_text().splitlines(), [
+            "sleep 120", "live", "gh auth status --hostname github.com",
+            "gh workflow run deploy.yml --ref main", "sleep 120", "live",
+            "gh workflow run deploy.yml --ref main", "sleep 120", "live",
+        ])
+
+    def test_unauthenticated_gh_only_warns(self):
+        r = self.run_script(live_env=self.stub_live_commands(auth_status=1))
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        self.assertIn("WARN — gh is not authenticated", r.stdout)
+        self.assertEqual(self.live_events.read_text().splitlines(), [
+            "sleep 120", "live", "gh auth status --hostname github.com",
+        ])
+
+    def test_missing_gh_only_warns(self):
+        r = self.run_script(live_env=self.stub_live_commands(with_gh=False))
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        self.assertIn("WARN — gh unavailable", r.stdout)
+        self.assertEqual(self.live_events.read_text().splitlines(), ["sleep 120", "live"])
 
     def head(self, cwd=None):
         return git(cwd or self.clone, "rev-parse", "HEAD").stdout.strip()
@@ -247,10 +342,15 @@ class PublishDaily(unittest.TestCase):
         ahead = git(self.clone, "rev-list", "--count", "origin/main..HEAD").stdout.strip()
         self.assertEqual(ahead, "1")
         hook.unlink()
-        r = self.run_script()  # today already has a post: nothing new, but the leftover commit goes out
+        # Today already has a post, so the leftover push is the only deploy to verify.
+        r = self.run_script(live_env=self.stub_live_commands(passes_on=2))
         self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
         self.assertIn("unpushed", r.stdout)
         self.assertEqual(self.head(), self.origin_head())
+        self.assertEqual(self.live_events.read_text().splitlines(), [
+            "sleep 120", "live", "gh auth status --hostname github.com",
+            "gh workflow run deploy.yml --ref main", "sleep 120", "live",
+        ])
 
     def test_not_a_clone_is_skipped(self):
         r = self.run_script(publish_dir=self.tmp)

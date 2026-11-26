@@ -16,6 +16,35 @@ export GIT_TERMINAL_PROMPT=0     # under launchd nobody can type a password: fai
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S') KST] publish_daily: $*"; }
 skip() { log "SKIP — $*"; exit 0; }
 
+check_live_deploy() {
+  local wait_seconds=120 attempt
+  sleep "$wait_seconds"
+  if python3 scripts/check_sitemap.py --live; then return 0; fi
+
+  if ! command -v gh >/dev/null 2>&1; then
+    log "WARN — gh unavailable; skipping Pages workflow dispatch"
+  elif ! GH_PROMPT_DISABLED=1 gh auth status --hostname github.com >/dev/null 2>&1; then
+    log "WARN — gh is not authenticated for github.com; skipping Pages workflow dispatch"
+  else
+    for attempt in 1 2; do
+      log "live check failed — dispatching a new Pages run ($attempt/2)"
+      if ! GH_PROMPT_DISABLED=1 gh workflow run deploy.yml --ref main; then
+        log "WARN — Pages workflow dispatch failed ($attempt/2)"
+      fi
+      sleep "$wait_seconds"
+      if python3 scripts/check_sitemap.py --live; then return 0; fi
+    done
+  fi
+  log "live check failed — retry later: python3 scripts/check_sitemap.py --live"
+  return 1
+}
+
+check_leftover_deploy() {
+  if [ "$pushed_leftovers" = 1 ] && [ "${SUNMELD_SKIP_NET:-0}" != 1 ]; then
+    check_live_deploy || true
+  fi
+}
+
 REPO="${SUNMELD_PUBLISH_DIR:-$HOME/Developer/sunmeld-rest}"
 CHECK_CMD="${SUNMELD_CHECK_CMD:-bash scripts/check.sh}"
 # Everything publish_post.py + build_site.py may create or change. Anything else in the tree after a publish means abort.
@@ -49,6 +78,7 @@ git rebase -q origin/main || { git rebase --abort 2>/dev/null || true; log "FAIL
 
 # Unpushed commits from an earlier failed push go first, whether or not there is anything new to publish — but only if they touch nothing outside the
 # publish set (a local work-in-progress commit must never ride along to the public main).
+pushed_leftovers=0
 if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
   stray=""
   while IFS= read -r f; do
@@ -59,11 +89,13 @@ if [ "$(git rev-list --count origin/main..HEAD)" -gt 0 ]; then
   [ -z "$stray" ] || skip "unpushed commits touch paths outside the publish set:${stray:0:200} — not pushing"
   log "pushing $(git rev-list --count origin/main..HEAD) unpushed commit(s)"
   git push -q origin HEAD:main || { log "FAIL — push of unpushed commits"; exit 1; }
+  pushed_leftovers=1
 fi
 
 # An empty queue ends the daily post series silently, so make it loud in the log (still exit 0: it is not an error).
 if [ -z "$(find content/queue -mindepth 1 -maxdepth 1 -type d 2>/dev/null)" ]; then
   log "QUEUE_EMPTY — no post left in content/queue/; add content/queue/NN-slug/{en,ko}.md (+ translations) or the daily publishing stops"
+  check_leftover_deploy
   exit 0
 fi
 
@@ -91,7 +123,11 @@ if ! out="$(python3 scripts/publish_post.py --daily 2>&1)"; then
   echo "$out"; rollback; log "FAIL — publish_post"; exit 1
 fi
 echo "$out"
-if [ -z "$(git status --porcelain)" ]; then log "nothing to publish"; exit 0; fi
+if [ -z "$(git status --porcelain)" ]; then
+  log "nothing to publish"
+  check_leftover_deploy
+  exit 0
+fi
 slug="$(echo "$out" | sed -n 's/^publish_post: \([^ ]*\) at .*/\1/p' | head -1)"
 [ -n "$slug" ] || { rollback; log "FAIL — changes without a published slug"; exit 1; }
 
@@ -116,8 +152,7 @@ log "pushed ${slug}"
 
 [ "${SUNMELD_SKIP_NET:-0}" = "1" ] && exit 0
 # IndexNow only after the deploy is live: wait for Pages, then submit the new post in every language plus the home and journal pages.
-sleep 120
-python3 scripts/check_sitemap.py --live || log "live check failed — retry later: python3 scripts/check_sitemap.py --live"
+check_live_deploy || exit 0  # A push is retained and live failures are reported in the log.
 urls="$(echo "$out" | sed -n 's/^  \(https:\/\/[^ ]*\)$/\1/p') https://sunmeld.ipe.rest/ https://sunmeld.ipe.rest/journal/"
 # shellcheck disable=SC2086
 python3 scripts/indexnow.py $urls || log "IndexNow failed (not critical)"

@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment_retry_2.outputs.page_url || steps.deployment_retry_1.outputs.page_url || steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -54,4 +54,25 @@ jobs:
 
       - name: Deploy
         id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      # An uploaded artifact can take a moment to become visible to Pages.
+      - name: Wait before first deploy retry
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 25
+
+      - name: Retry deploy
+        if: steps.deployment.outcome == 'failure'
+        id: deployment_retry_1
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+
+      - name: Wait before final deploy retry
+        if: steps.deployment_retry_1.outcome == 'failure'
+        run: sleep 25
+
+      - name: Retry deploy (final attempt)
+        if: steps.deployment_retry_1.outcome == 'failure'
+        id: deployment_retry_2
         uses: actions/deploy-pages@v4
