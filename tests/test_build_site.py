@@ -176,6 +176,14 @@ class Rules(unittest.TestCase):
         (self.root / "content" / "pages" / "ko" / "terms.md").unlink()
         self.assertTrue(any("en and ko must both be complete" in e for e in self.errs()))
 
+    def test_existing_language_needs_both_legal_pages(self):
+        root = make_site(langs=("en", "ko", "ja"))
+        self.addCleanup(shutil.rmtree, root, True)
+        for slug in ("privacy", "terms"):
+            (root / "content" / "pages" / "ja" / (slug + ".md")).unlink()
+        _, errors = bs.make_ctx(root, NOW)
+        self.assertEqual(errors, ["language ja is missing pages: privacy, terms"])
+
     def test_queued_post_needs_faq(self):
         self.assertEqual(self.errs(), [])
         d = self.root / "content" / "queue" / "09-no-faq"

@@ -1,8 +1,9 @@
-"""Header language select = ipe_web_kit.langswitch (v0.7.2): one select per page in the header, all 12 languages, the page's own
+"""Header language select = ipe_web_kit.langswitch: one select per page in the header, all 12 languages, the page's own
 language selected, same page in each language; privacy/terms only in the footer; no footer language row; dropped-language
 addresses (pt zh ar hi ru) are redirect pages that are not in the sitemap."""
 import re
 import unittest
+import xml.etree.ElementTree as ET
 
 from helpers import REPO, bs
 
@@ -28,8 +29,6 @@ class LangSelect(unittest.TestCase):
     def test_one_select_in_the_header_with_all_languages(self):
         self.assertEqual(len(bs.LANGS), 12)
         for lang, f, h in pages():
-            if "/privacy/" in "/" + f:
-                continue  # privacy pages come from the kit privacy module with their own layout
             header = re.search(r"<header.*?</header>", h, re.S).group(0)
             self.assertEqual(header.count("<select"), 1, f)
             self.assertEqual(h.count("<select"), 1, f)
@@ -40,8 +39,6 @@ class LangSelect(unittest.TestCase):
 
     def test_select_values_are_the_same_page_in_each_language(self):
         for lang, f, h in pages():
-            if "/privacy/" in "/" + f:
-                continue
             for value, l, _ in re.findall(r'<option value="([^"]*)" lang="([\w-]+)"( selected)?>', h):
                 self.assertTrue(value.startswith("/") and value.endswith("/"), (f, value))
                 if l == "en":
@@ -51,15 +48,35 @@ class LangSelect(unittest.TestCase):
 
     def test_privacy_and_terms_only_in_footer(self):
         for lang, f, h in pages():
-            if "/privacy/" in "/" + f:
-                continue
             nav = re.search(r'<header class="site-header".*?</header>', h, re.S).group(0)
             nav = re.sub(r'<div class="ipe-lang">.*?</div>', "", nav, flags=re.S)
             self.assertIsNone(re.search(r'href="[^"]*/(privacy|terms)/"', nav), f)
             foot = re.search(r'<nav class="foot-links".*?</nav>', h, re.S).group(0)
-            self.assertIsNotNone(re.search(r'href="[^"]*/privacy/"', foot), f)
-            self.assertIsNotNone(re.search(r'href="[^"]*/terms/"', foot), f)
+            for slug in ("privacy", "terms"):
+                self.assertIn('href="%s"' % bs.path_page(lang, slug), foot, f)
             self.assertNotIn("foot-langs", h, f)
+
+    def test_legal_pages_have_all_localized_urls(self):
+        ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9", "x": "http://www.w3.org/1999/xhtml"}
+        sitemap = ET.parse(REPO / "sitemap.xml")
+        indexed = {row.findtext("sm:loc", namespaces=ns): row for row in sitemap.findall("sm:url", ns)}
+        for slug in ("privacy", "terms"):
+            paths = {lang: bs.path_page(lang, slug) for lang in bs.LANGS}
+            urls = {lang: bs.url(path) for lang, path in paths.items()}
+            alternates = {**urls, "x-default": urls["en"]}
+            for lang, path in paths.items():
+                with self.subTest(lang=lang, page=slug):
+                    page = REPO / path.lstrip("/") / "index.html"
+                    self.assertTrue(page.is_file(), page)
+                    html = page.read_text(encoding="utf-8")
+                    self.assertIn('<html lang="%s"' % lang, html)
+                    self.assertIn('<link rel="canonical" href="%s">' % urls[lang], html)
+                    self.assertEqual(dict(re.findall(r'<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">', html)), alternates)
+                    picker = re.findall(r'<option value="([^"]+)" lang="([^"]+)"', html)
+                    self.assertEqual({code: href for href, code in picker}, paths)
+                    self.assertIn(urls[lang], indexed)
+                    self.assertEqual({link.get("hreflang"): link.get("href")
+                                      for link in indexed[urls[lang]].findall("x:link", ns)}, alternates)
 
     def test_no_own_picker_left(self):
         css = (REPO / "assets" / "sunmeld.css").read_text(encoding="utf-8")

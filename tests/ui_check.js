@@ -24,9 +24,10 @@ function pagesToCheck() {
   if (slugs.length) out.push('/journal/' + slugs[0] + '/');
   for (const b of base) out.push(b === '/' ? '/ko/' : '/ko' + b);
   if (slugs.length) out.push('/ko/journal/' + slugs[0] + '/');
+  out.push('/ja/privacy/', '/de/terms/', '/th/privacy/');
   return out;
 }
-const SHOT = new Set(['/', '/journal/', '/privacy/', '/ko/', '/ko/journal/', '/ko/privacy/']);
+const SHOT = new Set(['/', '/journal/', '/privacy/', '/ko/', '/ko/journal/', '/ko/privacy/', '/ja/privacy/', '/de/terms/', '/th/privacy/']);
 (async () => {
   fs.mkdirSync(OUT, { recursive: true });
   await new Promise(r => server.listen(0, '127.0.0.1', r));
@@ -47,7 +48,7 @@ const SHOT = new Set(['/', '/journal/', '/privacy/', '/ko/', '/ko/journal/', '/k
       const m = await page.evaluate(() => ({ sw: document.documentElement.scrollWidth, iw: window.innerWidth,
         wide: [...document.querySelectorAll('body *')].filter(e => e.getBoundingClientRect().right > window.innerWidth + 1 && !e.closest('.table-wrap') && getComputedStyle(e).position !== 'fixed')
           .slice(0, 3).map(e => e.tagName + '.' + e.className) }));
-      const clipped = await page.evaluate(() => [...document.querySelectorAll('body *')].filter(e => { const c = getComputedStyle(e); return (c.overflowX !== 'visible' && !e.closest('.table-wrap') && e.tagName !== 'PRE' && e.scrollWidth > e.clientWidth + 1) || (c.textOverflow === 'ellipsis'); }).slice(0, 3).map(e => e.tagName + '.' + e.className));
+      const clipped = await page.evaluate(() => [...document.querySelectorAll('body *')].filter(e => { const c = getComputedStyle(e); if (c.position === 'absolute' && e.clientWidth <= 1 && e.clientHeight <= 1) return false; /* visually-hidden (screen-reader) label */ return (c.overflowX !== 'visible' && !e.closest('.table-wrap') && e.tagName !== 'PRE' && e.scrollWidth > e.clientWidth + 1) || (c.textOverflow === 'ellipsis'); }).slice(0, 3).map(e => e.tagName + '.' + e.className));
       if (clipped.length) bad.push(`${w}px ${pth}: clipped content (${clipped.join(', ')})`);
       if (m.sw > m.iw) bad.push(`${w}px ${pth}: horizontal overflow scrollWidth ${m.sw} > ${m.iw} (${m.wide.join(', ')})`);
       for (const e of errs) bad.push(`${w}px ${pth}: console: ${e}`);
