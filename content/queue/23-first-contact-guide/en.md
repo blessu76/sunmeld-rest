@@ -6,7 +6,7 @@ lang: en
 category: devlog
 keywords: Sunmeld, aiming guide, dashed circle, stone drop, journal
 ---
-Move a stone from side to side in Sunmeld and a dashed circle moves with it inside the jar. It gives you a place to look before you let go.
+Move a stone from side to side in Sunmeld and a dashed circle moves with it inside the jar. It gives you a place to look before you let go. The game is still in development for iOS and Android.
 
 ## When a stone is in the way
 

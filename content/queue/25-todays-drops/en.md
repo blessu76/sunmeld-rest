@@ -6,7 +6,7 @@ lang: en
 category: devlog
 keywords: Sunmeld, Today’s drops, solo stacking, personal best, journal
 ---
-Tap “Today” on the home screen of the Sunmeld test build to open “Today’s drops,” a solo stacking round. Your device’s date sets the order of the stones.
+Tap “Today” on the home screen of the Sunmeld test build to open “Today’s drops,” a solo stacking round. Your device’s date sets the order of the stones. The game is still in development for iOS and Android.
 
 ## The same order on the same date
 

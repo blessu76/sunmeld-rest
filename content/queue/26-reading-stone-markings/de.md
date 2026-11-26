@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, Steinumrisse, Stufenzahlen, Barrierefreiheit, Journal
 translation_of: en
 ---
-Je voller das Glas wird, desto schwerer lässt sich erkennen, wem ein Stein gehört und welche Steine zusammenpassen. In den Einstellungen der Sunmeld-Testversion kannst du die Umrisse anpassen und Stufenzahlen einschalten. Beides siehst du dann direkt an den Steinen.
+Je voller das Glas wird, desto schwerer lässt sich erkennen, wem ein Stein gehört und welche Steine zusammenpassen. In den Einstellungen der Sunmeld-Testversion kannst du die Umrisse anpassen und Stufenzahlen einschalten. Beides siehst du dann direkt an den Steinen. Das Spiel ist weiterhin für iOS und Android in Entwicklung.
 
 ## Die Ringe zeigen, wem ein Stein gehört
 

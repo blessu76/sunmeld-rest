@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, taş çizgileri, seviye sayıları, erişilebilirlik, günlük
 translation_of: en
 ---
-Kavanoz doldukça hangi taşın kime ait olduğunu ve hangilerinin birleşebileceğini görmek zorlaşabilir. Sunmeld’in test sürümündeki ayarlardan dış çizgileri değiştirip seviye sayılarını açabilir ve iki bilgiyi de taşların üzerinden okuyabilirsin.
+Kavanoz doldukça hangi taşın kime ait olduğunu ve hangilerinin birleşebileceğini görmek zorlaşabilir. Sunmeld’in test sürümündeki ayarlardan dış çizgileri değiştirip seviye sayılarını açabilir ve iki bilgiyi de taşların üzerinden okuyabilirsin. Oyun hâlâ iOS ve Android için geliştiriliyor.
 
 ## Çember taşın sahibini gösterir
 

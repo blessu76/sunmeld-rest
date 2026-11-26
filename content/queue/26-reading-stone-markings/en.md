@@ -6,7 +6,7 @@ lang: en
 category: devlog
 keywords: Sunmeld, stone outlines, stage numbers, accessibility, journal
 ---
-As the jar fills up, it can get harder to see whose stone is whose or which stones can merge. In the settings of the Sunmeld test build, you can adjust outlines and turn on stage numbers to read both details right on the stones.
+As the jar fills up, it can get harder to see whose stone is whose or which stones can merge. In the settings of the Sunmeld test build, you can adjust outlines and turn on stage numbers to read both details right on the stones. The game is still in development for iOS and Android.
 
 ## Read ownership by the ring
 

@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, garis tepi batu, angka tingkat, aksesibilitas, jurnal
 translation_of: en
 ---
-Saat wadah mulai penuh, makin sulit melihat siapa pemilik batu atau batu mana yang bisa bergabung. Di pengaturan versi uji Sunmeld, kamu bisa mengubah garis tepi dan menyalakan angka tingkat agar keduanya mudah dibaca langsung pada batu.
+Saat wadah mulai penuh, makin sulit melihat siapa pemilik batu atau batu mana yang bisa bergabung. Di pengaturan versi uji Sunmeld, kamu bisa mengubah garis tepi dan menyalakan angka tingkat agar keduanya mudah dibaca langsung pada batu. Game ini masih dalam pengembangan untuk iOS dan Android.
 
 ## Lihat pemiliknya dari garis tepi
 

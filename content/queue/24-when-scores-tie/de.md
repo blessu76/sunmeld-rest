@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, Punktgleichstand, letzte Punkte, Duell, Journal
 translation_of: en
 ---
-Mit einer Verschmelzung ziehst du mit der KI gleich. Bleibt es nach allen übrigen Würfen bei diesem Punktestand, gewinnt nach den Standardregeln die Seite, die gerade aufgeholt hat.
+Sunmeld ist weiterhin in Entwicklung für iOS und Android. Mit einer Verschmelzung ziehst du mit der KI gleich. Bleibt es nach allen übrigen Würfen bei diesem Punktestand, gewinnt nach den Standardregeln die Seite, die gerade aufgeholt hat.
 
 ## Wer zuletzt gepunktet hat
 

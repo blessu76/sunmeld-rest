@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, Urutan hari ini, susun solo, skor terbaik, jurnal
 translation_of: en
 ---
-Ketuk «Hari ini» di layar utama versi uji Sunmeld untuk membuka «Urutan hari ini», ronde menyusun batu sendiri. Tanggal di perangkat menentukan urutan batunya.
+Ketuk «Hari ini» di layar utama versi uji Sunmeld untuk membuka «Urutan hari ini», ronde menyusun batu sendiri. Tanggal di perangkat menentukan urutan batunya. Game ini masih dalam pengembangan untuk iOS dan Android.
 
 ## Tanggal sama, urutan sama
 

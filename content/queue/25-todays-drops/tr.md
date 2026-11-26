@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, Bugünün dizisi, tek kişilik oyun, en iyi puan, günlük
 translation_of: en
 ---
-Sunmeld’in test sürümünde ana ekrandaki “Bugün” düğmesine dokunarak tek kişilik “Bugünün dizisi” turunu açabilirsin. Taşların sırasını cihazındaki tarih belirler.
+Sunmeld’in test sürümünde ana ekrandaki “Bugün” düğmesine dokunarak tek kişilik “Bugünün dizisi” turunu açabilirsin. Taşların sırasını cihazındaki tarih belirler. Oyun hâlâ iOS ve Android için geliştiriliyor.
 
 ## Aynı tarihte aynı sıra
 

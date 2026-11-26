@@ -78,11 +78,13 @@ class JsonLd(unittest.TestCase):
             self.assertIn("<h2>", f.read_text(encoding="utf-8"))
 
     def test_first_paragraph_names_game_and_platform(self):
-        for src in sorted((REPO / "content" / "journal").glob("*/*.md")):
-            _, body = bs.parse_front(src.read_text(encoding="utf-8"))
-            first = body.split("\n\n")[0]
-            self.assertRegex(first, r"Sunmeld|썬멜드|サンメルド", src)
-            self.assertIn("iOS", first, src)
+        for directory in ("journal", "queue"):
+            for src in sorted((REPO / "content" / directory).glob("*/*.md")):
+                with self.subTest(source=src.relative_to(REPO)):
+                    _, body = bs.parse_front(src.read_text(encoding="utf-8"))
+                    first = body.split("\n\n", 1)[0]
+                    self.assertRegex(first, r"Sunmeld|썬멜드|サンメルド")
+                    self.assertIn("iOS", first)
 
 
 class FaqParser(unittest.TestCase):

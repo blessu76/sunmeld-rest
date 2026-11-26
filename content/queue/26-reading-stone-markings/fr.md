@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, contours, numéros de niveau, accessibilité, journal
 translation_of: en
 ---
-Quand le bocal se remplit, il devient plus difficile de voir à qui appartient une pierre ou quelles pierres peuvent fusionner. Dans les réglages de la version de test de Sunmeld, vous pouvez modifier les contours et activer les numéros de niveau pour lire ces deux informations directement sur les pierres.
+Quand le bocal se remplit, il devient plus difficile de voir à qui appartient une pierre ou quelles pierres peuvent fusionner. Dans les réglages de la version de test de Sunmeld, vous pouvez modifier les contours et activer les numéros de niveau pour lire ces deux informations directement sur les pierres. Le jeu est toujours en développement pour iOS et Android.
 
 ## L’anneau indique à qui appartient la pierre
 

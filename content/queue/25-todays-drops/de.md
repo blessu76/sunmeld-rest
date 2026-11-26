@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, Heutige Abfolge, Solo-Stapeln, Bestpunktzahl, Journal
 translation_of: en
 ---
-Tippe auf dem Startbildschirm der Sunmeld-Testversion auf „Heute“, um die Solorunde „Heutige Abfolge“ zu öffnen. Das Datum deines Geräts bestimmt die Reihenfolge der Steine.
+Tippe auf dem Startbildschirm der Sunmeld-Testversion auf „Heute“, um die Solorunde „Heutige Abfolge“ zu öffnen. Das Datum deines Geräts bestimmt die Reihenfolge der Steine. Das Spiel ist weiterhin für iOS und Android in Entwicklung.
 
 ## Am selben Tag dieselbe Reihenfolge
 

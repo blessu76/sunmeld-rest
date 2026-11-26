@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, panduan bidik, lingkaran putus-putus, batu jatuh, jurnal
 translation_of: en
 ---
-Saat kamu menggeser batu ke kiri atau ke kanan di Sunmeld, lingkaran putus-putus di dalam wadah ikut bergerak. Tanda ini membantu kamu memperkirakan titik sentuh sebelum melepas batu.
+Saat kamu menggeser batu ke kiri atau ke kanan di Sunmeld, lingkaran putus-putus di dalam wadah ikut bergerak. Tanda ini membantu kamu memperkirakan titik sentuh sebelum melepas batu. Game ini masih dalam pengembangan untuk iOS dan Android.
 
 ## Saat ada batu yang menghalangi
 

@@ -6,7 +6,7 @@ lang: en
 category: devlog
 keywords: Sunmeld, tied score, last scorer, duel, journal
 ---
-One merge brings you level with the AI. If both scores stay there through the remaining drops, the standard duel rules give the win to the side that just caught up.
+Sunmeld is still in development for iOS and Android. One merge brings you level with the AI. If both scores stay there through the remaining drops, the standard duel rules give the win to the side that just caught up.
 
 ## The last points earned
 

@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, 瞄準輔助線, 虛線圓圈, 落石, 日誌
 translation_of: en
 ---
-在 Sunmeld 裡左右移動石頭時，罐中的虛線圓圈也會跟著移動。鬆手之前，你就能大概看出石頭會先碰到哪裡。
+在 Sunmeld 裡左右移動石頭時，罐中的虛線圓圈也會跟著移動。鬆手之前，你就能大概看出石頭會先碰到哪裡。遊戲目前仍在為 iOS 與 Android 開發中。
 
 ## 下方有石頭擋住時
 

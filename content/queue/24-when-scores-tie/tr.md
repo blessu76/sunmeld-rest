@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, puan eşitliği, son puan, düello, günlük
 translation_of: en
 ---
-Bir birleşmeyle yapay zekânın puanına yetiştin. Kalan taşlar da bırakıldığında puanlar hâlâ eşitse standart düello kurallarına göre az önce yetişen taraf kazanır.
+Sunmeld hâlâ iOS ve Android için geliştiriliyor. Bir birleşmeyle yapay zekânın puanına yetiştin. Kalan taşlar da bırakıldığında puanlar hâlâ eşitse standart düello kurallarına göre az önce yetişen taraf kazanır.
 
 ## En son kim puan aldı?
 

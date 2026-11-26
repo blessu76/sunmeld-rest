@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, nişan kılavuzu, kesik çizgili çember, taş düşürme, günlük
 translation_of: en
 ---
-Sunmeld’de taşı sağa sola kaydırdığında kavanozdaki kesik çizgili çember de onunla birlikte hareket eder. Taşı bırakmadan önce ilk nereye değebileceğini bu çemberden anlayabilirsin.
+Sunmeld’de taşı sağa sola kaydırdığında kavanozdaki kesik çizgili çember de onunla birlikte hareket eder. Taşı bırakmadan önce ilk nereye değebileceğini bu çemberden anlayabilirsin. Oyun hâlâ iOS ve Android için geliştiriliyor.
 
 ## Yolda başka bir taş varsa
 

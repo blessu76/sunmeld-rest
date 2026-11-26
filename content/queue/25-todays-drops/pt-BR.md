@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, Queda de hoje, empilhamento solo, melhor pontuação, diário
 translation_of: en
 ---
-Toque em “Hoje” na tela inicial da versão de teste do Sunmeld para abrir “Queda de hoje”, uma rodada de empilhamento solo. A data do seu aparelho define a ordem das pedras.
+Toque em “Hoje” na tela inicial da versão de teste do Sunmeld para abrir “Queda de hoje”, uma rodada de empilhamento solo. A data do seu aparelho define a ordem das pedras. O jogo continua em desenvolvimento para iOS e Android.
 
 ## A mesma ordem na mesma data
 

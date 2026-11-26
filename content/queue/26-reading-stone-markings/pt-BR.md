@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, contorno das pedras, números de nível, acessibilidade, diário
 translation_of: en
 ---
-Conforme o pote enche, pode ficar mais difícil saber de quem é cada pedra ou quais podem se fundir. Nas configurações da versão de teste do Sunmeld, você pode mudar os contornos e ativar os números de nível para ler as duas informações direto nas pedras.
+Conforme o pote enche, pode ficar mais difícil saber de quem é cada pedra ou quais podem se fundir. Nas configurações da versão de teste do Sunmeld, você pode mudar os contornos e ativar os números de nível para ler as duas informações direto nas pedras. O jogo continua em desenvolvimento para iOS e Android.
 
 ## O anel indica de quem é a pedra
 

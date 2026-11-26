@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, Chute du jour, empilement solo, meilleur score, journal
 translation_of: en
 ---
-Touchez « Du jour » depuis l’accueil de la version de test de Sunmeld pour ouvrir « Chute du jour », une partie d’empilement en solo. La date de votre appareil fixe l’ordre des pierres.
+Touchez « Du jour » depuis l’accueil de la version de test de Sunmeld pour ouvrir « Chute du jour », une partie d’empilement en solo. La date de votre appareil fixe l’ordre des pierres. Le jeu est toujours en développement pour iOS et Android.
 
 ## Le même ordre à la même date
 

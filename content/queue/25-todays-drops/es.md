@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, Caída de hoy, apilar en solitario, mejor puntuación, diario
 translation_of: en
 ---
-Toca «Hoy» en la pantalla de inicio de la versión de prueba de Sunmeld para abrir «Caída de hoy», una partida en solitario. La fecha de tu dispositivo determina el orden de las piedras.
+Toca «Hoy» en la pantalla de inicio de la versión de prueba de Sunmeld para abrir «Caída de hoy», una partida en solitario. La fecha de tu dispositivo determina el orden de las piedras. El juego sigue en desarrollo para iOS y Android.
 
 ## El mismo orden en la misma fecha
 

@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, repère de visée, cercle en pointillés, chute, journal
 translation_of: en
 ---
-Quand vous déplacez une pierre de gauche à droite dans Sunmeld, un cercle en pointillés suit votre mouvement dans le bocal. Il vous indique où regarder avant de lâcher la pierre.
+Quand vous déplacez une pierre de gauche à droite dans Sunmeld, un cercle en pointillés suit votre mouvement dans le bocal. Il vous indique où regarder avant de lâcher la pierre. Le jeu est toujours en développement pour iOS et Android.
 
 ## Quand une pierre se trouve sur le trajet
 

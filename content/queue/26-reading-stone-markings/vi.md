@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, đường viền đá, số cấp, trợ năng, nhật ký
 translation_of: en
 ---
-Khi lọ đầy dần, bạn có thể khó nhận ra viên đá thuộc về bên nào hoặc viên nào có thể hợp nhất với nhau. Trong phần cài đặt của bản thử nghiệm Sunmeld, bạn có thể đổi đường viền và bật số cấp để đọc cả hai thông tin ngay trên các viên đá.
+Khi lọ đầy dần, bạn có thể khó nhận ra viên đá thuộc về bên nào hoặc viên nào có thể hợp nhất với nhau. Trong phần cài đặt của bản thử nghiệm Sunmeld, bạn có thể đổi đường viền và bật số cấp để đọc cả hai thông tin ngay trên các viên đá. Trò chơi vẫn đang được phát triển cho iOS và Android.
 
 ## Nhìn đường viền để biết đá của bên nào
 

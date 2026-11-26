@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, Chuỗi đá hôm nay, xếp đá một mình, điểm cao nhất, nhật ký
 translation_of: en
 ---
-Chạm vào “Hôm nay” trên màn hình chính của bản thử nghiệm Sunmeld để mở “Chuỗi đá hôm nay”, một lượt xếp đá một mình. Ngày trên thiết bị quyết định thứ tự đá xuất hiện.
+Chạm vào “Hôm nay” trên màn hình chính của bản thử nghiệm Sunmeld để mở “Chuỗi đá hôm nay”, một lượt xếp đá một mình. Ngày trên thiết bị quyết định thứ tự đá xuất hiện. Trò chơi vẫn đang được phát triển cho iOS và Android.
 
 ## Cùng ngày, cùng thứ tự
 

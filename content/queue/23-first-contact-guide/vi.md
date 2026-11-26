@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, vạch ngắm, vòng nét đứt, thả đá, nhật ký
 translation_of: en
 ---
-Khi bạn dịch viên đá sang trái hoặc phải trong Sunmeld, vòng nét đứt trong lọ cũng di chuyển theo. Nhờ vậy, bạn có thể đoán viên đá sẽ chạm vào đâu trước khi buông tay.
+Khi bạn dịch viên đá sang trái hoặc phải trong Sunmeld, vòng nét đứt trong lọ cũng di chuyển theo. Nhờ vậy, bạn có thể đoán viên đá sẽ chạm vào đâu trước khi buông tay. Trò chơi vẫn đang được phát triển cho iOS và Android.
 
 ## Khi có viên đá chắn đường
 

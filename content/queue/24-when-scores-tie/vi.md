@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, bằng điểm, ghi điểm cuối, đối đấu, nhật ký
 translation_of: en
 ---
-Một lần hợp nhất giúp bạn bắt kịp điểm của AI. Nếu điểm số vẫn bằng nhau sau khi thả hết số đá còn lại, luật đấu tiêu chuẩn tính bên vừa bắt kịp là bên thắng.
+Sunmeld vẫn đang được phát triển cho iOS và Android. Một lần hợp nhất giúp bạn bắt kịp điểm của AI. Nếu điểm số vẫn bằng nhau sau khi thả hết số đá còn lại, luật đấu tiêu chuẩn tính bên vừa bắt kịp là bên thắng.
 
 ## Bên nào ghi điểm sau cùng
 

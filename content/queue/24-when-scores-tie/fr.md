@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, égalité, derniers points, duel, journal
 translation_of: en
 ---
-Une fusion vous permet de rattraper l’IA. Si le score reste à égalité jusqu’à la dernière pierre, les règles standard du duel donnent la victoire au camp qui vient de revenir à hauteur.
+Sunmeld est toujours en développement pour iOS et Android. Une fusion vous permet de rattraper l’IA. Si le score reste à égalité jusqu’à la dernière pierre, les règles standard du duel donnent la victoire au camp qui vient de revenir à hauteur.
 
 ## Qui a marqué en dernier
 

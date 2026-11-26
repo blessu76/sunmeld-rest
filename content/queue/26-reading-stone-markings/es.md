@@ -7,7 +7,7 @@ category: devlog
 keywords: Sunmeld, contornos de piedras, números de nivel, accesibilidad, diario
 translation_of: en
 ---
-Cuando el recipiente se llena, cuesta más distinguir de quién es cada piedra o cuáles pueden fusionarse. En los ajustes de la versión de prueba de Sunmeld puedes cambiar los contornos y activar los números de nivel para leer ambos datos en las propias piedras.
+Cuando el recipiente se llena, cuesta más distinguir de quién es cada piedra o cuáles pueden fusionarse. En los ajustes de la versión de prueba de Sunmeld puedes cambiar los contornos y activar los números de nivel para leer ambos datos en las propias piedras. El juego sigue en desarrollo para iOS y Android.
 
 ## El anillo indica de quién es la piedra
 
