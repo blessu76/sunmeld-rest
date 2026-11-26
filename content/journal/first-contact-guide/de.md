@@ -6,6 +6,7 @@ lang: de
 category: devlog
 keywords: Sunmeld, Zielhilfe, gestrichelter Kreis, Steine, Journal
 translation_of: en
+published: 2026-11-26T23:41+09:00
 ---
 Wenn du in Sunmeld einen Stein nach links oder rechts bewegst, wandert ein gestrichelter Kreis im Glas mit. So kannst du vor dem Loslassen abschätzen, wo der Stein zuerst auftrifft. Das Spiel ist weiterhin für iOS und Android in Entwicklung.
 

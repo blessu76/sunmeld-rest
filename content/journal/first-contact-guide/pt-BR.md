@@ -6,6 +6,7 @@ lang: pt-BR
 category: devlog
 keywords: Sunmeld, guia de mira, círculo tracejado, queda, diário
 translation_of: en
+published: 2026-11-26T23:41+09:00
 ---
 Ao mover uma pedra de um lado para o outro no Sunmeld, um círculo tracejado acompanha o movimento dentro do pote. Ele ajuda você a ver onde a pedra deve tocar primeiro antes de soltá-la. O jogo continua em desenvolvimento para iOS e Android.
 

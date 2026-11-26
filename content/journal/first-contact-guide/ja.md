@@ -6,6 +6,7 @@ lang: ja
 category: devlog
 keywords: Sunmeld, 照準ガイド, 点線の円, 落下, ジャーナル
 translation_of: en
+published: 2026-11-26T23:41+09:00
 ---
 Sunmeldで石を左右に動かすと、容器の中の点線の円もついてきます。石を落とす前に、どこに最初に触れそうかを確かめられます。現在、iOSとAndroid向けに開発中です。
 

@@ -5,6 +5,7 @@ slug: first-contact-guide
 lang: ko
 category: devlog
 keywords: 썬멜드, Sunmeld, 조준, 점선 원, 낙하, 저널
+published: 2026-11-26T23:41+09:00
 ---
 썬멜드에서 돌을 좌우로 움직이면 통 안의 점선 원도 따라 움직여요. 원을 보면 손을 떼기 전에 돌이 어디에 처음 닿을지 가늠할 수 있어요. 게임은 아직 iOS와 Android용으로 개발 중이에요.
 

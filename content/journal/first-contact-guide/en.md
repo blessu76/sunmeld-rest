@@ -5,6 +5,7 @@ slug: first-contact-guide
 lang: en
 category: devlog
 keywords: Sunmeld, aiming guide, dashed circle, stone drop, journal
+published: 2026-11-26T23:41+09:00
 ---
 Move a stone from side to side in Sunmeld and a dashed circle moves with it inside the jar. It gives you a place to look before you let go. The game is still in development for iOS and Android.
 

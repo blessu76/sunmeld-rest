@@ -6,6 +6,7 @@ lang: es
 category: devlog
 keywords: Sunmeld, guía de puntería, círculo discontinuo, caída, diario
 translation_of: en
+published: 2026-11-26T23:41+09:00
 ---
 Al mover una piedra de un lado a otro en Sunmeld, un círculo discontinuo la acompaña dentro del recipiente. Esa marca te ayuda a ver dónde tocará primero antes de soltarla. El juego sigue en desarrollo para iOS y Android.
 
