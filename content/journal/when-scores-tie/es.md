@@ -6,6 +6,7 @@ lang: es
 category: devlog
 keywords: Sunmeld, empate, últimos puntos, duelo, diario
 translation_of: en
+published: 2026-11-28T13:09+09:00
 ---
 Sunmeld sigue en desarrollo para iOS y Android. Con una fusión igualas a la IA. Si el marcador sigue empatado después de agotar las piedras, las reglas normales del duelo dan la victoria a quien acaba de alcanzar el empate.
 

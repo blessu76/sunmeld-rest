@@ -29,6 +29,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Journal posts (English)
 
+- [When the scores are tied](https://sunmeld.ipe.rest/journal/when-scores-tie/) — 2026-11-28 — Here’s what settles a tied Sunmeld duel when it ends on points.
 - [The dashed circle before a drop](https://sunmeld.ipe.rest/journal/first-contact-guide/) — 2026-11-26 — Read Sunmeld’s aiming guide to see where a stone is likely to touch down first.
 - [A "new record" mark after a practice match](https://sunmeld.ipe.rest/journal/new-record/) — 2026-11-25 — When the result screen shows a new record, which records count, and how the mark appears.
 - [Who you beat in the league, one rival at a time](https://sunmeld.ipe.rest/journal/league-rivals/) — 2026-11-24 — How the league now keeps a win and game count against each opponent, and how those counts are merged between your devices.
@@ -58,6 +59,7 @@ Sunmeld is a casual player-versus-AI mobile game by ipe() (https://ipe.rest/). I
 
 ## Journal posts (한국어)
 
+- [대결 점수가 같으면 누가 이길까요](https://sunmeld.ipe.rest/ko/journal/when-scores-tie/) — 2026-11-28 — 썬멜드에서 점수로 끝난 대결이 동점일 때 어떤 합치기가 승부를 가르는지 이야기해요.
 - [돌이 처음 닿을 곳을 알려 주는 점선](https://sunmeld.ipe.rest/ko/journal/first-contact-guide/) — 2026-11-26 — 조준할 때 보이는 점선 원을 읽고, 빈틈과 돌이 맞닿는 자리를 가늠하는 법을 소개해요.
 - [연습 대결 뒤에 뜨는 「새 기록」 표시](https://sunmeld.ipe.rest/ko/journal/new-record/) — 2026-11-25 — 결과 화면에 새 기록이 뜨는 때, 어떤 기록이 세어지는지, 그리고 표시가 어떻게 나타나는지 이야기해요.
 - [리그에서 상대마다 몇 판을 이겼는지](https://sunmeld.ipe.rest/ko/journal/league-rivals/) — 2026-11-24 — 리그가 상대마다 승과 판을 세는 방법과, 두 기기 사이에서 그 기록이 어떻게 합쳐지는지 이야기해요.

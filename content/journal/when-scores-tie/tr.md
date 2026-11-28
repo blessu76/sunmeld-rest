@@ -6,6 +6,7 @@ lang: tr
 category: devlog
 keywords: Sunmeld, puan eşitliği, son puan, düello, günlük
 translation_of: en
+published: 2026-11-28T13:09+09:00
 ---
 Sunmeld hâlâ iOS ve Android için geliştiriliyor. Bir birleşmeyle yapay zekânın puanına yetiştin. Kalan taşlar da bırakıldığında puanlar hâlâ eşitse standart düello kurallarına göre az önce yetişen taraf kazanır.
 

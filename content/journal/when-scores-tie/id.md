@@ -6,6 +6,7 @@ lang: id
 category: devlog
 keywords: Sunmeld, skor imbang, poin terakhir, duel, jurnal
 translation_of: en
+published: 2026-11-28T13:09+09:00
 ---
 Sunmeld masih dalam pengembangan untuk iOS dan Android. Satu penggabungan membuat skormu menyamai skor AI. Jika skor tetap sama sampai jatah batu kedua pihak habis, aturan duel standar memberi kemenangan kepada pihak yang baru saja menyusul.
 

@@ -5,6 +5,7 @@ slug: when-scores-tie
 lang: en
 category: devlog
 keywords: Sunmeld, tied score, last scorer, duel, journal
+published: 2026-11-28T13:09+09:00
 ---
 Sunmeld is still in development for iOS and Android. One merge brings you level with the AI. If both scores stay there through the remaining drops, the standard duel rules give the win to the side that just caught up.
 

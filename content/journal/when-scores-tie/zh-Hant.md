@@ -6,6 +6,7 @@ lang: zh-Hant
 category: devlog
 keywords: Sunmeld, 同分, 最後得分, 對局, 日誌
 translation_of: en
+published: 2026-11-28T13:09+09:00
 ---
 Sunmeld 仍在為 iOS 與 Android 開發中。一次合併讓你追平 AI。接下來把剩下的石頭都放完，分數還是一樣的話，按標準對局規則，剛剛追平的一方會獲勝。
 

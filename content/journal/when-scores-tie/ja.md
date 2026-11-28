@@ -6,6 +6,7 @@ lang: ja
 category: devlog
 keywords: Sunmeld, 同点, 最後の得点, 対戦, ジャーナル
 translation_of: en
+published: 2026-11-28T13:09+09:00
 ---
 SunmeldはiOSとAndroid向けに開発中です。合体の得点でAIに追いつきました。残りの石をすべて落としても点数が変わらなければ、通常の対戦ルールでは、今追いついた側の勝ちです。
 
